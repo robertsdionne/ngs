@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quicktest</title>
+  <script src=web/scene.js></script>
+  <script src=web/navigator.js></script>
+  <script src=web/util.js></script>
+  <script src=web/mygame/mygame.js></script>
+  <script src=editor/embeddable-autotester.js></script>
+<script>
+
+nav.setStartingStatsClone(stats);
+
+function doneLoading() {
+  var loadingDiv = document.getElementById("loading");
+  if (loadingDiv) loadingDiv.parentNode.removeChild(loadingDiv);
+}
+function changeTitle() {}
+knownScenes = [];
+
+function addFile(name) {
+  for (var i = 0; i < knownScenes.length; i++) {
+    if (knownScenes[i] == name) return;
+  }
+  knownScenes.push(name);
+}
+
+var sceneName = nav.getStartupScene();
+for (var i = 0; i < nav._sceneList.length; i++) {
+  addFile(nav._sceneList[i] + ".txt");
+}
+addFile("choicescript_stats.txt");
+addFile("choicescript_upgrade.txt");
+
+Scene.prototype.verifySceneFile = function webVerifySceneFile(name) {
+  addFile(name+".txt");
+}
+
+printFooter = function() {};
+printShareLinks = function() {};
+printLink = function() {};
+printButton = function() {};
+printImage = function() {};
+showPassword = function() {};
+achieve = function() {};
+loginForm = function() {};
+
+isRegistered = function() {return false;};
+isRegisterAllowed = function() {return false;};
+isRestorePurchasesSupported = function() {return false;};
+isFullScreenAdvertisingSupported = function() {return false;};
+areSaveSlotsSupported = function() {return false;};
+
+function initStore() { return false; }
+
+clearScreen = function clearScreen(code) {
+  code.call();
+};
+
+var oldLog = console.log;
+
+saveCookie = function(callback) { if (callback) callback.call(); };
+
+function printBody(msg, parent) {
+    if (msg === null || msg === undefined || msg === "") return;
+    if (!parent) parent = document.body;
+    if (msg == " ") {
+      // IE7 doesn't like innerHTML that's nothing but " "
+      parent.appendChild(document.createTextNode(" "));
+      return;
+    }
+    msg = (msg+"").replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/\[b\]/g, '<b>')
+      .replace(/\[\/b\]/g, '</b>')
+      .replace(/\[i\]/g, '<i>')
+      .replace(/\[\/i\]/g, '</i>');
+    var frag = document.createDocumentFragment();
+    temp = document.createElement('div');
+    temp.innerHTML = msg;
+    while (temp.firstChild) {
+        frag.appendChild(temp.firstChild);
+    }
+    parent.appendChild(frag);
+
+}
+
+function println() {}
+
+console.log = function() {
+  var msg = arguments[0];
+  printBody(msg);
+  var br = document.createElement("br");
+  document.body.appendChild(br);
+  br.scrollIntoView();
+  oldLog.apply(this, arguments);
+}
+
+uncoveredScenes = [];
+
+var success = true;
+function testScene(sceneNum) {
+  var fileName = knownScenes[sceneNum];
+  var sceneName = fileName.replace(/.txt$/, "");
+  var url = "web/mygame/scenes/" + fileName;
+  xhr = new XMLHttpRequest();
+  xhr.open("GET", url, false);
+  var skip = false;
+  var loadFailed = false;
+  try {
+    xhr.send();
+  } catch (x) {
+    if (/^choicescript_(stats|upgrade)$/.test(sceneName)) {
+      skip = true;
+    } else {
+      if (window.location.protocol == "file:" && /Chrome/.test(navigator.userAgent)) {
+        doneLoading();
+        console.log("We're sorry, Google Chrome has blocked ChoiceScript from functioning.  (\"file:\" URLs cannot "+
+          "load files in Chrome.)  ChoiceScript works just fine in Chrome, but only on a published website like "+
+          "choiceofgames.com.  For the time being, please try another browser like Mozilla Firefox.");
+        success = false;
+        return;
+      }
+      loadFailed = true;
+    }
+  }
+
+  if (xhr.status && xhr.status != 200) {
+    loadFailed = true;
+  }
+
+  if (loadFailed) {
+    if (/^choicescript_(stats|upgrade)$/.test(sceneName)) {
+      skip = true;
+    } else {
+      doneLoading();
+      console.log("QUICKTEST FAILED");
+      console.log("ERROR: couldn't open " + url);
+      success = false;
+      return;
+    }
+  }
+  if (!skip) {
+    console.log(sceneName);
+    try {
+      var uncovered = autotester(xhr.responseText, nav, sceneName)[1];
+      if (uncovered) {
+        uncoveredScenes.push({name:sceneName, lines:uncovered});
+      }
+    } catch (x) {
+      console.log("QUICKTEST FAILED");
+        console.log(x);
+        console.error(x.stack);
+        success = false;
+        return;
+    }
+  }
+  
+  if (++sceneNum < knownScenes.length) return setTimeout(function(){testScene(sceneNum)}, 0);
+
+  if (success) {
+    var allLinesTested = true;
+    for (var i = 0; i < uncoveredScenes.length; i++) {
+      allLinesTested = false;
+      var uncoveredScene = uncoveredScenes[i];
+      for (var j = 0; j < uncoveredScene.lines.length; j++) {
+        console.log("UNTESTED " + uncoveredScene.name + " " + uncoveredScene.lines[j]);
+      };
+    }
+    if (!allLinesTested) console.log("SOME LINES UNTESTED");
+    console.log("QUICKTEST PASSED");
+  }
+}
+
+</script>
+</head>
+<body>
+<div id="loading">Loading...</div>
+<script>
+testScene(0);
+</script>
+</body>
+</html>
