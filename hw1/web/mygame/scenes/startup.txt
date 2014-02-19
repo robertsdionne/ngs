@@ -4,8 +4,8 @@
 *scene_list
   startup
 
-*create leadership 50
-*create strength 50
+*create complete_tasks 0
+*create fulfilled_desires 0
 
 *page_break
 
