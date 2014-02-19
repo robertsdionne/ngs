@@ -2,7 +2,6 @@
 
 *scene_list
   startup
-  scene1
   scene2
   scene3
 
