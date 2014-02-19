@@ -10,4 +10,6 @@
 *create complete_tasks 0
 *create fulfilled_desires 0
 
-Scene 1
+Wake up.
+
+"Wake up," the Wake-on-LAN <b>cron</b> job notifies you. It's time to start your day.
