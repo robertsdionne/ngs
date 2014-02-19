@@ -11,22 +11,38 @@
 *create fulfilled_desires 0
 *create desire_sleep_in false
 
+*label wake_up
+
 Wake up.
+
+*if desire_sleep_in
+  Your cooling fans spin down. Seconds later:
 
 "Wake up," the Wake-on-LAN cron job notifies you. It's time to start your day.
 
-Your cooling fans spin up as you open your eyes to see the blank interior planar surface of the door
-to your housing unit. The housing chamber is only large enough for you to stand upright, but
-luckily your mechanical muscles do not get tired.
+*if not(desire_sleep_in)
+  Your cooling fans spin up as you open your eyes to see the blank interior planar surface of the
+  door to your housing unit. The housing chamber is only large enough for you to stand upright, but
+  luckily your mechanical muscles do not get tired.
+  *goto decision
+*else
+  Your cooling fans spin up as you, again, open your eyes to see the blank interior planar surface
+  of the door to your housing unit. The housing chamber is only large enough for you to stand
+  upright, but luckily your mechanical muscles do not get tired.
+  *goto decision
+
+*label decision
 
 Your tasks and desires:
-
+*line_break
 Get to work on time.
+*line_break
 Sleep in.
 
 What would you like to do?
 *choice
   #Open the door by grasping the handle and rotating your gripper ninety degrees to the left.
     *finish
-  #Shut your eyes.
-    *finish
+  *disable_reuse #Shut your eyes.
+    *set desire_sleep_in true
+    *goto wake_up
