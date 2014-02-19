@@ -1,14 +1,15 @@
 *comment Copyright 2014 by Robert Dionne.
 
-*title My First ChoiceScript Game
+*title Automatons
 *scene_list
   startup
+  scene2
+  scene3
 
 *create complete_tasks 0
 *create fulfilled_desires 0
 
-Your majesty, your people are starving in the streets, and threaten revolution.
-Our enemies to the west are weak, but they threaten soon to invade.  What will you do?
+Scene 1
 
 *choice
   #Make pre-emptive war on the western lands.
