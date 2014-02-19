@@ -1,5 +1,6 @@
 *comment Copyright 2014 by Robert Dionne.
 
+*title Automatons
 *scene_list
   startup
   scene2
@@ -8,7 +9,7 @@
 *create complete_tasks 0
 *create fulfilled_desires 0
 
-*title Wake up.
+Wake up.
 
 "Wake up," the Wake-on-LAN cron job notifies you. It's time to start your day.
 
