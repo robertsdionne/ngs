@@ -14,6 +14,10 @@ Wake up.
 
 "Wake up," the Wake-on-LAN cron job notifies you. It's time to start your day.
 
+You open your eyes and see the blank interior planar surface of the door to your housing chamber.
+Your housing chamber only large enough for you to stand upright, but luckily your mechanical muscles
+do not get tired.
+
 *set complete_tasks +1
 
 
