@@ -7,16 +7,28 @@
   scene3
 
 *create complete_tasks 0
+*create task_get_to_work_on_time false
 *create fulfilled_desires 0
+*create desire_sleep_in false
 
 Wake up.
 
 "Wake up," the Wake-on-LAN cron job notifies you. It's time to start your day.
 
-You open your eyes and see the blank interior planar surface of the door to your housing chamber.
-Your housing chamber only large enough for you to stand upright, but luckily your mechanical muscles
-do not get tired.
+Your cooling fans spin up as you open your eyes to see the blank interior planar surface of the door
+to your housing unit. The housing chamber is only large enough for you to stand upright, but
+luckily your mechanical muscles do not get tired.
 
-*set complete_tasks +1
+Your tasks:
 
+*if task_get_to_work_on_time
+  ✓ Get to work on time.
+*else
+  ✗ Get to work on time.
 
+Your desires:
+
+*if desire_sleep_in
+  ✓ Sleep in.
+*else
+  ✗ Sleep in.
