@@ -18,7 +18,7 @@ Wake up.
 *if desire_sleep_in
   Your cooling fans spin down. Seconds later:
 
-"Wake up," the Wake-on-LAN cron job notifies you. It's time to start your day.
+"Wake up," the Wake-on-LAN [b]cron[/b] job notifies you. It's time to start your day.
 
 *if not(desire_sleep_in)
   Your cooling fans spin up as you open your eyes to see the blank interior planar surface of the
