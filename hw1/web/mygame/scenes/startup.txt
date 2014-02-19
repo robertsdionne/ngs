@@ -7,8 +7,6 @@
 *create complete_tasks 0
 *create fulfilled_desires 0
 
-*page_break
-
 Your majesty, your people are starving in the streets, and threaten revolution.
 Our enemies to the west are weak, but they threaten soon to invade.  What will you do?
 
