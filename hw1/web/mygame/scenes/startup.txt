@@ -12,4 +12,4 @@
 
 Wake up.
 
-"Wake up," the Wake-on-LAN <b>cron</b> job notifies you. It's time to start your day.
+"Wake up," the Wake-on-LAN cron job notifies you. It's time to start your day.
