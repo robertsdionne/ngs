@@ -19,16 +19,14 @@ Your cooling fans spin up as you open your eyes to see the blank interior planar
 to your housing unit. The housing chamber is only large enough for you to stand upright, but
 luckily your mechanical muscles do not get tired.
 
-Your tasks:
+Your tasks and desires:
 
-*if task_get_to_work_on_time
-  ✓ Get to work on time.
-*else
-  ✗ Get to work on time.
+Get to work on time.
+Sleep in.
 
-Your desires:
-
-*if desire_sleep_in
-  ✓ Sleep in.
-*else
-  ✗ Sleep in.
+What would you like to do?
+*choice
+  #Open the door by grasping the handle and rotating your gripper ninety degrees to the left.
+    *finish
+  #Shut your eyes.
+    *finish
