@@ -3,13 +3,14 @@
 *title Automatons
 *scene_list
   startup
+  scene1
   scene2
   scene3
 
 *create complete_tasks 0
 *create fulfilled_desires 0
 
-Scene 1
+Startup
 
 *choice
   #Make pre-emptive war on the western lands.
