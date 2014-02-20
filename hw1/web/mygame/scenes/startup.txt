@@ -6,13 +6,27 @@
   scene2
   scene3
 
+*create corporation ""
+*create desk ""
+*create work_instructions ""
+*create job 1
+*create job_text ""
+
 *create complete_tasks 0
 *create task_get_to_work_on_time false
 *create task_report_to_your_desk false
+*create task_decode_work_instructions false
+
 *create fulfilled_desires 0
 *create desire_sleep_in false
 *create desire_stop_by_the_snack_room false
 *create desire_pass_by_the_water_fountain false
+
+*create pack_the_box false
+*create deliver_the_box false
+*create unpack_the_box false
+*create recycle_the_box false
+*create complete_user_defined false
 
 *label wake_up
 
@@ -148,7 +162,6 @@ You decide to wait, however your legs and arms start moving on schedule.
 
 *label append_parts
 
-*temp corporation
 *set corporation "${prefix}${midfix}${suffix} ${postsuffix}, ${postfix}"
 
 [b]Head to Work.[/b]
@@ -160,19 +173,10 @@ The housing unit door slides open to reveal an office hallway of ${corporation}.
 
 It seems you have already arrived at your workplace, and on time at that.
 
-Your desires and tasks:
-*line_break
-[i]Report to your desk.[/i]
-*line_break
-[i]Stop by the snack room.[/i]
-*line_break
-[i]Pass by the water fountain.[/i]
-
-What do you choose to do?
-
 *temp desk_number
 *rand desk_number 100 1000
-*temp choice 1 5
+*temp desk_letter
+*rand choice 1 5
 *if choice = 1
   *set desk_letter "A"
   *goto append_desk_parts
@@ -190,15 +194,76 @@ What do you choose to do?
   *goto append_desk_parts
 
 *label append_desk_parts
-*temp desk
 *set desk "${desk_number}-${desk_letter}"
+
+*label delay_desk
+
+Your desires and tasks:
+*line_break
+[i]Report to your desk.[/i]
+*if not(desire_stop_by_the_snack_room)
+  *line_break
+  [i]Stop by the snack room.[/i]
+  *goto print_desire_water_fountain
+*label print_desire_water_fountain
+*if not(desire_pass_by_the_water_fountain)
+  *line_break
+  [i]Pass by the water fountain.[/i]
+  *goto done_printing
+*label done_printing
+
+What do you choose to do?
 
 *choice
   #Head straight to your desk, ${desk}.
-    *finish
-  #I'm hungry. I'll grab a snack.
-    *finish
-  #I could visit the water fountain.
-    *finish
+    *goto visit_desk
+  *disable_reuse #You're hungry. You'll grab a snack.
+    *goto visit_snack_room
+  *disable_reuse #You could visit the water fountain.
+    *goto visit_water_fountain
+
+*label visit_snack_room
+
+[b]Snacktime.[/b]
+
+You follow a small crowd of employees through the hallway. They veer left and right in an irrational
+pattern which causes you much delay. So much wasted energy.
+
+After an eternity, you and the group reach the snack kitchen. The employees spread around evenly to
+grab a variety of organic food products: apples, potato chips, chocolates and espresso.
+
+You, however, open one of the cabinet's bottom doors to remove a blue wastebin filled with bits of
+recycling. You lift the container and empty its contents into your rear compartment, a bucket of
+sorts that resides on your back like a backpack. Ahh, that was satisfying.
+
+Now you are ready to continue your life's work.
+
+*set desire_stop_by_the_snack_room true
+*set fulfilled_desires +1
+
+*goto delay_desk
+
+*label visit_water_fountain
+
+[b]The Bubbler.[/b]
+
+Your routing algorithm identifies the nearest water fountain, only a few meters to your left.
+
+You press the button on the fountain and dip your heat sinks into the cool flow. While water is not
+strictly necessary for your self-perpetuation, your autonomic system calls delightfully in response
+to the lowered strain on your cooling systems.
+
+You remember all the work you have yet to do.
+
+*set desire_pass_by_the_water_fountain true
+*set fulfilled_desires +1
+
+*goto delay_desk
+
+*label visit_desk
+
+[b]Standing Desk.[/b]
+
+You stand beside your desk. You don't know what to expect for today's work.
 
 *finish

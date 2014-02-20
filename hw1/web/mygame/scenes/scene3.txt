@@ -1,3 +1,6 @@
 *comment Copyright 2014 by Robert Dionne.
 
 [b]Bedtime.[/b]
+
+Having fulfilled your tasks for the day, the work [b]daemon[/b] notifies you of your final daily
+task: to return to your housing unit for sleep.
