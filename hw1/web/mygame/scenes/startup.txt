@@ -27,8 +27,8 @@
   *goto tasks
 *else
   Your cooling fans spin up as you, again, open your eyes to see the blank interior planar surface
-  of the door to your housing unit. The housing chamber is only large enough for you to stand
-  upright, but luckily your mechanical muscles do not get tired.
+  of the door to your housing unit. The housing chamber is still only large enough for you to stand
+  upright, and luckily your mechanical muscles do not get tired.
   *goto tasks
 
 *label tasks
