@@ -1,6 +1,6 @@
 *comment Copyright 2014 by Robert Dionne.
 
-*title Automatons
+*title Automaton
 *scene_list
   startup
   scene2
@@ -35,10 +35,10 @@
 
 Your tasks and desires:
 *line_break
-Get to work on time.
+[i]Get to work on time.[/i]
 *if not(desire_sleep_in)
   *line_break
-  Sleep in.
+  [i]Sleep in.[/i]
   *goto decision
 
 *label decision
