@@ -16,11 +16,16 @@
 *create task_get_to_work_on_time false
 *create task_report_to_your_desk false
 *create task_decode_work_instructions false
+*create task_head_home false
+*create task_sleep false
 
 *create fulfilled_desires 0
 *create desire_sleep_in false
 *create desire_stop_by_the_snack_room false
 *create desire_pass_by_the_water_fountain false
+*create desire_greet_janitor false
+*create desire_look_outside false
+*create desire_dream false
 
 *create pack_the_box false
 *create deliver_the_box false
