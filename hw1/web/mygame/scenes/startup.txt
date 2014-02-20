@@ -48,6 +48,7 @@ What would you like to do?
     *goto work
   *disable_reuse #Shut your eyes.
     *set desire_sleep_in true
+    *set fulfilled_desires +1
     *goto wake_up
 
 *label work

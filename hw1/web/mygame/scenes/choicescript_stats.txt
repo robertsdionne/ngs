@@ -1,7 +1,5 @@
 This is a stats screen!
 
 *stat_chart
-  opposed_pair Complete_Tasks
-    Incomplete_Tasks
-  opposed_pair Fulfilled_Desires
-    Unfulfilled_Desires
+  text Complete_Tasks
+  text Fulfilled_Desires
