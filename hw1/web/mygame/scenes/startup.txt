@@ -8,8 +8,11 @@
 
 *create complete_tasks 0
 *create task_get_to_work_on_time false
+*create task_report_to_your_desk false
 *create fulfilled_desires 0
 *create desire_sleep_in false
+*create desire_stop_by_the_snack_room false
+*create desire_pass_by_the_water_fountain false
 
 *label wake_up
 
@@ -154,5 +157,17 @@ You decide to wait, however your legs and arms start moving on schedule.
 *set complete_tasks +1
 
 The housing unit door slides open to reveal an office hallway of ${corporation}.
+
+It seems you have already arrived at your workplace, and on time at that.
+
+Your desires and tasks:
+*line_break
+[i]Report to your desk.[/i]
+*line_break
+[i]Stop by the snack room.[/i]
+*line_break
+[i]Pass by the water fountain.[/i]
+
+What do you choose to do?
 
 *finish
