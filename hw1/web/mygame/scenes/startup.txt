@@ -46,7 +46,12 @@ Get to work on time.
 What would you like to do?
 *choice
   #Open the door by grasping the handle and rotating your gripper ninety degrees to the left.
-    *finish
+    *goto work
   *disable_reuse #Shut your eyes.
     *set desire_sleep_in true
     *goto wake_up
+
+*label work
+
+You are so cool.
+*finish
