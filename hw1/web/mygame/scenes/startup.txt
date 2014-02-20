@@ -50,10 +50,16 @@ What would you like to do?
   *else
     #Open the door already!
       *goto work
+    #Wait a minute.
+      *goto wait
   *disable_reuse #Shut your eyes.
     *set desire_sleep_in true
     *set fulfilled_desires +1
     *goto wake_up
+
+*label wait
+
+You wait.
 
 *label work
 
