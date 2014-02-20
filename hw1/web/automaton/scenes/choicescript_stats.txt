@@ -1,3 +1,17 @@
+[b]RQX-997-H[/b]
+*if not(corporation = "")
+  of ${corporation}.
+  *goto continue_1
+*else
+  .
+  *goto continue_1
+*label continue_1
+
+*if not(desk = "")
+  Seat assignment: ${desk}
+  *goto continue_2
+*label continue_2
+
 *stat_chart
   text Complete_Tasks
   text Fulfilled_Desires
