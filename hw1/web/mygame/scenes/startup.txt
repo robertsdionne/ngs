@@ -150,6 +150,9 @@ You decide to wait, however your legs and arms start moving on schedule.
 
 [b]Head to Work.[/b]
 
+*set task_get_to_work_on_time true
+*set complete_tasks +1
+
 The housing unit door slides open to reveal an office hallway of ${corporation}.
 
 *finish
