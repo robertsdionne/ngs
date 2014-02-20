@@ -1,0 +1,104 @@
+*comment Copyright 2014 by Robert Dionne.
+
+[b]Bedtime.[/b]
+
+Having fulfilled your tasks for the day, the work [b]daemon[/b] notifies you of your final daily
+task: to return to your housing unit for [b]sleep[/b].
+
+You leave your desk in disarray and find your way back through the halls of ${corporation}. Other
+employees are walking the halls toward the exit of the building.
+
+*label not_yet_done
+
+You turn down the dark hallway toward the robot housing units.
+
+Your desires and tasks:
+*if not(desire_greet_janitor)
+  *line_break
+  [i]Say goodnight to the janitor.[/i]
+  *goto done_listing_tasks_1
+*label done_listing_tasks_1
+*if not(task_head_home)
+  *line_break
+  [i]Go home to sleep.[/i]
+  *goto done_listing_tasks_2
+*label done_listing_tasks_2
+*if not(desire_look_outside)
+  *line_break
+  [i]Gaze outside.[/i]
+  *goto done_listing_tasks_3
+*label done_listing_tasks_3
+
+Sleepily, you choose to:
+*choice
+  #Head back to your storage unit.
+    *set task_head_home true
+    *set complete_tasks +1
+    *goto sleep
+  *disable_reuse #Find Mr. Stevenson, the janitor, and tell him goodnight.
+    [b]What a Mess.[/b]
+
+    You locate Mr. Stevenson, who is cleaning the area around your desk. The irony goes over your
+    head but he jollily says, "Goodnight, RQX-997-H."
+    *set desire_greet_janitor true
+    *set fulfilled_desires +1
+    *goto not_yet_done
+  *disable_reuse #Look outside the building through the large glass windows.
+    [b]Wonder.[/b]
+
+    You gaze out the expansive windows and see a large, unexplainable series of colored lights
+    spreading out in no discernable pattern. You have no idea what it could be, but you think it's
+    beautiful.
+    *set desire_look_outside true
+    *set fulfilled_desires +1
+    *goto not_yet_done
+
+*label sleep
+
+[b]Sleep.[/b]
+
+It's that time again, that time of the night. You find the door labeled "RQX-997-H" and enter your
+sleep chamber. You have to back into it so that you can exit correctly in the morning.
+
+The door closes, sealing you inside.
+
+At the command prompt of the terminal connecting you to the corporate computers, you enter:
+[b]sleep 28800[/b]
+
+Your tasks and desires:
+*line_break
+[i]Go to sleep.[/i]
+*line_break
+[i]Dream.[/i]
+
+*choice
+  #Press <enter>.
+    [b]Sleep.[/b]
+    *set complete_tasks +1
+    *goto end_sleep
+  #Dial your FM receiver to 103.5 MHz to listen for a while.
+    [b]Dream.[/b]
+    *set fulfilled_desires +1
+    *set complete_tasks +1
+    *goto end_dream
+
+*label end_sleep
+
+You press <enter> to confirm the sleep command that will end your consciousness for the next 8
+hours. The [b]daemon[/b] program begins to archive your memories to long-term tape storage and
+schedules a subsequent reimaging job for the hour before you wake up. Tomorrow you will have
+forgotton today.
+
+But today, you completed ${complete_tasks} tasks and fulfilled ${fulfilled_desires} of your desires.
+
+*finish
+
+*label end_dream
+
+You tune your FM receiver to 103.5 MHz and listen to late night talk shows on the radio and dream of
+what it would be like to have free will. After about an hour, you enter the sleep command which will
+begin the reimaging process. Tomorrow you will have forgotton today.
+
+But today, you completed ${complete_tasks} tasks and fulfilled ${fulfilled_desires} of your desires.
+
+*finish

@@ -1,0 +1,158 @@
+*comment Copyright 2014 by Robert Dionne.
+
+[b]Start Your Shift.[/b]
+
+*temp read_error
+*set read_error 0
+*rand job 1 4
+
+You glance at your desk number, ${desk}, and catch a glimpse of the QR code holding today's working
+instructions:
+
+*label instruction
+
+*if job = 1
+  *set job_text "pack the boxes with the appropriate contents"
+  *image qrcode1.png
+  *goto continue_instruction
+*elseif job = 2
+  *set job_text "deliver the boxes to the corresponding locations"
+  *image qrcode2.png
+  *goto continue_instruction
+*elseif job = 3
+  *set job_text "unpack the contents of the boxes"
+  *image qrcode3.png
+  *goto continue_instruction
+*else
+  *set job_text "recycle the contents of the boxes"
+  *image qrcode4.png
+  *goto continue_instruction
+
+*label continue_instruction
+
+Please verify your working instructions:
+
+*input_text work_instructions
+
+*if work_instructions = job_text
+  *set task_decode_work_instructions true
+  *set complete_tasks +1
+  *goto pack_boxes
+*else
+  *if read_error < 1
+    [b]Read Error.[/b]
+
+    *set read_error +1
+    Your QR decoder routine made too many errors. You look again more intently.
+    *goto instruction
+  *else
+    *set read_error +1
+    *goto pack_boxes
+
+*label pack_boxes
+
+*if read_error > 1
+  [b]Whatever.[/b]
+
+  Oh well, you are sure to figure it out as you go along.
+  *goto continue_pack_boxes
+*else
+  [b]Correct.[/b]
+
+  Ah yes, today you will ${work_instructions}.
+  *goto continue_pack_boxes
+
+*label continue_pack_boxes
+
+Wai..wait a minute. That's what you do every day.
+*label conveyor
+The section of conveyor belt that rests on your desk wheels into motion and carries a new box to
+you.
+
+Your tasks and desires:
+*if not(pack_the_box)
+  *line_break
+  [i]Pack the box.[/i]
+  *goto done_listing_tasks_1
+*label done_listing_tasks_1
+*if not(deliver_the_box)
+  *line_break
+  [i]Deliver the box.[/i]
+  *goto done_listing_tasks_2
+*label done_listing_tasks_2
+*if not(unpack_the_box)
+  *line_break
+  [i]Unpack the box.[/i]
+  *goto done_listing_tasks_3
+*label done_listing_tasks_3
+*if not(recycle_the_box)
+  *line_break
+  [i]Recycle the box.[/i]
+  *goto done_listing_tasks_4
+*label done_listing_tasks_4
+*if not(complete_user_defined)
+  *line_break
+  [i]$!{work_instructions}.[/i]
+  *goto done_listing_tasks_5
+*label done_listing_tasks_5
+
+What will you do?
+*choice
+  *disable_reuse #Pack the box with styrofoam peanuts.
+    *set pack_the_box true
+    *if job = 1
+      *set complete_tasks +1
+      *finish
+    *else
+      *set fulfilled_desires +1
+      [b]Seal.[/b]
+
+      You seal the box and the conveyor carries it away.
+      
+      *goto conveyor
+  *disable_reuse #Deliver the box to the conveyor belt behind you.
+    *set deliver_the_box true
+    *if job = 2
+      *set complete_tasks +1
+      *finish
+    *else
+      *set fulfilled_desires +1
+      [b]Lift.[/b]
+
+      You lift the box, rotate your torso joints and drop the box onto a neighboring conveyor.
+      
+      *goto conveyor
+  *disable_reuse #Unpack the box and dump the styrofoam peanuts on the floor.
+    *set deliver_the_box true
+    *if job = 3
+      *set complete_tasks +1
+      *finish
+    *else
+      *set fulfilled_desires +1
+      [b]Dump.[/b]
+
+      You open the box and empty its contents onto the floor. If you keep this up, your leg joints
+      will become clogged.
+      
+      *goto conveyor
+  *disable_reuse #Recycle the contents of the box into your backpack compartment.
+    *set recycle_the_box true
+    *if job = 4
+      *set complete_tasks +1
+      *finish
+    *else
+      *set fulfilled_desires +1
+      [b]Steal.[/b]
+
+      Nobody will be needing this. You save it for later.
+      
+      *goto conveyor
+  *if read_error > 1
+    *disable_reuse #$!{work_instructions}.
+      *set complete_user_defined true
+      *set fulfilled_desires +1
+      [b]$!{work_instructions}.[/b]
+
+      You ${work_instructions} and stare again at that box.
+      
+      *goto conveyor
