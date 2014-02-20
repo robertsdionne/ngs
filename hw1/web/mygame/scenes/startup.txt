@@ -50,7 +50,7 @@ What would you like to do?
   *else
     #Open the door already!
       *goto work
-    #Wait a minute.
+    #Relax for a minute.
       *goto wait
   *disable_reuse #Shut your eyes.
     *set desire_sleep_in true
@@ -59,7 +59,7 @@ What would you like to do?
 
 *label wait
 
-You wait.
+You decide to wait, however your legs and arms start moving on schedule.
 
 *label work
 
