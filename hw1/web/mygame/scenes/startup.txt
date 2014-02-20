@@ -53,5 +53,93 @@ What would you like to do?
 
 *label work
 
-You are so cool.
+*temp choice
+*rand choice 1 4
+*temp prefix
+*if choice = 1
+  *set prefix "Gad"
+  *goto choose_midfix
+*elseif choice = 2
+  *set prefix "Pan"
+  *goto choose_midfix
+*elseif choice = 3
+  *set prefix "Tri"
+  *goto choose_midfix
+*else
+  *set prefix "Fen"
+  *goto choose_midfix
+
+*label choose_midfix
+*rand choice 1 4
+*temp midfix
+*if choice = 1
+  *set midfix "opto"
+  *goto choose_suffix
+*elseif choice = 2
+  *set midfix "dono"
+  *goto choose_suffix
+*elseif choice = 3
+  *set midfix "veno"
+  *goto choose_suffix
+*else
+  *set midfix "mira"
+  *goto choose_suffix
+
+*label choose_suffix
+*rand choice 1 4
+*temp suffix
+*if choice = 1
+  *set suffix "biz"
+  *goto choose_postsuffix
+*elseif choice = 2
+  *set suffix "chain"
+  *goto choose_postsuffix
+*elseif choice = 3
+  *set suffix "max"
+  *goto choose_postsuffix
+*else
+  *set suffix "corp"
+  *goto choose_postsuffix
+
+*label choose_postsuffix
+*rand choice 1 4
+*temp postsuffix
+*if choice = 1
+  *set postsuffix "Advanced"
+  *goto choose_postfix
+*elseif choice = 2
+  *set postsuffix "Arrivals"
+  *goto choose_postfix
+*elseif choice = 3
+  *set postsuffix "Research"
+  *goto choose_postfix
+*else
+  *set postsuffix "Operations"
+  *goto choose_postfix
+
+*label choose_postfix
+*rand choice 1 4
+*temp postfix
+*if choice = 1
+  *set postfix "Inc"
+  *goto append_parts
+*elseif choice = 2
+  *set postfix "LLC"
+  *goto append_parts
+*elseif choice = 3
+  *set postfix "Ltd"
+  *goto append_parts
+*else
+  *set postfix "LP"
+  *goto append_parts
+
+*label append_parts
+
+*temp corporation
+*set corporation "${prefix}${midfix}${suffix} ${postsuffix}, ${postfix}"
+
+[b]Head to Work.[/b]
+
+The housing unit door slides open to reveal an office hallway of ${corporation}.
+
 *finish
