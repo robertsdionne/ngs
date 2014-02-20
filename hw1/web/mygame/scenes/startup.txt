@@ -170,4 +170,35 @@ Your desires and tasks:
 
 What do you choose to do?
 
+*temp desk_number
+*rand desk_number 100 1000
+*temp choice 1 5
+*if choice = 1
+  *set desk_letter "A"
+  *goto append_desk_parts
+*elseif choice = 2
+  *set desk_letter "J"
+  *goto append_desk_parts
+*elseif choice = 3
+  *set desk_letter "F"
+  *goto append_desk_parts
+*elseif choice = 4
+  *set desk_letter "S"
+  *goto append_desk_parts
+*else
+  *set desk_letter "Z"
+  *goto append_desk_parts
+
+*label append_desk_parts
+*temp desk
+*set desk "${desk_number}-${desk_letter}"
+
+*choice
+  #Head straight to your desk, ${desk}.
+    *finish
+  #I'm hungry. I'll grab a snack.
+    *finish
+  #I could visit the water fountain.
+    *finish
+
 *finish
