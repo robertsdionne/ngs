@@ -24,20 +24,24 @@
   Your cooling fans spin up as you open your eyes to see the blank interior planar surface of the
   door to your housing unit. The housing chamber is only large enough for you to stand upright, but
   luckily your mechanical muscles do not get tired.
-  *goto decision
+  *goto tasks
 *else
   Your cooling fans spin up as you, again, open your eyes to see the blank interior planar surface
   of the door to your housing unit. The housing chamber is only large enough for you to stand
   upright, but luckily your mechanical muscles do not get tired.
-  *goto decision
+  *goto tasks
 
-*label decision
+*label tasks
 
 Your tasks and desires:
 *line_break
 Get to work on time.
-*line_break
-Sleep in.
+*if not(desire_sleep_in)
+  *line_break
+  Sleep in.
+  *goto decision
+
+*label decision
 
 What would you like to do?
 *choice
