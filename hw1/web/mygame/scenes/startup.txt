@@ -44,8 +44,12 @@ Your tasks and desires:
 
 What would you like to do?
 *choice
-  #Open the door by grasping the handle and rotating your gripper ninety degrees to the left.
-    *goto work
+  *if not(desire_sleep_in)
+    #Open the door by grasping the handle and rotating your gripper ninety degrees to the left.
+      *goto work
+  *else
+    #Open the door already!
+      *goto work
   *disable_reuse #Shut your eyes.
     *set desire_sleep_in true
     *set fulfilled_desires +1
