@@ -34,14 +34,13 @@
 *label tasks
 
 Your tasks and desires:
-*line_break
-[i]Get to work on time.[/i]
 *if not(desire_sleep_in)
   *line_break
   [i]Sleep in.[/i]
   *goto decision
-
 *label decision
+*line_break
+[i]Get to work on time.[/i]
 
 What would you like to do?
 *choice
