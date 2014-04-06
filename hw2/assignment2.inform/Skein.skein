@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x488100" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x2df3c0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x488100" />
-  <item nodeId="node-0x488100">
+  <activeNode nodeId="node-0x2df3c0" />
+  <item nodeId="node-0x2df3c0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,7 +12,7 @@ You awaken.
 
 Antarctic Ruse
 An Interactive Fiction by Robert Dionne
-Release 1 / Serial number 140405 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140406 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Sleeping Quarters (on your bunk bed)
 You are in your bunk bed in Sleeping Quarters. The smell of warm breakfast wafts through the northern hatch. Your alarm clock buzzes loudly.
@@ -21,23 +21,23 @@ On the other bunks are some sleeping crew.
 
 On your night stand are an alarm clock, a keycard and a mobile phone.
 
-You can also see ROBOTS file here.
-
 On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="840">NO</temporary>
+    <temporary score="53">NO</temporary>
     <children>
-      <child nodeId="node-0x14297210" />
-      <child nodeId="node-0x1b929680" />
-      <child nodeId="node-0x14a954b0" />
-      <child nodeId="node-0x1186e860" />
-      <child nodeId="node-0x16f2eef0" />
+      <child nodeId="node-0xa8759d0" />
+      <child nodeId="node-0xa878560" />
+      <child nodeId="node-0x13ede7f0" />
+      <child nodeId="node-0xef987b0" />
+      <child nodeId="node-0x2df6c0" />
+      <child nodeId="node-0x2ee750" />
+      <child nodeId="node-0xa8784f0" />
     </children>
   </item>
-  <item nodeId="node-0x16f2eef0">
+  <item nodeId="node-0xa8784f0">
     <command xml:space="preserve">test me</command>
     <result xml:space="preserve">&gt;--&gt; No test scripts exist for this game.
 &gt;</result>
@@ -45,7 +45,35 @@ On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
     <changed>YES</changed>
     <temporary score="684">YES</temporary>
   </item>
-  <item nodeId="node-0x1186e860">
+  <item nodeId="node-0x2ee750">
+    <command xml:space="preserve">take all then turn off alarm then put on clothes then north</command>
+    <result xml:space="preserve">copy of Research Robotics: Taken.
+grey fatigues: Taken.
+keycard: mobile phone: [Your score has just gone up by two points.]
+
+You switch the alarm clock off.
+
+You put on the grey fatigues.
+
+(first getting off your bunk bed)
+(first opening the hatch)
+You close the hatch.
+
+Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see Bart the Bartender here.
+
+Bart the Bartender tends to the prepared plates.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+  </item>
+  <item nodeId="node-0x2df6c0">
     <command xml:space="preserve">takea ll</command>
     <result xml:space="preserve">That&apos;s not a verb I recognize.
 
@@ -54,10 +82,10 @@ On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
     <changed>NO</changed>
     <temporary score="678">YES</temporary>
     <children>
-      <child nodeId="node-0xed13690" />
+      <child nodeId="node-0x2df710" />
     </children>
   </item>
-  <item nodeId="node-0xed13690">
+  <item nodeId="node-0x2df710">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">copy of Research Robotics: Taken.
 grey fatigues: Taken.
@@ -68,10 +96,10 @@ keycard: mobile phone: [Your score has just gone up by two points.]
     <changed>NO</changed>
     <temporary score="678">YES</temporary>
     <children>
-      <child nodeId="node-0x142b5c80" />
+      <child nodeId="node-0x2df760" />
     </children>
   </item>
-  <item nodeId="node-0x142b5c80">
+  <item nodeId="node-0x2df760">
     <command xml:space="preserve">turn off alarm</command>
     <result xml:space="preserve">You switch the alarm clock off.
 
@@ -80,10 +108,10 @@ keycard: mobile phone: [Your score has just gone up by two points.]
     <changed>YES</changed>
     <temporary score="678">YES</temporary>
     <children>
-      <child nodeId="node-0xedd65d0" />
+      <child nodeId="node-0x2df7b0" />
     </children>
   </item>
-  <item nodeId="node-0xedd65d0">
+  <item nodeId="node-0x2df7b0">
     <command xml:space="preserve">put on clothes</command>
     <result xml:space="preserve">You put on the grey fatigues.
 
@@ -92,10 +120,10 @@ keycard: mobile phone: [Your score has just gone up by two points.]
     <changed>YES</changed>
     <temporary score="678">YES</temporary>
     <children>
-      <child nodeId="node-0x16f303a0" />
+      <child nodeId="node-0x2df820" />
     </children>
   </item>
-  <item nodeId="node-0x16f303a0">
+  <item nodeId="node-0x2df820">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first getting off your bunk bed)
 
@@ -113,10 +141,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="678">YES</temporary>
     <children>
-      <child nodeId="node-0x16fdea50" />
+      <child nodeId="node-0x2df890" />
     </children>
   </item>
-  <item nodeId="node-0x16fdea50">
+  <item nodeId="node-0x2df890">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Your mobile phone buzzes: &quot;Get to the operations wing, as soon as possible.&quot;
 
@@ -125,107 +153,83 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="678">YES</temporary>
   </item>
-  <item nodeId="node-0x14a954b0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Sleeping Quarters (on your bunk bed)
-You are in your bunk bed in Sleeping Quarters. The smell of warm breakfast wafts through the northern hatch. Your alarm clock buzzes loudly.
-
-On the other bunks are some sleeping crew.
-
-On your night stand are an alarm clock, a keycard and a mobile phone.
-
-You can also see ROBOTS file here.
-
-On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="838">YES</temporary>
-    <children>
-      <child nodeId="node-0x17749a10" />
-      <child nodeId="node-0x14a62d20" />
-      <child nodeId="node-0x142b66c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x142b66c0">
-    <command xml:space="preserve">read ROBOTS</command>
-    <result xml:space="preserve">Robot Locations
-Humanoid 1 Housing Unit
-Humanoid 2 yes
-Humanoid 3 NO
-Humanoid 4 yes
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="837">YES</temporary>
-  </item>
-  <item nodeId="node-0x14a62d20">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You should probably get dressed first!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x11813be0" />
-    </children>
-  </item>
-  <item nodeId="node-0x11813be0">
-    <command xml:space="preserve">take all</command>
+  <item nodeId="node-0xef987b0">
+    <command xml:space="preserve">take all then put on clothes then turn off alarm then north</command>
     <result xml:space="preserve">copy of Research Robotics: Taken.
 grey fatigues: Taken.
 keycard: mobile phone: [Your score has just gone up by two points.]
 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x16fd7190" />
-    </children>
-  </item>
-  <item nodeId="node-0x16fd7190">
-    <command xml:space="preserve">put on clothes</command>
-    <result xml:space="preserve">You put on the grey fatigues.
+You put on the grey fatigues.
+
+You switch the alarm clock off.
+
+(first getting off your bunk bed)
+(first opening the hatch)
+You close the hatch.
+
+Bart the Bartender tends to the beer taps.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="795">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x16fb3860" />
+      <child nodeId="node-0x2016770" />
+      <child nodeId="node-0x13ec6990" />
     </children>
   </item>
-  <item nodeId="node-0x16fb3860">
-    <command xml:space="preserve">turno ff alarm</command>
+  <item nodeId="node-0x13ec6990">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see Bart the Bartender here.
+
+Bart the Bartender tends to the stovetop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+  </item>
+  <item nodeId="node-0x2016770">
+    <command xml:space="preserve">turns</command>
     <result xml:space="preserve">That&apos;s not a verb I recognize.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="795">YES</temporary>
+    <temporary score="49">YES</temporary>
     <children>
-      <child nodeId="node-0x14a8b310" />
+      <child nodeId="node-0xef8d8a0" />
     </children>
   </item>
-  <item nodeId="node-0x14a8b310">
-    <command xml:space="preserve">turn off alarm</command>
-    <result xml:space="preserve">You switch the alarm clock off.
+  <item nodeId="node-0xef8d8a0">
+    <command xml:space="preserve">stop</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognize.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x14ac41e0" />
-    </children>
+    <temporary score="48">YES</temporary>
   </item>
-  <item nodeId="node-0x14ac41e0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first getting off your bunk bed)
+  <item nodeId="node-0x13ede7f0">
+    <command xml:space="preserve">take all then put on clothes then turn off alarm then go north</command>
+    <result xml:space="preserve">copy of Research Robotics: Taken.
+grey fatigues: Taken.
+keycard: mobile phone: [Your score has just gone up by two points.]
+
+You put on the grey fatigues.
+
+You switch the alarm clock off.
+
+(first getting off your bunk bed)
+(first opening the hatch)
+You close the hatch behind you.
+
+You close the hatch.
 
 Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -239,296 +243,9 @@ Bart the Bartender tends to the stovetop.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x14af61c0" />
-    </children>
+    <temporary score="52">YES</temporary>
   </item>
-  <item nodeId="node-0x14af61c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Offices
-Offices
-
-You can see a computer (in which is ROBOTS file) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x14a871e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x14a871e0">
-    <command xml:space="preserve">read ROBOTS file</command>
-    <result xml:space="preserve">Humanoids 0-13.
-
-A scientist arrives from Catwalk.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x403670" />
-    </children>
-  </item>
-  <item nodeId="node-0x403670">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Offices
-Offices
-
-You can see a scientist and a computer (in which is ROBOTS file) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x509bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x509bd0">
-    <command xml:space="preserve">read ROBOTS</command>
-    <result xml:space="preserve">Humanoids 0-13.
-
-A scientist heads to Operations.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="795">YES</temporary>
-    <children>
-      <child nodeId="node-0x16f55420" />
-    </children>
-  </item>
-  <item nodeId="node-0x16f55420">
-    <command xml:space="preserve">read ROBOTS</command>
-    <result xml:space="preserve">Humanoids 0-13.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="794">YES</temporary>
-  </item>
-  <item nodeId="node-0x17749a10">
-    <command xml:space="preserve">take all</command>
-    <result xml:space="preserve">copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x14ab0fd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x14ab0fd0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You should probably get dressed first!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x109b1a90" />
-    </children>
-  </item>
-  <item nodeId="node-0x109b1a90">
-    <command xml:space="preserve">put on clothes</command>
-    <result xml:space="preserve">You put on the grey fatigues.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x142f4c30" />
-    </children>
-  </item>
-  <item nodeId="node-0x142f4c30">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">A dozing crew member whispers abruptly, &quot;Could you shut that thing off!&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x14267c40" />
-    </children>
-  </item>
-  <item nodeId="node-0x14267c40">
-    <command xml:space="preserve">turn off alarm</command>
-    <result xml:space="preserve">You switch the alarm clock off.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x146941d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x146941d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first getting off your bunk bed)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x16f15c40" />
-    </children>
-  </item>
-  <item nodeId="node-0x16f15c40">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Offices
-Offices
-
-You can see a scientist and a computer (in which is ROBOTS file) here.
-
-A scientist heads to Operations.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0xed11ef0" />
-    </children>
-  </item>
-  <item nodeId="node-0xed11ef0">
-    <command xml:space="preserve">open computer</command>
-    <result xml:space="preserve">That&apos;s not something you can open.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x14676ff0" />
-    </children>
-  </item>
-  <item nodeId="node-0x14676ff0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Offices
-Offices
-
-You can see a computer (in which is ROBOTS file) here.
-
-A scientist arrives from Operations.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x142ee300" />
-    </children>
-  </item>
-  <item nodeId="node-0x142ee300">
-    <command xml:space="preserve">take ROBOTS</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0xd0b7fc0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd0b7fc0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a mobile phone
-    ROBOTS file
-  a keycard
-  some grey fatigues (being worn)
-  a copy of Research Robotics
-
-A scientist heads to Catwalk.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0xed96650" />
-    </children>
-  </item>
-  <item nodeId="node-0xed96650">
-    <command xml:space="preserve">read ROBOTS file</command>
-    <result xml:space="preserve">Humanoids 0-13.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x17757a60" />
-    </children>
-  </item>
-  <item nodeId="node-0x17757a60">
-    <command xml:space="preserve">put ROBOTS file in computer</command>
-    <result xml:space="preserve">(first taking ROBOTS file)
-
-A scientist arrives from Catwalk.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x11814370" />
-    </children>
-  </item>
-  <item nodeId="node-0x11814370">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Offices
-Offices
-
-You can see a scientist and a computer (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="783">YES</temporary>
-    <children>
-      <child nodeId="node-0x14ad3c60" />
-    </children>
-  </item>
-  <item nodeId="node-0x14ad3c60">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a mobile phone
-    ROBOTS file
-  a keycard
-  some grey fatigues (being worn)
-  a copy of Research Robotics
-
-A scientist heads to Mess Hall.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="782">YES</temporary>
-  </item>
-  <item nodeId="node-0x1b929680">
+  <item nodeId="node-0xa878560">
     <command xml:space="preserve">read ROBOST</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -537,10 +254,10 @@ A scientist heads to Mess Hall.
     <changed>YES</changed>
     <temporary score="840">YES</temporary>
     <children>
-      <child nodeId="node-0x14ac58e0" />
+      <child nodeId="node-0xa8785d0" />
     </children>
   </item>
-  <item nodeId="node-0x14ac58e0">
+  <item nodeId="node-0xa8785d0">
     <command xml:space="preserve">read ROBOTS</command>
     <result xml:space="preserve">Robot Locations
 Humanoid 1 Housing Unit
@@ -553,7 +270,7 @@ Humanoid 4 Housing Unit
     <changed>YES</changed>
     <temporary score="839">YES</temporary>
   </item>
-  <item nodeId="node-0x14297210">
+  <item nodeId="node-0xa8759d0">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">copy of Research Robotics: Taken.
 grey fatigues: Taken.
@@ -562,15 +279,15 @@ keycard: mobile phone: [Your score has just gone up by two points.]
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="836">YES</temporary>
+    <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x16f2b070" />
-      <child nodeId="node-0x109bc0a0" />
-      <child nodeId="node-0x1774d460" />
-      <child nodeId="node-0x14225bc0" />
+      <child nodeId="node-0xa876100" />
+      <child nodeId="node-0xa876810" />
+      <child nodeId="node-0xa8763b0" />
+      <child nodeId="node-0xa876180" />
     </children>
   </item>
-  <item nodeId="node-0x14225bc0">
+  <item nodeId="node-0xa876180">
     <command xml:space="preserve">turn off alarm</command>
     <result xml:space="preserve">You switch the alarm clock off.
 
@@ -579,10 +296,10 @@ keycard: mobile phone: [Your score has just gone up by two points.]
     <changed>NO</changed>
     <temporary score="734">YES</temporary>
     <children>
-      <child nodeId="node-0x16f46030" />
+      <child nodeId="node-0xa8761f0" />
     </children>
   </item>
-  <item nodeId="node-0x16f46030">
+  <item nodeId="node-0xa8761f0">
     <command xml:space="preserve">get dressed</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -591,10 +308,10 @@ keycard: mobile phone: [Your score has just gone up by two points.]
     <changed>YES</changed>
     <temporary score="734">YES</temporary>
     <children>
-      <child nodeId="node-0x16fbeec0" />
+      <child nodeId="node-0xa876260" />
     </children>
   </item>
-  <item nodeId="node-0x16fbeec0">
+  <item nodeId="node-0xa876260">
     <command xml:space="preserve">put on clothes</command>
     <result xml:space="preserve">You put on the grey fatigues.
 
@@ -603,10 +320,10 @@ keycard: mobile phone: [Your score has just gone up by two points.]
     <changed>YES</changed>
     <temporary score="734">YES</temporary>
     <children>
-      <child nodeId="node-0x142d3fe0" />
+      <child nodeId="node-0xa8762d0" />
     </children>
   </item>
-  <item nodeId="node-0x142d3fe0">
+  <item nodeId="node-0xa8762d0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first getting off your bunk bed)
 
@@ -626,10 +343,10 @@ A scientist arrives from Offices.
     <changed>YES</changed>
     <temporary score="734">YES</temporary>
     <children>
-      <child nodeId="node-0x16f1e020" />
+      <child nodeId="node-0xa876340" />
     </children>
   </item>
-  <item nodeId="node-0x16f1e020">
+  <item nodeId="node-0xa876340">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Offices
@@ -642,7 +359,7 @@ You can see a monitor here.
     <changed>YES</changed>
     <temporary score="733">YES</temporary>
   </item>
-  <item nodeId="node-0x1774d460">
+  <item nodeId="node-0xa8763b0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You should probably get dressed first!
 
@@ -651,10 +368,10 @@ You can see a monitor here.
     <changed>NO</changed>
     <temporary score="835">YES</temporary>
     <children>
-      <child nodeId="node-0xe6f7830" />
+      <child nodeId="node-0xa876420" />
     </children>
   </item>
-  <item nodeId="node-0xe6f7830">
+  <item nodeId="node-0xa876420">
     <command xml:space="preserve">put on clothes</command>
     <result xml:space="preserve">You put on the grey fatigues.
 
@@ -663,10 +380,10 @@ You can see a monitor here.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0x1422db80" />
+      <child nodeId="node-0xa876490" />
     </children>
   </item>
-  <item nodeId="node-0x1422db80">
+  <item nodeId="node-0xa876490">
     <command xml:space="preserve">turn off alarm</command>
     <result xml:space="preserve">You switch the alarm clock off.
 
@@ -675,10 +392,10 @@ You can see a monitor here.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0x14a459c0" />
+      <child nodeId="node-0xa876500" />
     </children>
   </item>
-  <item nodeId="node-0x14a459c0">
+  <item nodeId="node-0xa876500">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first getting off your bunk bed)
 
@@ -696,10 +413,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0xed0e690" />
+      <child nodeId="node-0xa876570" />
     </children>
   </item>
-  <item nodeId="node-0xed0e690">
+  <item nodeId="node-0xa876570">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Offices
@@ -712,10 +429,10 @@ You can see a computer (in which is ROBOTS file) here.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0xeac77e0" />
+      <child nodeId="node-0xa8765e0" />
     </children>
   </item>
-  <item nodeId="node-0xeac77e0">
+  <item nodeId="node-0xa8765e0">
     <command xml:space="preserve">take ROBOTS</command>
     <result xml:space="preserve">Taken.
 
@@ -724,10 +441,10 @@ You can see a computer (in which is ROBOTS file) here.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0x14620ee0" />
+      <child nodeId="node-0xa876650" />
     </children>
   </item>
-  <item nodeId="node-0x14620ee0">
+  <item nodeId="node-0xa876650">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Offices
 Offices
@@ -739,10 +456,10 @@ You can see a computer (empty) here.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0x16f6a220" />
+      <child nodeId="node-0xa8766c0" />
     </children>
   </item>
-  <item nodeId="node-0x16f6a220">
+  <item nodeId="node-0xa8766c0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   ROBOTS file
@@ -756,10 +473,10 @@ You can see a computer (empty) here.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0x1774f030" />
+      <child nodeId="node-0xa876730" />
     </children>
   </item>
-  <item nodeId="node-0x1774f030">
+  <item nodeId="node-0xa876730">
     <command xml:space="preserve">put ROBOTS file in computer</command>
     <result xml:space="preserve">You put ROBOTS file into the computer.
 
@@ -770,10 +487,10 @@ A scientist arrives from Mess Hall.
     <changed>YES</changed>
     <temporary score="812">YES</temporary>
     <children>
-      <child nodeId="node-0x16f0db90" />
+      <child nodeId="node-0xa8767a0" />
     </children>
   </item>
-  <item nodeId="node-0x16f0db90">
+  <item nodeId="node-0xa8767a0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Offices
 Offices
@@ -785,7 +502,7 @@ You can see a scientist and a computer (in which is ROBOTS file) here.
     <changed>YES</changed>
     <temporary score="811">YES</temporary>
   </item>
-  <item nodeId="node-0x109bc0a0">
+  <item nodeId="node-0xa876810">
     <command xml:space="preserve">put on fatigues</command>
     <result xml:space="preserve">You put on the grey fatigues.
 
@@ -794,10 +511,10 @@ You can see a scientist and a computer (in which is ROBOTS file) here.
     <changed>NO</changed>
     <temporary score="834">YES</temporary>
     <children>
-      <child nodeId="node-0x11865e30" />
+      <child nodeId="node-0xa876880" />
     </children>
   </item>
-  <item nodeId="node-0x11865e30">
+  <item nodeId="node-0xa876880">
     <command xml:space="preserve">turn off alarm</command>
     <result xml:space="preserve">You switch the alarm clock off.
 
@@ -806,10 +523,10 @@ You can see a scientist and a computer (in which is ROBOTS file) here.
     <changed>NO</changed>
     <temporary score="834">YES</temporary>
     <children>
-      <child nodeId="node-0x1425ba60" />
+      <child nodeId="node-0xa875f40" />
     </children>
   </item>
-  <item nodeId="node-0x1425ba60">
+  <item nodeId="node-0xa875f40">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first getting off your bunk bed)
 
@@ -827,10 +544,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="834">YES</temporary>
     <children>
-      <child nodeId="node-0x16ff3410" />
+      <child nodeId="node-0xa875fb0" />
     </children>
   </item>
-  <item nodeId="node-0x16ff3410">
+  <item nodeId="node-0xa875fb0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Best not to disturb those that are sleeping.
 
@@ -841,10 +558,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="834">YES</temporary>
     <children>
-      <child nodeId="node-0x16fbc190" />
+      <child nodeId="node-0xa876020" />
     </children>
   </item>
-  <item nodeId="node-0x16fbc190">
+  <item nodeId="node-0xa876020">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Offices
@@ -859,10 +576,10 @@ A scientist arrives from Mess Hall.
     <changed>YES</changed>
     <temporary score="834">YES</temporary>
     <children>
-      <child nodeId="node-0x16fb4a40" />
+      <child nodeId="node-0xa876090" />
     </children>
   </item>
-  <item nodeId="node-0x16fb4a40">
+  <item nodeId="node-0xa876090">
     <command xml:space="preserve">read ROBOTS</command>
     <result xml:space="preserve">Robots in Housing Unit
 Humanoid 1 yes
@@ -875,41 +592,36 @@ Humanoid 4 yes
     <changed>YES</changed>
     <temporary score="833">YES</temporary>
   </item>
-  <item nodeId="node-0x16f2b070">
+  <item nodeId="node-0xa876100">
     <command xml:space="preserve">put on clothes</command>
     <result xml:space="preserve">You put on the grey fatigues.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="827">YES</temporary>
+    <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x14283a60" />
-      <child nodeId="node-0x16fec850" />
+      <child nodeId="node-0x31c130" />
+      <child nodeId="node-0xa8768f0" />
     </children>
   </item>
-  <item nodeId="node-0x16fec850">
+  <item nodeId="node-0xa8768f0">
     <command xml:space="preserve">turn off alarm</command>
     <result xml:space="preserve">You switch the alarm clock off.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="827">YES</temporary>
+    <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0xed06ca0" />
+      <child nodeId="node-0xa876960" />
     </children>
   </item>
-  <item nodeId="node-0xed06ca0">
+  <item nodeId="node-0xa876960">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first getting off your bunk bed)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
+(first opening the hatch)
+You close the hatch.
 
 Bart the Bartender tends to the beer taps.
 
@@ -918,13 +630,33 @@ A scientist arrives from Offices.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="827">YES</temporary>
+    <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x1468bf90" />
-      <child nodeId="node-0x1189ddc0" />
+      <child nodeId="node-0xa877ae0" />
+      <child nodeId="node-0x2025950" />
+      <child nodeId="node-0xa8769d0" />
     </children>
   </item>
-  <item nodeId="node-0x1189ddc0">
+  <item nodeId="node-0xa8769d0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see a scientist and Bart the Bartender here.
+
+Bart the Bartender tends to the pint glasses.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="45">YES</temporary>
+    <children>
+      <child nodeId="node-0xa876a40" />
+    </children>
+  </item>
+  <item nodeId="node-0xa876a40">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -940,29 +672,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14619410" />
+      <child nodeId="node-0xa876ab0" />
     </children>
   </item>
-  <item nodeId="node-0x14619410">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender and a scientist here.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="728">YES</temporary>
-    <children>
-      <child nodeId="node-0xe64c640" />
-    </children>
-  </item>
-  <item nodeId="node-0xe64c640">
+  <item nodeId="node-0xa876ab0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -978,10 +691,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x146443a0" />
+      <child nodeId="node-0xa876b20" />
     </children>
   </item>
-  <item nodeId="node-0x146443a0">
+  <item nodeId="node-0xa876b20">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -997,10 +710,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14243d90" />
+      <child nodeId="node-0xa876b90" />
     </children>
   </item>
-  <item nodeId="node-0x14243d90">
+  <item nodeId="node-0xa876b90">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1016,10 +729,10 @@ Bart the Bartender tends to the pint glasses.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16f41530" />
+      <child nodeId="node-0xa876c00" />
     </children>
   </item>
-  <item nodeId="node-0x16f41530">
+  <item nodeId="node-0xa876c00">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1035,10 +748,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14a39de0" />
+      <child nodeId="node-0xa876c70" />
     </children>
   </item>
-  <item nodeId="node-0x14a39de0">
+  <item nodeId="node-0xa876c70">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1054,10 +767,10 @@ Bart the Bartender tends to the pint glasses.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x118c47f0" />
+      <child nodeId="node-0xa876ce0" />
     </children>
   </item>
-  <item nodeId="node-0x118c47f0">
+  <item nodeId="node-0xa876ce0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1073,10 +786,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14292300" />
+      <child nodeId="node-0xa876d50" />
     </children>
   </item>
-  <item nodeId="node-0x14292300">
+  <item nodeId="node-0xa876d50">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1092,10 +805,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x118c0a00" />
+      <child nodeId="node-0xa876dc0" />
     </children>
   </item>
-  <item nodeId="node-0x118c0a00">
+  <item nodeId="node-0xa876dc0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1111,10 +824,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x17727fd0" />
+      <child nodeId="node-0xa876e30" />
     </children>
   </item>
-  <item nodeId="node-0x17727fd0">
+  <item nodeId="node-0xa876e30">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1130,10 +843,10 @@ Bart the Bartender tends to the pint glasses.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14a84440" />
+      <child nodeId="node-0xa876ea0" />
     </children>
   </item>
-  <item nodeId="node-0x14a84440">
+  <item nodeId="node-0xa876ea0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1149,10 +862,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14a1b3f0" />
+      <child nodeId="node-0xa876f10" />
     </children>
   </item>
-  <item nodeId="node-0x14a1b3f0">
+  <item nodeId="node-0xa876f10">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1168,10 +881,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14282b10" />
+      <child nodeId="node-0xa876f80" />
     </children>
   </item>
-  <item nodeId="node-0x14282b10">
+  <item nodeId="node-0xa876f80">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1187,10 +900,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x4e4a40" />
+      <child nodeId="node-0xa876ff0" />
     </children>
   </item>
-  <item nodeId="node-0x4e4a40">
+  <item nodeId="node-0xa876ff0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1206,10 +919,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16fc4180" />
+      <child nodeId="node-0xa877060" />
     </children>
   </item>
-  <item nodeId="node-0x16fc4180">
+  <item nodeId="node-0xa877060">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1225,10 +938,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14a7b9d0" />
+      <child nodeId="node-0xa8770d0" />
     </children>
   </item>
-  <item nodeId="node-0x14a7b9d0">
+  <item nodeId="node-0xa8770d0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1244,10 +957,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x50b100" />
+      <child nodeId="node-0xa877140" />
     </children>
   </item>
-  <item nodeId="node-0x50b100">
+  <item nodeId="node-0xa877140">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1263,10 +976,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14add900" />
+      <child nodeId="node-0xa8771b0" />
     </children>
   </item>
-  <item nodeId="node-0x14add900">
+  <item nodeId="node-0xa8771b0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1282,10 +995,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16fbbaa0" />
+      <child nodeId="node-0xa877220" />
     </children>
   </item>
-  <item nodeId="node-0x16fbbaa0">
+  <item nodeId="node-0xa877220">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1301,10 +1014,10 @@ Bart the Bartender tends to the pint glasses.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14688430" />
+      <child nodeId="node-0xa877290" />
     </children>
   </item>
-  <item nodeId="node-0x14688430">
+  <item nodeId="node-0xa877290">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1320,10 +1033,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14283290" />
+      <child nodeId="node-0xa877300" />
     </children>
   </item>
-  <item nodeId="node-0x14283290">
+  <item nodeId="node-0xa877300">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1339,10 +1052,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16fc9120" />
+      <child nodeId="node-0xa877370" />
     </children>
   </item>
-  <item nodeId="node-0x16fc9120">
+  <item nodeId="node-0xa877370">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1358,10 +1071,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x142102b0" />
+      <child nodeId="node-0xa8773e0" />
     </children>
   </item>
-  <item nodeId="node-0x142102b0">
+  <item nodeId="node-0xa8773e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1377,10 +1090,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16fc9ed0" />
+      <child nodeId="node-0xa877450" />
     </children>
   </item>
-  <item nodeId="node-0x16fc9ed0">
+  <item nodeId="node-0xa877450">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1396,10 +1109,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16f51980" />
+      <child nodeId="node-0xa8774c0" />
     </children>
   </item>
-  <item nodeId="node-0x16f51980">
+  <item nodeId="node-0xa8774c0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1415,10 +1128,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14ac1f20" />
+      <child nodeId="node-0xa877530" />
     </children>
   </item>
-  <item nodeId="node-0x14ac1f20">
+  <item nodeId="node-0xa877530">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1434,10 +1147,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16fc74d0" />
+      <child nodeId="node-0xa8775a0" />
     </children>
   </item>
-  <item nodeId="node-0x16fc74d0">
+  <item nodeId="node-0xa8775a0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1453,10 +1166,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14291610" />
+      <child nodeId="node-0xa877610" />
     </children>
   </item>
-  <item nodeId="node-0x14291610">
+  <item nodeId="node-0xa877610">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1472,10 +1185,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16f8fc70" />
+      <child nodeId="node-0xa877680" />
     </children>
   </item>
-  <item nodeId="node-0x16f8fc70">
+  <item nodeId="node-0xa877680">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1491,10 +1204,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16f51a60" />
+      <child nodeId="node-0xa8776f0" />
     </children>
   </item>
-  <item nodeId="node-0x16f51a60">
+  <item nodeId="node-0xa8776f0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1510,10 +1223,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14ab6180" />
+      <child nodeId="node-0xa877760" />
     </children>
   </item>
-  <item nodeId="node-0x14ab6180">
+  <item nodeId="node-0xa877760">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1529,10 +1242,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16f66440" />
+      <child nodeId="node-0xa8777d0" />
     </children>
   </item>
-  <item nodeId="node-0x16f66440">
+  <item nodeId="node-0xa8777d0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1548,10 +1261,10 @@ Bart the Bartender tends to the stovetop.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x16f3df00" />
+      <child nodeId="node-0xa877840" />
     </children>
   </item>
-  <item nodeId="node-0x16f3df00">
+  <item nodeId="node-0xa877840">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1567,10 +1280,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x142f75a0" />
+      <child nodeId="node-0xa8778b0" />
     </children>
   </item>
-  <item nodeId="node-0x142f75a0">
+  <item nodeId="node-0xa8778b0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1586,10 +1299,10 @@ Bart the Bartender tends to the pint glasses.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x146c3a20" />
+      <child nodeId="node-0xa877920" />
     </children>
   </item>
-  <item nodeId="node-0x146c3a20">
+  <item nodeId="node-0xa877920">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1605,10 +1318,10 @@ Bart the Bartender tends to the beer taps.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x14aba250" />
+      <child nodeId="node-0xa877990" />
     </children>
   </item>
-  <item nodeId="node-0x14aba250">
+  <item nodeId="node-0xa877990">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1624,10 +1337,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x146a9490" />
+      <child nodeId="node-0xa877a00" />
     </children>
   </item>
-  <item nodeId="node-0x146a9490">
+  <item nodeId="node-0xa877a00">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1643,10 +1356,10 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="728">YES</temporary>
     <children>
-      <child nodeId="node-0x142c2420" />
+      <child nodeId="node-0xa877a70" />
     </children>
   </item>
-  <item nodeId="node-0x142c2420">
+  <item nodeId="node-0xa877a70">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mess Hall
 The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
@@ -1662,7 +1375,18 @@ Bart the Bartender tends to the prepared plates.
     <changed>YES</changed>
     <temporary score="727">YES</temporary>
   </item>
-  <item nodeId="node-0x1468bf90">
+  <item nodeId="node-0x2025950">
+    <command xml:space="preserve">close hatch</command>
+    <result xml:space="preserve">You close the hatch.
+
+Bart the Bartender tends to the pint glasses.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="29">YES</temporary>
+  </item>
+  <item nodeId="node-0xa877ae0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Offices
@@ -1675,14 +1399,14 @@ You can see a computer (in which is ROBOTS file) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x16f8ee40" />
-      <child nodeId="node-0x17728a30" />
-      <child nodeId="node-0x109b2e40" />
-      <child nodeId="node-0x16fee110" />
-      <child nodeId="node-0x1429ece0" />
+      <child nodeId="node-0xa877b50" />
+      <child nodeId="node-0xa878170" />
+      <child nodeId="node-0xa878020" />
+      <child nodeId="node-0xa877fb0" />
+      <child nodeId="node-0xa8781e0" />
     </children>
   </item>
-  <item nodeId="node-0x1429ece0">
+  <item nodeId="node-0xa8781e0">
     <command xml:space="preserve">read ROBOTS</command>
     <result xml:space="preserve">Robots in Housing Unit
 Humanoid 1 YES
@@ -1697,7 +1421,7 @@ A scientist arrives from Mess Hall.
     <changed>YES</changed>
     <temporary score="800">YES</temporary>
   </item>
-  <item nodeId="node-0x16fee110">
+  <item nodeId="node-0xa877fb0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Offices
 Offices
@@ -1713,17 +1437,17 @@ A scientist heads to Mess Hall.
     <changed>YES</changed>
     <temporary score="683">YES</temporary>
   </item>
-  <item nodeId="node-0x109b2e40">
+  <item nodeId="node-0xa878020">
     <command xml:space="preserve">take ROBOTS</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="767">YES</temporary>
     <children>
-      <child nodeId="node-0x14283200" />
+      <child nodeId="node-0xa878090" />
     </children>
   </item>
-  <item nodeId="node-0x14283200">
+  <item nodeId="node-0xa878090">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a mobile phone
@@ -1737,10 +1461,10 @@ A scientist heads to Mess Hall.
     <changed>YES</changed>
     <temporary score="767">YES</temporary>
     <children>
-      <child nodeId="node-0x14a7af30" />
+      <child nodeId="node-0xa878100" />
     </children>
   </item>
-  <item nodeId="node-0x14a7af30">
+  <item nodeId="node-0xa878100">
     <command xml:space="preserve">read ROBOTS</command>
     <result xml:space="preserve">Humanoids 0-13.
 
@@ -1749,7 +1473,7 @@ A scientist heads to Mess Hall.
     <changed>YES</changed>
     <temporary score="766">YES</temporary>
   </item>
-  <item nodeId="node-0x17728a30">
+  <item nodeId="node-0xa878170">
     <command xml:space="preserve">take INVENTORY</command>
     <result xml:space="preserve">You are carrying:
   a mobile phone
@@ -1764,7 +1488,7 @@ A scientist heads to Catwalk.
     <changed>YES</changed>
     <temporary score="758">YES</temporary>
   </item>
-  <item nodeId="node-0x16f8ee40">
+  <item nodeId="node-0xa877b50">
     <command xml:space="preserve">take file</command>
     <result xml:space="preserve">That&apos;s fixed in place.
 
@@ -1775,10 +1499,10 @@ A scientist arrives from Mess Hall.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x16f0d770" />
+      <child nodeId="node-0xa877bc0" />
     </children>
   </item>
-  <item nodeId="node-0x16f0d770">
+  <item nodeId="node-0xa877bc0">
     <command xml:space="preserve">read ROBOTS</command>
     <result xml:space="preserve">Robots in Housing Unit
 Humanoid 1 yes
@@ -1791,10 +1515,10 @@ Humanoid 4 yes
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x14688510" />
+      <child nodeId="node-0xa877c30" />
     </children>
   </item>
-  <item nodeId="node-0x14688510">
+  <item nodeId="node-0xa877c30">
     <command xml:space="preserve">move Humanoid 3 to Offices</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1803,10 +1527,10 @@ Humanoid 4 yes
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xed074b0" />
+      <child nodeId="node-0xa877ca0" />
     </children>
   </item>
-  <item nodeId="node-0xed074b0">
+  <item nodeId="node-0xa877ca0">
     <command xml:space="preserve">purloin Humanoid 3</command>
     <result xml:space="preserve">[Purloined.]
 
@@ -1815,10 +1539,10 @@ Humanoid 4 yes
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x146cf850" />
+      <child nodeId="node-0xa877d10" />
     </children>
   </item>
-  <item nodeId="node-0x146cf850">
+  <item nodeId="node-0xa877d10">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Offices
 Offices
@@ -1832,10 +1556,10 @@ A scientist heads to Mess Hall.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x14a81510" />
+      <child nodeId="node-0xa877d80" />
     </children>
   </item>
-  <item nodeId="node-0x14a81510">
+  <item nodeId="node-0xa877d80">
     <command xml:space="preserve">read ROBOTS</command>
     <result xml:space="preserve">Robots in Housing Unit
 Humanoid 1 yes
@@ -1848,10 +1572,10 @@ Humanoid 4 yes
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x1774d7a0" />
+      <child nodeId="node-0xa877df0" />
     </children>
   </item>
-  <item nodeId="node-0x1774d7a0">
+  <item nodeId="node-0xa877df0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Humanoid 3
@@ -1867,10 +1591,10 @@ A scientist arrives from Mess Hall.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x16f1ead0" />
+      <child nodeId="node-0xa877e60" />
     </children>
   </item>
-  <item nodeId="node-0x16f1ead0">
+  <item nodeId="node-0xa877e60">
     <command xml:space="preserve">drop Humanoid 3</command>
     <result xml:space="preserve">Dropped.
 
@@ -1879,10 +1603,10 @@ A scientist arrives from Mess Hall.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x16f8fbd0" />
+      <child nodeId="node-0xa877ed0" />
     </children>
   </item>
-  <item nodeId="node-0x16f8fbd0">
+  <item nodeId="node-0xa877ed0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a mobile phone
@@ -1897,10 +1621,10 @@ A scientist heads to Catwalk.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x14214d50" />
+      <child nodeId="node-0xa877f40" />
     </children>
   </item>
-  <item nodeId="node-0x14214d50">
+  <item nodeId="node-0xa877f40">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Offices
 Offices
@@ -1912,87 +1636,67 @@ You can see Humanoid 3 and a computer (in which is ROBOTS file) here.
     <changed>YES</changed>
     <temporary score="826">YES</temporary>
   </item>
-  <item nodeId="node-0x14283a60">
+  <item nodeId="node-0x31c130">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">A dozing crew member whispers abruptly, &quot;Could you shut that thing off!&quot;
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="753">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
     <children>
-      <child nodeId="node-0x16f21460" />
+      <child nodeId="node-0x5350d0" />
     </children>
   </item>
-  <item nodeId="node-0x16f21460">
+  <item nodeId="node-0x5350d0">
     <command xml:space="preserve">turn off alarm</command>
     <result xml:space="preserve">You switch the alarm clock off.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="753">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
     <children>
-      <child nodeId="node-0x16f47260" />
+      <child nodeId="node-0x232710" />
     </children>
   </item>
-  <item nodeId="node-0x16f47260">
+  <item nodeId="node-0x232710">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first getting off your bunk bed)
+(first opening the hatch)
+Bart the Bartender tends to the beer taps.
 
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
+    <children>
+      <child nodeId="node-0xf39d1d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf39d1d0">
+    <command xml:space="preserve">look at hatch</command>
+    <result xml:space="preserve">You see nothing special about the hatch.
 
-On the bar are prepared plates, pint glasses and some beer taps.
+Bart the Bartender tends to the beer taps.
 
-You can also see Bart the Bartender and a scientist here.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
+    <children>
+      <child nodeId="node-0x53c530" />
+    </children>
+  </item>
+  <item nodeId="node-0x53c530">
+    <command xml:space="preserve">close hatch</command>
+    <result xml:space="preserve">That&apos;s already closed.
 
 Bart the Bartender tends to the pint glasses.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="753">YES</temporary>
-    <children>
-      <child nodeId="node-0x142d7430" />
-    </children>
-  </item>
-  <item nodeId="node-0x142d7430">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Offices
-Offices
-
-You can see a computer here.
-
-&gt;</result>
-    <played>YES</played>
     <changed>YES</changed>
-    <temporary score="753">YES</temporary>
-    <children>
-      <child nodeId="node-0x118ce080" />
-      <child nodeId="node-0x16f69ab0" />
-    </children>
-  </item>
-  <item nodeId="node-0x16f69ab0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Offices
-Offices
-
-You can see a scientist and a monitor here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="740">YES</temporary>
-  </item>
-  <item nodeId="node-0x118ce080">
-    <command xml:space="preserve">look at computer</command>
-    <result xml:space="preserve">You see nothing special about the computer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="752">YES</temporary>
+    <temporary score="36">YES</temporary>
   </item>
 </Skein>

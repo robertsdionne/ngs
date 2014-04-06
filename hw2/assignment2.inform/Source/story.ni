@@ -9,15 +9,11 @@ A file is a kind of thing.
 
 
 [Robots]
-A robot is a kind of person.
-
-
-[Antarctic Base]
-Antarctic Base is a region.
+A robot is a kind of person. It is usually neuter.
 
 
 [Sleeping Quarters]
-Sleeping Quarters is a room. It is in Antarctic Base. "You are in[if player is on bunk bed] [your bunk bed] in[end if] [Sleeping Quarters]. The smell of warm breakfast wafts through the northern hatch.[if alarm clock is switched on] Your [alarm clock] buzzes loudly.[end if]"
+Sleeping Quarters is a room. . "You are in[if player is on bunk bed] [your bunk bed] in[end if] [Sleeping Quarters]. The smell of warm breakfast wafts through the northern hatch.[if alarm clock is switched on] Your [alarm clock] buzzes loudly.[end if]"
 
 Your bunk bed is in Sleeping Quarters. The player is on it.
 On the bunk bed is a copy of Research Robotics. The description of a copy of Research Robotics is "The magazine is dated March 2024." Understand "magazine" as Research Robotics.
@@ -46,9 +42,11 @@ After taking the keycard:
 After taking the mobile phone:
 	Increase the score by 1.
 
+The hatch is north of Sleeping Quarters and south of Mess Hall. It is a door. It is scenery.
+
 
 [Mess Hall]
-Mess Hall is north of Sleeping Quarters.  It is in Antarctic Base. "The [Mess Hall] is more properly a bar repurposed at mealtimes for eating. East to [Offices]."
+Mess Hall is a room. "The [Mess Hall] is more properly a bar repurposed at mealtimes for eating. East to [Offices]."
 
 The bar is some scenery in the Mess Hall.
 
@@ -80,7 +78,7 @@ Instead of taking the pint glasses:
 	otherwise:
 		say "You already have a pint glass."
 
-Bart the Bartender is a person in the Mess Hall. The description of Bart is "The serving robot prepares meals here."
+Bart the Bartender is a robot in the Mess Hall. The description of Bart is "The serving robot prepares meals here."
 
 Every turn when the player can see Bart the Bartender:
 	say "Bart the Bartender tends to the [random thing which is on the bar]."
@@ -100,7 +98,7 @@ Instead of going to Sleeping Quarters:
 	
 
 [Housing Unit]
-Housing Unit is east of Catwalk. It is in Antarctic Base.
+Housing Unit is east of Catwalk. 
 
 Humanoid 1 is a robot in Housing Unit.
 Humanoid 2 is a robot in Housing Unit.
@@ -109,22 +107,22 @@ Humanoid 4 is a robot in Housing Unit.
 
 
 [Garage]
-Garage is west of Catwalk. It is in Antarctic Base.
+Garage is west of Catwalk. 
 
 
 [Offices]
-Offices is east of Mess Hall.  It is in Antarctic Base. "Offices"
+Offices is east of Mess Hall.   "Offices"
 
-A computer is in Offices. It is fixed in place.
-ROBOTS file is a file in Sleeping Quarters. It is fixed in place. The description of ROBOTS file is "Robot Locations[line break]Humanoid 1 [location of Humanoid 1][line break]Humanoid 2 [location of Humanoid 2][line break]Humanoid 3 [location of Humanoid 3][line break]Humanoid 4 [location of Humanoid 4]".
+A computer terminal is in Offices. It is fixed in place. It is a container.
+ROBOTS file is a file in the computer terminal. It is fixed in place. The description of ROBOTS file is "Robot Locations[line break]Humanoid 1 [location of Humanoid 1][line break]Humanoid 2 [location of Humanoid 2][line break]Humanoid 3 [location of Humanoid 3][line break]Humanoid 4 [location of Humanoid 4]".
 
 
 [Operations]
-Operations is east of Offices. It is in Antarctic Base.
+Operations is east of Offices. 
 
 
 [Catwalk]
-Catwalk is north of Offices. It is in Antarctic Base. 
+Catwalk is north of Offices.  
 
 
 [Ice Cave]
