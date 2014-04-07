@@ -6,6 +6,10 @@ Part - Settings
 Use American dialect.
 When play begins: say "You awaken."
 
+Test awaken with "take all / put on clothes / turn off alarm / north."
+Test breakfast with "take plate / take glass / eat pancake / eat egg / eat bacon / eat toast / drink orange juice / drop plate and glass / turn off Bart / east."
+Test all with "test awaken / test breakfast."
+
 
 Part - New Kinds of Things
 
@@ -59,10 +63,12 @@ Instead of going to Mess Hall when the alarm clock is switched on:
 	Say "A dozing crew member whispers abruptly, 'Could you shut that thing off!'"
 
 After taking the keycard:
-	Increase the score by 1.
+	Increase the score by 1;
+	Continue the action.
 
 After taking the mobile phone:
-	Increase the score by 1.
+	Increase the score by 1;
+	Continue the action.
 
 The hatch is north of Sleeping Quarters and south of Mess Hall. It is a door. It is scenery.
 
@@ -104,7 +110,7 @@ Instead of taking the pint glasses:
 Bart the Bartender is a robot in the Mess Hall. Bart is switched on. The description of Bart is "The serving robot prepares meals here."
 
 Every turn when the player can see Bart the Bartender and Bart the Bartender is switched on:
-	say "Bart the Bartender tends to the [random thing which is on the bar]."
+	say "Bart the Bartender [one of]tends to[or]washes[or]cleans[or]scrubs[or]prepares[at random] the [random thing which is on the bar]."
 
 A scientist is a person in the Mess Hall.
 
@@ -118,6 +124,24 @@ Every turn when the turn count is even:
 
 Instead of going to Sleeping Quarters:
 	Say "Best not to disturb those that are sleeping."
+
+
+Section - Offices
+
+Offices is east of Mess Hall. "You pass through [Offices], with [Catwalk] to the north and [Operations] to the east."
+
+A computer terminal is in Offices. It is a closed openable fixed in place lockable locked container. The matching key of the computer terminal is the keycard.
+ROBOTS file is a file in the computer terminal. It is fixed in place. The description of ROBOTS file is "Robot Locations[line break]Humanoid 1 [location of Humanoid 1][line break]Humanoid 2 [location of Humanoid 2][line break]Humanoid 3 [location of Humanoid 3][line break]Humanoid 4 [location of Humanoid 4]".
+
+
+Section - Operations
+
+Operations is east of Offices. 
+
+
+Section - Catwalk
+
+Catwalk is north of Offices.
 
 
 Section - Ready Room
@@ -143,24 +167,6 @@ In Garage is a vehicle called SnowCat.
 
 Instead of going by a vehicle to somewhere (called the destination) that is not outdoors:
 	Say "You cannot drive [the SnowCat] to [the destination]."
-
-
-Section - Offices
-
-Offices is east of Mess Hall.   "Offices"
-
-A computer terminal is in Offices. It is a closed openable fixed in place container.
-ROBOTS file is a file in the computer terminal. It is fixed in place. The description of ROBOTS file is "Robot Locations[line break]Humanoid 1 [location of Humanoid 1][line break]Humanoid 2 [location of Humanoid 2][line break]Humanoid 3 [location of Humanoid 3][line break]Humanoid 4 [location of Humanoid 4]".
-
-
-Section - Operations
-
-Operations is east of Offices. 
-
-
-Section - Catwalk
-
-Catwalk is north of Offices.  
 
 
 Section - Ice Cave
