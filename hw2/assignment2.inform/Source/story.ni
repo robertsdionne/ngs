@@ -8,8 +8,13 @@ When play begins: say "You awaken."
 
 Test awaken with "take all / put on clothes / turn off alarm / north."
 Test breakfast with "take plate / take glass / eat pancake / eat egg / eat bacon / eat toast / drink orange juice / drop plate and glass / turn off Bart / east."
-Test duties with "look at mobile / unlock terminal with keycard / open terminal / read ROBOTS."
-Test all with "test awaken / test breakfast / test duties."
+Test duties with "read mobile / unlock terminal with keycard / open terminal / read ROBOTS."
+Test alert with "east / read mobile / west."
+Test robots with "north / west / west / x Humanoid 1 / turn on Humanoid 1 / x Humanoid 2 / turn on Humanoid 2 / x Humanoid 4 / turn on Humanoid 4 / east."
+Test gear with "read mobile / open lockers / take all / wear gear."
+Test vehicle with "east / east / x SnowCat / enter SnowCat / look / north."
+
+Test all with "test awaken / test breakfast / test duties / test alert / test robots / test gear."
 
 
 Part - New Kinds of Things
@@ -28,7 +33,7 @@ A mobile device is a kind of thing. A mobile device can be buzzing.
 
 [People]
 A person can be cold. A person can be notified-of-first-message. A person can be notified-of-second-message.
-A person can be notified-of-third-message.
+A person can be notified-of-third-message. A person can be ambushed.
 
 
 [Robots]
@@ -73,14 +78,6 @@ Instead of going to Mess Hall when the player is not wearing grey fatigues:
 	
 Instead of going to Mess Hall when the alarm clock is switched on:
 	Say "A dozing crew member whispers abruptly, 'Could you shut that thing off!'"
-
-After taking the keycard:
-	Increase the score by 1;
-	Continue the action.
-
-After taking the mobile phone:
-	Increase the score by 1;
-	Continue the action.
 
 The hatch is north of Sleeping Quarters and south of Mess Hall. It is a door. It is scenery.
 
@@ -175,6 +172,7 @@ After switching off the supercomputer:
 Instead of switching on the supercomputer:
 	Say "You've shorted some sort of electrical breaker. Too bad."
 
+
 Section - Catwalk
 
 Catwalk is north of Offices. "Your shoes [one of]clank[or]jingle[or]clomp[or]bang[at random] along the metal surface between the railings leading west to [Ready Room] and east to [Garage]."
@@ -185,9 +183,8 @@ Section - Ready Room
 Ready Room is west of Catwalk. "Your gear is stored in [the lockers]. [Housing Unit] to west, [Catwalk] east."
 
 Some lockers are a closed openable fixed in place container in Ready Room.
-The thick outdoor gear is in the lockers. It is wearable.
-The EMP Grenade is in the lockers.
-
+Some thick outdoor gear is in the lockers. It is wearable.
+The EMP grenade is in the lockers.
 
 Section - Housing Unit
 
@@ -200,8 +197,6 @@ Instead of switching on Humanoid 1:
 Humanoid 2 is a robot in Housing Unit. The description of Humanoid 2 is "The face is smashed."
 Instead of switching on Humanoid 2:
 	Say "The humanoid doesn't even respond."
-
-Humanoid 3 is in Ice Cave. Humanoid 3 is a robot.
 
 Humanoid 4 is a robot in Housing Unit. The description of Humanoid 4 is "The antennae are bent."
 Instead of switching on Humanoid 4:
@@ -221,6 +216,7 @@ Garage is an environment. It is east of Catwalk. "The [SnowCat] [if player is in
 Some empty fuel canisters are in Garage. The empty fuel canisters are fixed in place.
 
 In Garage is a vehicle called SnowCat. The description of SnowCat is "A rugged, tracked vehicle with enclosed cab for navigating the treacherous climate outside."
+Understand "vehicle / cat" as SnowCat when player is in Garage.
 
 Instead of going by a vehicle to somewhere (called the destination) that is not outdoors:
 	Say "You cannot drive [the SnowCat] into [the destination]."
@@ -230,62 +226,62 @@ Chapter - Antarctic Desert
 
 Section - Grid 0-0
 
-Grid 0-0 is an environment. It is west of Grid 0-1.
+Grid 0-0 is an environment. It is west of Grid 0-1. "You see nothing particular besides complete whiteness."
 
 
 Section - Grid 0-1
 
-Grid 0-1 is an environment. It is north of Garage.
+Grid 0-1 is an environment. It is north of Garage. "Leaving the garage behind, you plow into the hazardous wind and ice."
 
 
 Section - Grid 0-2
 
-Grid 0-2 is an environment. It is east of Grid 0-1.
+Grid 0-2 is an environment. It is east of Grid 0-1. "It's hard to tell which way to go."
 
 
 Section - Grid 1-0
 
-Grid 1-0 is an environment. It is north of Grid 0-0. It is west of Grid 1-1.
+Grid 1-0 is an environment. It is north of Grid 0-0. It is west of Grid 1-1. "The wind is howling."
 
 
 Section - Grid 1-1
 
-Grid 1-1 is an environment.
+Grid 1-1 is an environment. "Icy mist blows [one of]westward[or]eastward[at random] at [a random number between 80 and 200] kph."
 
 
 Section - Grid 1-2
 
-Grid 1-2 is an environment. It is north of Grid 0-2. It is east of Grid 1-1.
+Grid 1-2 is an environment. It is north of Grid 0-2. It is east of Grid 1-1. "The ice crunches beneath you."
 
 
 Section - Grid 2-0
 
-Grid 2-0 is an environment. It is west of Grid 2-1.
+Grid 2-0 is an environment. It is west of Grid 2-1. "Crunching along, you are about halfway to the caves."
 
 
 Section - Grid 2-1
 
-Grid 2-1 is an environment. It is north of Grid 1-1.
+Grid 2-1 is an environment. It is north of Grid 1-1. "You see the horizon intermittently."
 
 
 Section - Grid 2-2
 
-Grid 2-2 is an environment. It is east of Grid 2-1.
+Grid 2-2 is an environment. It is east of Grid 2-1. "White everywhere."
 
 
 Section - Grid 3-0
 
-Grid 3-0 is an environment. It is north of Grid 2-0. It is west of Grid 3-1.
+Grid 3-0 is an environment. It is north of Grid 2-0. It is west of Grid 3-1. "The wind whistles past the entrances to the [Ice Cave] and [Ice Cavern]."
 
 
 Section - Grid 3-1
 
-Grid 3-1 is an environment.
+Grid 3-1 is an environment. "The wind increases its strength."
 
 
 Section - Grid 3-2
 
-Grid 3-2 is an environment. It is north of Grid 2-2. It is east of Grid 3-1.
+Grid 3-2 is an environment. It is north of Grid 2-2. It is east of Grid 3-1. "The wind cups the edge of the [Ice Crevasse]."
 
 
 Section - Off the Grid
@@ -312,9 +308,10 @@ Instead of going by the SnowCat when the SnowCat is out-of-fuel:
 	Say "[The SnowCat] is out of fuel!"
 
 [Player Hypothermia]
-Every turn when the player is not cold and the location of the player is an environment and the player is not wearing thick outdoor gear and the player is not in the SnowCat:
-	Hypothermia occurs in four turns from now;
-	Now the player is cold.
+Every turn when the player is not cold and the location of the player is an environment and the location of the player is not Garage:
+	if the player is not wearing thick outdoor gear and the player is not in the SnowCat:
+		Hypothermia occurs in four turns from now;
+		Now the player is cold.
 
 Every turn when the player is not cold and the location of the player is dark and the player is not wearing thick outdoor gear:
 	Hypothermia occurs in four turns from now;
@@ -335,14 +332,31 @@ Chapter - Ices Caves
 
 Section - Ice Cave
 
-Ice Cave is north of Grid 3-0.
+Ice Cave is north of Grid 3-0. "The rogue robot [Humanoid 3] is waiting here."
+
+Humanoid 3 is in Ice Cave. Humanoid 3 is a robot. The description of Humanoid 3 is "[Humanoid 3] is clearly disturbed and autonomous."
+
+After going to Ice Cave when the player is not ambushed:
+	Now the player is ambushed;
+	Attack occurs in one turn from now;
+	Continue the action.
+
+At the time when attack occurs:
+	If player has EMP grenade:
+		End the game saying "You toss the [EMP grenade] and it explodes, disabling [Humanoid 3]. You win!";
+	otherwise:
+		End the game saying "You forgot the [EMP grenade] and [Humanoid 3] ambushes you, killing you under his weight."
 
 
 Section - Ice Cavern
 
-Ice Cavern is west of Grid 3-0.
+Ice Cavern is west of Grid 3-0. The Ice Cavern is dark.
 
 
 Section - Ice Crevasse
 
-Ice Crevasse is east of Grid 3-2.
+Ice Crevasse is east of Grid 3-2. "The [Ice Crevasse] engulfs you into its depths."
+
+After going to Ice Crevasse:
+	Try looking;
+	End the story saying "You died in the fall."
