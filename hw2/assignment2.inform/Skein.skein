@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x2df3c0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x35d9a3b0" />
+  <activeNode nodeId="node-0x2df3c0" />
   <item nodeId="node-0x2df3c0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -26,52 +26,1729 @@ On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="712">NO</temporary>
+    <temporary score="893">NO</temporary>
     <children>
-      <child nodeId="node-0x23083d70" />
-      <child nodeId="node-0x230e3790" />
       <child nodeId="node-0xa878560" />
-      <child nodeId="node-0x13ede7f0" />
-      <child nodeId="node-0x2df6c0" />
-      <child nodeId="node-0x3df1b0" />
       <child nodeId="node-0x18326350" />
-      <child nodeId="node-0xa8784f0" />
+      <child nodeId="node-0x183f4ac0" />
+      <child nodeId="node-0x183a1670" />
+      <child nodeId="node-0x230b4c50" />
     </children>
   </item>
-  <item nodeId="node-0xa8784f0">
-    <command xml:space="preserve">test me</command>
+  <item nodeId="node-0x230b4c50">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sleeping Quarters (on your bunk bed)
+You are in your bunk bed in Sleeping Quarters. The smell of warm breakfast wafts through the northern hatch. Your alarm clock buzzes loudly.
+
+On the other bunks are some sleeping crew.
+
+On your night stand are an alarm clock, a keycard and a mobile phone.
+
+On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x3996f000" />
+    </children>
+  </item>
+  <item nodeId="node-0x3996f000">
+    <command xml:space="preserve">test all</command>
     <result xml:space="preserve">(Testing.)
 
-&gt;[1] take all
+&gt;[1] test awaken
+(Testing.)
+
+&gt;[2] take all
 copy of Research Robotics: Taken.
 grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
+keycard: Taken.
+mobile phone: Taken.
 
-&gt;[2] put on clothes
+[Your score has just gone up by two points.]
+
+&gt;[3] put on clothes
 You put on the grey fatigues.
 
-&gt;[3] turn off alarm
+&gt;[4] turn off alarm
 You switch the alarm clock off.
 
-&gt;[4] go north.
+&gt;[5] north.
 (first getting off your bunk bed)
 (first opening the hatch)
 
 Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
 
 On the bar are prepared plates, pint glasses and some beer taps.
 
 You can also see Bart the Bartender here.
 
+Bart the Bartender prepares the pint glasses.
+
+&gt;[6] test breakfast
+(Testing.)
+
+&gt;[7] take plate
+You take a plate from the bar.
+
 Bart the Bartender tends to the prepared plates.
+
+&gt;[8] take glass
+You take a pint glass from the bar.
+
+Bart the Bartender washes the pint glasses.
+
+&gt;[9] eat pancake
+(first taking the pancake)
+You eat the pancake. Not bad.
+
+Bart the Bartender cleans the beer taps.
+
+&gt;[10] eat egg
+(first taking the egg)
+You eat the egg. Not bad.
+
+Bart the Bartender tends to the prepared plates.
+
+&gt;[11] eat bacon
+(first taking the slice of bacon)
+You eat the slice of bacon. Not bad.
+
+Bart the Bartender washes the prepared plates.
+
+&gt;[12] eat toast
+(first taking the slice of toast)
+You eat the slice of toast. Not bad.
+
+Bart the Bartender scrubs the prepared plates.
+
+&gt;[13] drink orange juice
+You drink the orange juice. Refreshing.
+
+Bart the Bartender washes the stovetop.
+
+&gt;[14] drop plate and glass
+prepared plate: Dropped.
+pint glass: Dropped.
+
+Bart the Bartender prepares the prepared plates.
+
+&gt;[15] turn off bart
+You switch Bart the Bartender off.
+
+&gt;[16] east.
+
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;[17] test duties.
+(Testing.)
+
+&gt;[18] look at mobile
+Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+&gt;[19] unlock terminal with keycard
+You unlock the computer terminal.
+
+&gt;[20] open terminal
+You open the computer terminal, revealing ROBOTS file.
+
+&gt;[21] read robots.
+Robot Locations
+Humanoid 1 Housing Unit
+Humanoid 2 Housing Unit
+Humanoid 3 UNKNOWN
+Humanoid 4 Housing Unit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3ec830" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3ec830">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x194ad130" />
+    </children>
+  </item>
+  <item nodeId="node-0x194ad130">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+You can see SnowCat (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0xef7aa60" />
+    </children>
+  </item>
+  <item nodeId="node-0xef7aa60">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 0-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3db2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3db2a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x18331300" />
+    </children>
+  </item>
+  <item nodeId="node-0x18331300">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x194f5830" />
+    </children>
+  </item>
+  <item nodeId="node-0x194f5830">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 0-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x546bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x546bb0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 1-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0xef749e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xef749e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 2-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d58390" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d58390">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 2-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x399f0bd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399f0bd0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 3-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d21b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d21b20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x32eee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x32eee0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 3-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e3e1b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e3e1b0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0xa8a0950" />
+    </children>
+  </item>
+  <item nodeId="node-0xa8a0950">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d14060" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d14060">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x39941e40" />
+    </children>
+  </item>
+  <item nodeId="node-0x39941e40">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Grid 2-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x23073c40" />
+    </children>
+  </item>
+  <item nodeId="node-0x23073c40">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the icy plains.
+
+You can see a scientist here.
+
+A scientist heads to Off the Grid.
+A scientist arrives from Off the Grid.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x183a94a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x183a94a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the glacial plains.
+
+You can see a scientist here.
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x399ee340" />
+    </children>
+  </item>
+  <item nodeId="node-0x399ee340">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the frozen plains.
+
+You can see a scientist here.
+
+A scientist heads to Off the Grid.
+A scientist arrives from Off the Grid.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x399c3b00" />
+    </children>
+  </item>
+  <item nodeId="node-0x399c3b00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the icy plains.
+
+You can see a scientist here.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="859">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d524d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d524d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the glacial plains.
+
+You can see a scientist here.
+
+A scientist heads to Off the Grid.
+A scientist arrives from Off the Grid.
+
+You are getting cold.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 40 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="858">YES</temporary>
+  </item>
+  <item nodeId="node-0x183a1670">
+    <command xml:space="preserve">test breakfast</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] take plate
+You can&apos;t see any such thing.
+
+&gt;[2] take glass
+You can&apos;t see any such thing.
+
+&gt;[3] eat pancake
+You can&apos;t see any such thing.
+
+&gt;[4] eat egg
+You can&apos;t see any such thing.
+
+&gt;[5] eat bacon
+You can&apos;t see any such thing.
+
+&gt;[6] eat toast
+You can&apos;t see any such thing.
+
+&gt;[7] drink orange juice
+You can&apos;t see any such thing.
+
+&gt;[8] drop plate and glass
+You can&apos;t see any such thing.
+
+&gt;[9] turn off bart
+You can&apos;t see any such thing.
+
+&gt;[10] east.
+(first getting off your bunk bed)
+You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="752">YES</temporary>
+    <children>
+      <child nodeId="node-0xef3dd50" />
+    </children>
+  </item>
+  <item nodeId="node-0xef3dd50">
+    <command xml:space="preserve">test all</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test awaken
+(Testing.)
+
+&gt;[2] take all
+copy of Research Robotics: Taken.
+grey fatigues: Taken.
+keycard: Taken.
+mobile phone: Taken.
+
+[Your score has just gone up by two points.]
+
+&gt;[3] put on clothes
+You put on the grey fatigues.
+
+&gt;[4] turn off alarm
+You switch the alarm clock off.
+
+&gt;[5] north.
+(first opening the hatch)
+
+Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see Bart the Bartender here.
+
+Bart the Bartender cleans the pint glasses.
+
+&gt;[6] test breakfast
+(Testing.)
+
+&gt;[7] take plate
+You take a plate from the bar.
+
+Bart the Bartender tends to the pint glasses.
+
+&gt;[8] take glass
+You take a pint glass from the bar.
+
+Bart the Bartender scrubs the prepared plates.
+
+&gt;[9] eat pancake
+(first taking the pancake)
+You eat the pancake. Not bad.
+
+Bart the Bartender tends to the pint glasses.
+
+&gt;[10] eat egg
+(first taking the egg)
+You eat the egg. Not bad.
+
+Bart the Bartender prepares the prepared plates.
+
+&gt;[11] eat bacon
+(first taking the slice of bacon)
+You eat the slice of bacon. Not bad.
+
+Bart the Bartender washes the beer taps.
+
+&gt;[12] eat toast
+(first taking the slice of toast)
+You eat the slice of toast. Not bad.
+
+Bart the Bartender tends to the stovetop.
+
+&gt;[13] drink orange juice
+You drink the orange juice. Refreshing.
+
+Bart the Bartender prepares the beer taps.
+
+&gt;[14] drop plate and glass
+prepared plate: Dropped.
+pint glass: Dropped.
+
+Bart the Bartender cleans the pint glasses.
+
+&gt;[15] turn off bart
+You switch Bart the Bartender off.
+
+&gt;[16] east.
+
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;[17] test duties.
+(Testing.)
+
+&gt;[18] look at mobile
+Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Garage.&quot;
+
+&gt;[19] unlock terminal with keycard
+You unlock the computer terminal.
+
+&gt;[20] open terminal
+You open the computer terminal, revealing ROBOTS file.
+
+&gt;[21] read robots.
+Robot Locations
+Humanoid 1 Housing Unit
+Humanoid 2 Housing Unit
+Humanoid 3 UNKNOWN
+Humanoid 4 Housing Unit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="752">YES</temporary>
+    <children>
+      <child nodeId="node-0x230d1f40" />
+    </children>
+  </item>
+  <item nodeId="node-0x230d1f40">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="752">YES</temporary>
+  </item>
+  <item nodeId="node-0x183f4ac0">
+    <command xml:space="preserve">test all</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test awaken
+(Testing.)
+
+&gt;[2] take all
+copy of Research Robotics: Taken.
+grey fatigues: Taken.
+keycard: Taken.
+mobile phone: Taken.
+
+[Your score has just gone up by two points.]
+
+&gt;[3] put on clothes
+You put on the grey fatigues.
+
+&gt;[4] turn off alarm
+You switch the alarm clock off.
+
+&gt;[5] north.
+(first getting off your bunk bed)
+(first opening the hatch)
+
+Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see Bart the Bartender here.
+
+Bart the Bartender prepares the pint glasses.
+
+&gt;[6] test breakfast
+(Testing.)
+
+&gt;[7] take plate
+You take a plate from the bar.
+
+Bart the Bartender cleans the prepared plates.
+
+&gt;[8] take glass
+You take a pint glass from the bar.
+
+Bart the Bartender tends to the prepared plates.
+
+&gt;[9] eat pancake
+(first taking the pancake)
+You eat the pancake. Not bad.
+
+Bart the Bartender prepares the stovetop.
+
+&gt;[10] eat egg
+(first taking the egg)
+You eat the egg. Not bad.
+
+Bart the Bartender scrubs the prepared plates.
+
+&gt;[11] eat bacon
+(first taking the slice of bacon)
+You eat the slice of bacon. Not bad.
+
+Bart the Bartender tends to the prepared plates.
+
+&gt;[12] eat toast
+(first taking the slice of toast)
+You eat the slice of toast. Not bad.
+
+Bart the Bartender cleans the beer taps.
+
+&gt;[13] drink orange juice
+You drink the orange juice. Refreshing.
+
+Bart the Bartender tends to the beer taps.
+
+&gt;[14] drop plate and glass
+prepared plate: Dropped.
+pint glass: Dropped.
+
+Bart the Bartender cleans the beer taps.
+
+&gt;[15] turn off bart
+You switch Bart the Bartender off.
+
+&gt;[16] east.
+
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+A scientist arrives from Catwalk.
+
+&gt;[17] test duties.
+(Testing.)
+
+&gt;[18] look at mobile
+Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+&gt;[19] unlock terminal with keycard
+You unlock the computer terminal.
+
+A scientist heads to Mess Hall.
+
+&gt;[20] open terminal
+You open the computer terminal, revealing ROBOTS file.
+
+&gt;[21] read robots.
+Robot Locations
+Humanoid 1 Housing Unit
+Humanoid 2 Housing Unit
+Humanoid 3 UNKNOWN
+Humanoid 4 Housing Unit
+
+A scientist arrives from Mess Hall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d112c0" />
+      <child nodeId="node-0x23026240" />
+    </children>
+  </item>
+  <item nodeId="node-0x23026240">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see a pint glass (empty), a prepared plate (empty) and Bart the Bartender here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d12550" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d12550">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a scientist and a computer terminal (in which is ROBOTS file) here.
+
+A scientist heads to Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x1832f5c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1832f5c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+You can see a scientist here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x183e0680" />
+    </children>
+  </item>
+  <item nodeId="node-0x183e0680">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+You can see SnowCat (empty) here.
+
+A scientist arrives from Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x399462a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399462a0">
+    <command xml:space="preserve">enter snowcat</command>
+    <result xml:space="preserve">You get into SnowCat.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x3993d3d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3993d3d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 0-1 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x194d7a10" />
+    </children>
+  </item>
+  <item nodeId="node-0x194d7a10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x35de2d20" />
+    </children>
+  </item>
+  <item nodeId="node-0x35de2d20">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 0-0 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x18396bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18396bb0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 1-0 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x35da6cd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35da6cd0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0xefc67b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xefc67b0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 1-1 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d8cc20" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d8cc20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 2-1 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x1946b2d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1946b2d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x399ad340" />
+    </children>
+  </item>
+  <item nodeId="node-0x399ad340">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 2-0 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x230a1c40" />
+    </children>
+  </item>
+  <item nodeId="node-0x230a1c40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 3-0 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x39956c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x39956c70">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-1 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x317fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x317fe0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-2 (in SnowCat)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0xa812db0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa812db0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You cannot drive SnowCat to Ice Crevasse.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0xefba3d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xefba3d0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">You get out of SnowCat.
+
+Grid 3-2
+You can see SnowCat (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="893">YES</temporary>
+    <children>
+      <child nodeId="node-0x1831f480" />
+    </children>
+  </item>
+  <item nodeId="node-0x1831f480">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Ice Crevasse
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="892">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d112c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="836">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d103d0" />
+      <child nodeId="node-0x23085300" />
+      <child nodeId="node-0x23091890" />
+      <child nodeId="node-0x399e30b0" />
+      <child nodeId="node-0x35d498e0" />
+      <child nodeId="node-0xf3be1d0" />
+      <child nodeId="node-0x35d5d8c0" />
+      <child nodeId="node-0x194adc30" />
+      <child nodeId="node-0x323a60" />
+    </children>
+  </item>
+  <item nodeId="node-0x323a60">
+    <command xml:space="preserve">switch off supercomputer</command>
+    <result xml:space="preserve">You switch the supercomputer off.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="788">YES</temporary>
+    <children>
+      <child nodeId="node-0x194aa920" />
+    </children>
+  </item>
+  <item nodeId="node-0x194aa920">
+    <command xml:space="preserve">look at supercomputer</command>
+    <result xml:space="preserve">This machine guides all the research here at Antarctic #57.
+
+The supercomputer is currently switched off.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="787">YES</temporary>
+  </item>
+  <item nodeId="node-0x194adc30">
+    <command xml:space="preserve">turn off supercomputer</command>
+    <result xml:space="preserve">Your mobile phone buzzes.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="813">YES</temporary>
+    <children>
+      <child nodeId="node-0x194daae0" />
+      <child nodeId="node-0x13ec9650" />
+    </children>
+  </item>
+  <item nodeId="node-0x13ec9650">
+    <command xml:space="preserve">turn on supercomputer</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="806">YES</temporary>
+    <children>
+      <child nodeId="node-0x1940c820" />
+    </children>
+  </item>
+  <item nodeId="node-0x1940c820">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+Your mobile phone buzzes.
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="806">YES</temporary>
+    <children>
+      <child nodeId="node-0x399f04a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399f04a0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
+
+Your mobile phone buzzes.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="806">YES</temporary>
+    <children>
+      <child nodeId="node-0x35dea2c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35dea2c0">
+    <command xml:space="preserve">read mobile phone</command>
+    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
+
+Your mobile phone buzzes.
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="805">YES</temporary>
+  </item>
+  <item nodeId="node-0x194daae0">
+    <command xml:space="preserve">read mobile phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="813">YES</temporary>
+    <children>
+      <child nodeId="node-0x1837f5e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1837f5e0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="813">YES</temporary>
+    <children>
+      <child nodeId="node-0x13edd2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13edd2f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="813">YES</temporary>
+    <children>
+      <child nodeId="node-0xefedfc0" />
+    </children>
+  </item>
+  <item nodeId="node-0xefedfc0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+West to Offices.
+
+You can see a supercomputer here.
+
+Brrrrrrr.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 24 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="812">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d5d8c0">
+    <command xml:space="preserve">turn off computer</command>
+    <result xml:space="preserve">Your mobile phone buzzes.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="836">YES</temporary>
+    <children>
+      <child nodeId="node-0x230057c0" />
+      <child nodeId="node-0x39965d00" />
+    </children>
+  </item>
+  <item nodeId="node-0x39965d00">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+Your mobile phone buzzes.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="836">YES</temporary>
+    <children>
+      <child nodeId="node-0x23081a20" />
+    </children>
+  </item>
+  <item nodeId="node-0x23081a20">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
+
+You can&apos;t feel your toes.
+
+It is now pitch dark in here!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="836">YES</temporary>
+    <children>
+      <child nodeId="node-0x533060" />
+    </children>
+  </item>
+  <item nodeId="node-0x533060">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="836">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d99d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d99d70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+You are getting cold.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 24 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="835">YES</temporary>
+  </item>
+  <item nodeId="node-0x230057c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+Your mobile phone buzzes.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="829">YES</temporary>
+    <children>
+      <child nodeId="node-0x13eb0180" />
+    </children>
+  </item>
+  <item nodeId="node-0x13eb0180">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+Your mobile phone buzzes.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="829">YES</temporary>
+    <children>
+      <child nodeId="node-0x23081890" />
+    </children>
+  </item>
+  <item nodeId="node-0x23081890">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
+
+Your mobile phone buzzes.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="829">YES</temporary>
+    <children>
+      <child nodeId="node-0x183a7d80" />
+    </children>
+  </item>
+  <item nodeId="node-0x183a7d80">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
+
+Your mobile phone buzzes.
+
+You are getting cold.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 24 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="828">YES</temporary>
+  </item>
+  <item nodeId="node-0xf3be1d0">
+    <command xml:space="preserve">check mobile phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Head to Housing Unit.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="770">YES</temporary>
+    <children>
+      <child nodeId="node-0x18391590" />
+    </children>
+  </item>
+  <item nodeId="node-0x18391590">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="770">YES</temporary>
+    <children>
+      <child nodeId="node-0x273b220" />
+    </children>
+  </item>
+  <item nodeId="node-0x273b220">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="769">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d498e0">
+    <command xml:space="preserve">examine supercomputer</command>
+    <result xml:space="preserve">This machine guides all the research here at Antarctic #57.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="758">YES</temporary>
+    <children>
+      <child nodeId="node-0xf38be50" />
+    </children>
+  </item>
+  <item nodeId="node-0xf38be50">
+    <command xml:space="preserve">examine blinking lights</command>
+    <result xml:space="preserve">They flicker faster than you can see.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="758">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e02090" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e02090">
+    <command xml:space="preserve">read gauges</command>
+    <result xml:space="preserve">The gauges report -91 degrees celcius.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="758">YES</temporary>
+    <children>
+      <child nodeId="node-0x399aa640" />
+    </children>
+  </item>
+  <item nodeId="node-0x399aa640">
+    <command xml:space="preserve">read gauges</command>
+    <result xml:space="preserve">The gauges report -20 degrees celcius.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="757">YES</temporary>
+  </item>
+  <item nodeId="node-0x399e30b0">
+    <command xml:space="preserve">look at mobile</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Head to Housing Unit.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="778">YES</temporary>
+    <children>
+      <child nodeId="node-0x399d1ae0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399d1ae0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="778">YES</temporary>
+    <children>
+      <child nodeId="node-0x230fc010" />
+    </children>
+  </item>
+  <item nodeId="node-0x230fc010">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes bang along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+You can see a scientist here.
+
+A scientist heads to Ready Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="778">YES</temporary>
+    <children>
+      <child nodeId="node-0x183e2cd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x183e2cd0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+You can see a scientist here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="778">YES</temporary>
+    <children>
+      <child nodeId="node-0x399e1fc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399e1fc0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Housing Unit
+You can see Humanoid 1, Humanoid 2 and Humanoid 4 here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="778">YES</temporary>
+    <children>
+      <child nodeId="node-0x230e4be0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230e4be0">
+    <command xml:space="preserve">turn on Humanoid 1</command>
+    <result xml:space="preserve">You switch Humanoid 1 on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="777">YES</temporary>
+  </item>
+  <item nodeId="node-0x23091890">
+    <command xml:space="preserve">look at supercomputer</command>
+    <result xml:space="preserve">This machine guides all the research here at Antarctic #57.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="780">YES</temporary>
+  </item>
+  <item nodeId="node-0x23085300">
+    <command xml:space="preserve">look at mobile phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Head to Housing Unit.&quot;
 
 A scientist arrives from Offices.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="661">YES</temporary>
+    <temporary score="765">YES</temporary>
+    <children>
+      <child nodeId="node-0x399ac830" />
+    </children>
+  </item>
+  <item nodeId="node-0x399ac830">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="765">YES</temporary>
+    <children>
+      <child nodeId="node-0x39958e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x39958e10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="764">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d103d0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
+
+A scientist arrives from Offices.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="822">YES</temporary>
+    <children>
+      <child nodeId="node-0x5f28c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5f28c0">
+    <command xml:space="preserve">turn off computer</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="822">YES</temporary>
+    <children>
+      <child nodeId="node-0x399be9c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399be9c0">
+    <command xml:space="preserve">turn off supercomputer</command>
+    <result xml:space="preserve">You can&apos;t feel your toes.
+
+It is now pitch dark in here!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="822">YES</temporary>
+    <children>
+      <child nodeId="node-0x5077a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5077a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="822">YES</temporary>
+    <children>
+      <child nodeId="node-0x19458b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x19458b40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="822">YES</temporary>
+    <children>
+      <child nodeId="node-0x23036e80" />
+    </children>
+  </item>
+  <item nodeId="node-0x23036e80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="822">YES</temporary>
+    <children>
+      <child nodeId="node-0x183b9f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x183b9f70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+It&apos;s kinda cold out here.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 25 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="821">YES</temporary>
   </item>
   <item nodeId="node-0x18326350">
     <command xml:space="preserve">test awaken</command>
@@ -96,2587 +1773,202 @@ You switch the alarm clock off.
 (first opening the hatch)
 
 Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
 
 On the bar are prepared plates, pint glasses and some beer taps.
 
 You can also see Bart the Bartender here.
 
-Bart the Bartender cleans the pint glasses.
+Bart the Bartender prepares the prepared plates.
 
 A scientist arrives from Offices.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="712">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x399c7eb0" />
-      <child nodeId="node-0x35d980a0" />
+      <child nodeId="node-0x2306ff00" />
     </children>
   </item>
-  <item nodeId="node-0x35d980a0">
-    <command xml:space="preserve">test breakfast</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] take plate
-You take a plate from the bar.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;[2] take glass
-You take a pint glass from the bar.
-
-Bart the Bartender tends to the beer taps.
-
-A scientist heads to Offices.
-
-&gt;[3] eat pancake
-(first taking the pancake)
-You eat the pancake. Not bad.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[4] eat egg
-(first taking the egg)
-You eat the egg. Not bad.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;[5] eat bacon
-(first taking the slice of bacon)
-You eat the slice of bacon. Not bad.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;[6] eat toast
-(first taking the slice of toast)
-You eat the slice of toast. Not bad.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;[7] drink orange juice
-You drink the orange juice. Refreshing.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;[8] drop plate and glass
-prepared plate: Dropped.
-pint glass: Dropped.
-
-Bart the Bartender tends to the prepared plates.
-
-&gt;[9] turn off bart
-You switch Bart the Bartender off.
-
-&gt;[10] east.
-
+  <item nodeId="node-0x2306ff00">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
 Offices
 You pass through Offices, with Catwalk to the north and Operations to the east.
 
 You can see a computer terminal (closed) here.
 
-A scientist arrives from Catwalk.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="688">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d3e5d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d3e5d0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a pint glass
-  a prepared plate
-  a mobile phone
-  a keycard
-  some grey fatigues (being worn)
-  a copy of Research Robotics
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="666">YES</temporary>
-  </item>
-  <item nodeId="node-0x399c7eb0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see a scientist and Bart the Bartender here.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f5df0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f5df0">
-    <command xml:space="preserve">take plate</command>
-    <result xml:space="preserve">You take a plate from the bar.
-
-Bart the Bartender prepares the beer taps.
-
-A scientist heads to Offices.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d5bce0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d5bce0">
-    <command xml:space="preserve">take glass</command>
-    <result xml:space="preserve">You take a pint glass from the bar.
-
-Bart the Bartender cleans the prepared plates.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0xa80e740" />
-    </children>
-  </item>
-  <item nodeId="node-0xa80e740">
-    <command xml:space="preserve">turn off bart</command>
-    <result xml:space="preserve">You switch Bart the Bartender off.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x3996b2e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3996b2e0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x183105a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183105a0">
-    <command xml:space="preserve">turn on bart</command>
-    <result xml:space="preserve">You switch Bart the Bartender on.
-
-Bart the Bartender scrubs the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x39935c00" />
-    </children>
-  </item>
-  <item nodeId="node-0x39935c00">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x1949b2b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1949b2b0">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender washes the prepared plates.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x23072de0" />
-    </children>
-  </item>
-  <item nodeId="node-0x23072de0">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender cleans the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35db8070" />
-    </children>
-  </item>
-  <item nodeId="node-0x35db8070">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender prepares the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x399e4bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x399e4bd0">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender cleans the prepared plates.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x183ebc70" />
-    </children>
-  </item>
-  <item nodeId="node-0x183ebc70">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0xa81dd70" />
-    </children>
-  </item>
-  <item nodeId="node-0xa81dd70">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender prepares the prepared plates.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d9ac40" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d9ac40">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender cleans the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d14100" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d14100">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender washes the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d70780" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d70780">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender prepares the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x13eeaee0" />
-    </children>
-  </item>
-  <item nodeId="node-0x13eeaee0">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender washes the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0xeff8370" />
-    </children>
-  </item>
-  <item nodeId="node-0xeff8370">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender cleans the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x1830fc80" />
-    </children>
-  </item>
-  <item nodeId="node-0x1830fc80">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8cf320" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8cf320">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender cleans the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35dd55a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35dd55a0">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender prepares the pint glasses.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="712">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d9a3b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d9a3b0">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.
-
-Bart the Bartender cleans the beer taps.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="711">YES</temporary>
-  </item>
-  <item nodeId="node-0x3df1b0">
-    <command xml:space="preserve">test</command>
-    <result xml:space="preserve">&gt;--&gt; The following tests are available:
-&apos;test me&apos;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="664">YES</temporary>
-    <children>
-      <child nodeId="node-0xa80b5a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa80b5a0">
-    <command xml:space="preserve">test me</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] take all
-copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
-
-&gt;[2] put on clothes
-You put on the grey fatigues.
-
-&gt;[3] turn off alarm
-You switch the alarm clock off.
-
-&gt;[4] go north
-(first getting off your bunk bed)
-(first opening the hatch)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender tends to the pint glasses.
-
-A scientist arrives from Offices.
-
-&gt;[5] take plate
-You take a plate from the bar.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[6] take glass
-You take a pint glass from the bar.
-
-Bart the Bartender tends to the stovetop.
-
-A scientist heads to Offices.
-
-&gt;[7] eat pancake
-(first taking the pancake)
-You eat the pancake. Not bad.
-
-Bart the Bartender tends to the prepared plates.
-
-&gt;[8] eat egg
-(first taking the egg)
-You eat the egg. Not bad.
-
-Bart the Bartender tends to the beer taps.
-
-A scientist arrives from Offices.
-
-&gt;[9] eat bacon
-(first taking the slice of bacon)
-You eat the slice of bacon. Not bad.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;[10] eat toast
-(first taking the slice of toast)
-You eat the slice of toast. Not bad.
-
-Bart the Bartender tends to the stovetop.
-
-A scientist heads to Offices.
-
-&gt;[11] drink orange juice.
-You drink the orange juice. Refreshing.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="663">YES</temporary>
-  </item>
-  <item nodeId="node-0x2df6c0">
-    <command xml:space="preserve">takea ll</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="678">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x2df710" />
+      <child nodeId="node-0x23006cd0" />
     </children>
   </item>
-  <item nodeId="node-0x2df710">
-    <command xml:space="preserve">take all</command>
-    <result xml:space="preserve">copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="678">YES</temporary>
-    <children>
-      <child nodeId="node-0x2df760" />
-    </children>
-  </item>
-  <item nodeId="node-0x2df760">
-    <command xml:space="preserve">turn off alarm</command>
-    <result xml:space="preserve">You switch the alarm clock off.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="678">YES</temporary>
-    <children>
-      <child nodeId="node-0x2df7b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2df7b0">
-    <command xml:space="preserve">put on clothes</command>
-    <result xml:space="preserve">You put on the grey fatigues.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="678">YES</temporary>
-    <children>
-      <child nodeId="node-0x2df820" />
-    </children>
-  </item>
-  <item nodeId="node-0x2df820">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first getting off your bunk bed)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender and a scientist here.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="678">YES</temporary>
-    <children>
-      <child nodeId="node-0x2df890" />
-    </children>
-  </item>
-  <item nodeId="node-0x2df890">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Your mobile phone buzzes: &quot;Get to the operations wing, as soon as possible.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="678">YES</temporary>
-  </item>
-  <item nodeId="node-0x13ede7f0">
-    <command xml:space="preserve">take all then put on clothes then turn off alarm then go north</command>
-    <result xml:space="preserve">copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
-
-You put on the grey fatigues.
-
-You switch the alarm clock off.
-
-(first getting off your bunk bed)
-(first opening the hatch)
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender tends to the stovetop.
-
-A scientist arrives from Offices.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0x3c70e0" />
-      <child nodeId="node-0xef8ce00" />
-    </children>
-  </item>
-  <item nodeId="node-0xef8ce00">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Offices
-Offices
-
-You can see a computer terminal (closed) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0x20f2600" />
-    </children>
-  </item>
-  <item nodeId="node-0x20f2600">
+  <item nodeId="node-0x23006cd0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Catwalk
+Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="650">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x1833a200" />
+      <child nodeId="node-0x194f5880" />
     </children>
   </item>
-  <item nodeId="node-0x1833a200">
+  <item nodeId="node-0x194f5880">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Garage
 You can see SnowCat (empty) here.
 
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0x2013b60" />
-      <child nodeId="node-0x13ef4920" />
-      <child nodeId="node-0x19492680" />
-      <child nodeId="node-0x230683d0" />
-      <child nodeId="node-0x5e0d70" />
-    </children>
-  </item>
-  <item nodeId="node-0x5e0d70">
-    <command xml:space="preserve">enter SnowCat</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x18354c40" />
-    </children>
-  </item>
-  <item nodeId="node-0x18354c40">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x201bfc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x201bfc0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e9d780" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e9d780">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="517">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0xef3b0c0" />
+      <child nodeId="node-0x23060370" />
     </children>
   </item>
-  <item nodeId="node-0xef3b0c0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x230fb6a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x230fb6a0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3dc6d0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3dc6d0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The gas meter is getting lower.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x23084e30" />
-    </children>
-  </item>
-  <item nodeId="node-0x23084e30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-Running out of gas.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x230442c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x230442c0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x230b7a80" />
-    </children>
-  </item>
-  <item nodeId="node-0x230b7a80">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x2303ca90" />
-    </children>
-  </item>
-  <item nodeId="node-0x2303ca90">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3a7f00" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3a7f00">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x2000770" />
-    </children>
-  </item>
-  <item nodeId="node-0x2000770">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x2305f980" />
-    </children>
-  </item>
-  <item nodeId="node-0x2305f980">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x194cbda0" />
-    </children>
-  </item>
-  <item nodeId="node-0x194cbda0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x5cf310" />
-    </children>
-  </item>
-  <item nodeId="node-0x5cf310">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x230530d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x230530d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xefd3690" />
-    </children>
-  </item>
-  <item nodeId="node-0xefd3690">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x183d22e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183d22e0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x2307de30" />
-    </children>
-  </item>
-  <item nodeId="node-0x2307de30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3b0b60" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3b0b60">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x1833c9a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1833c9a0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xf39c160" />
-    </children>
-  </item>
-  <item nodeId="node-0xf39c160">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x2010d50" />
-    </children>
-  </item>
-  <item nodeId="node-0x2010d50">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e69280" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e69280">
-    <command xml:space="preserve">en</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x1943c640" />
-    </children>
-  </item>
-  <item nodeId="node-0x1943c640">
-    <command xml:space="preserve">en</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3045a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3045a0">
-    <command xml:space="preserve">en</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d60b30" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d60b30">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d9eb30" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d9eb30">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x35da3be0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35da3be0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d92620" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d92620">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8b1970" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8b1970">
-    <command xml:space="preserve">en</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0xf363090" />
-    </children>
-  </item>
-  <item nodeId="node-0xf363090">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="517">YES</temporary>
-    <children>
-      <child nodeId="node-0x35da41d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35da41d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="516">YES</temporary>
-  </item>
-  <item nodeId="node-0x230683d0">
+  <item nodeId="node-0x23060370">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Grid 0-1
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="650">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x13ec7f30" />
+      <child nodeId="node-0x399e6120" />
     </children>
   </item>
-  <item nodeId="node-0x13ec7f30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0xef6cff0" />
-    </children>
-  </item>
-  <item nodeId="node-0xef6cff0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frigid plains.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0x1836ab90" />
-    </children>
-  </item>
-  <item nodeId="node-0x1836ab90">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the glacial plains.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0xefeeee0" />
-    </children>
-  </item>
-  <item nodeId="node-0xefeeee0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frigid plains.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0x183c21e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183c21e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the icy plains.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="650">YES</temporary>
-    <children>
-      <child nodeId="node-0x311fc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x311fc0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the glacial plains.
-
-You are getting cold.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 14 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="649">YES</temporary>
-  </item>
-  <item nodeId="node-0x19492680">
-    <command xml:space="preserve">get in SnowCat</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x18337fe0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18337fe0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa87a7b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa87a7b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x18388b30" />
-    </children>
-  </item>
-  <item nodeId="node-0x18388b30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x547420" />
-    </children>
-  </item>
-  <item nodeId="node-0x547420">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa818b80" />
-    </children>
-  </item>
-  <item nodeId="node-0xa818b80">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x183620b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183620b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8f9510" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8f9510">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8c9f40" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8c9f40">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d420a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d420a0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xf357e30" />
-    </children>
-  </item>
-  <item nodeId="node-0xf357e30">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x13ed1420" />
-    </children>
-  </item>
-  <item nodeId="node-0x13ed1420">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xefe4730" />
-    </children>
-  </item>
-  <item nodeId="node-0xefe4730">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa812810" />
-    </children>
-  </item>
-  <item nodeId="node-0xa812810">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d7ed00" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d7ed00">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8a87c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8a87c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3ba270" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3ba270">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e13840" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e13840">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8187b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8187b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
-  </item>
-  <item nodeId="node-0x13ef4920">
-    <command xml:space="preserve">enter Snowcat</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x23043ba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x23043ba0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x273b740" />
-    </children>
-  </item>
-  <item nodeId="node-0x273b740">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3b4bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3b4bd0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The gas meter is getting lower.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e72b30" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e72b30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d82240" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d82240">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x19449da0" />
-    </children>
-  </item>
-  <item nodeId="node-0x19449da0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x35dabbf0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35dabbf0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The gas meter is getting lower.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x183c98e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183c98e0">
-    <command xml:space="preserve">get out</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0xefc7d40" />
-    </children>
-  </item>
-  <item nodeId="node-0xefc7d40">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x183cc6a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183cc6a0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x230329e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x230329e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x18364460" />
-    </children>
-  </item>
-  <item nodeId="node-0x18364460">
-    <command xml:space="preserve">en</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x5ee490" />
-    </children>
-  </item>
-  <item nodeId="node-0x5ee490">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x230e5630" />
-    </children>
-  </item>
-  <item nodeId="node-0x230e5630">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d39a10" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d39a10">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x1948dad0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1948dad0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d83cb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d83cb0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x1833f000" />
-    </children>
-  </item>
-  <item nodeId="node-0x1833f000">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0xf308180" />
-    </children>
-  </item>
-  <item nodeId="node-0xf308180">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x183142e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183142e0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8102f0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8102f0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x500da0" />
-    </children>
-  </item>
-  <item nodeId="node-0x500da0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0x183884a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183884a0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8b19c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8b19c0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="547">YES</temporary>
-    <children>
-      <child nodeId="node-0xef32790" />
-    </children>
-  </item>
-  <item nodeId="node-0xef32790">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="546">YES</temporary>
-  </item>
-  <item nodeId="node-0x2013b60">
-    <command xml:space="preserve">enter snowcat</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xefa2a10" />
-    </children>
-  </item>
-  <item nodeId="node-0xefa2a10">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xa89ec90" />
-    </children>
-  </item>
-  <item nodeId="node-0xa89ec90">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e75a60" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e75a60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the frozen plains.
-
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0x23038f60" />
-      <child nodeId="node-0x1946ea00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1946ea00">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d9ba60" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d9ba60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The gas meter is getting lower.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8ab710" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8ab710">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x13edb770" />
-    </children>
-  </item>
-  <item nodeId="node-0x13edb770">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The gas meter is getting lower.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x23075680" />
-    </children>
-  </item>
-  <item nodeId="node-0x23075680">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x194c1280" />
-    </children>
-  </item>
-  <item nodeId="node-0x194c1280">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0xef6d450" />
-    </children>
-  </item>
-  <item nodeId="node-0xef6d450">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You can see SnowCat (empty) here.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x183b8fb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183b8fb0">
-    <command xml:space="preserve">enter</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x13ef57f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x13ef57f0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d35ee0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d35ee0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="600">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3e8470" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3e8470">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-Brrrrrrr.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 21 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="599">YES</temporary>
-  </item>
-  <item nodeId="node-0x23038f60">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the frigid plains.
-
-You won&apos;t be able to drive much farther.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8e4a10" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8e4a10">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the icy plains.
-
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e982d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e982d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the glacial plains.
-
-You won&apos;t be able to drive much farther.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xef0b5c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xef0b5c0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the frigid plains.
-
-Running out of gas.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0x35db32b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35db32b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xa818de0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa818de0">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You are off the known grid and wandering the glacial plains.
-
-You can see SnowCat (empty) here.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0x13ed1630" />
-    </children>
-  </item>
-  <item nodeId="node-0x13ed1630">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the icy plains.
-
-You can see SnowCat (empty) here.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xf379a50" />
-    </children>
-  </item>
-  <item nodeId="node-0xf379a50">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frozen plains.
-
-You can see SnowCat (empty) here.
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0x18347f30" />
-    </children>
-  </item>
-  <item nodeId="node-0x18347f30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frigid plains.
-
-You can see SnowCat (empty) here.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="618">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8af0a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8af0a0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frozen plains.
-
-You can see SnowCat (empty) here.
-
-It&apos;s kinda cold out here.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 21 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="617">YES</temporary>
-  </item>
-  <item nodeId="node-0x3c70e0">
+  <item nodeId="node-0x399e6120">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
-Bart the Bartender tends to the prepared plates.
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="581">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x13ef04a0" />
+      <child nodeId="node-0x399eaa30" />
     </children>
   </item>
-  <item nodeId="node-0x13ef04a0">
+  <item nodeId="node-0x399eaa30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
-Offices
-Offices
-
-You can see a computer terminal (closed) here.
-
-A scientist arrives from Catwalk.
+Grid 0-2
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="581">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x5d28d0" />
+      <child nodeId="node-0x1838f6b0" />
     </children>
   </item>
-  <item nodeId="node-0x5d28d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Catwalk
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8066c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8066c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Garage
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x2304c480" />
-    </children>
-  </item>
-  <item nodeId="node-0x2304c480">
-    <command xml:space="preserve">enter snowcat</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x230e7a80" />
-    </children>
-  </item>
-  <item nodeId="node-0x230e7a80">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x230b3c70" />
-    </children>
-  </item>
-  <item nodeId="node-0x230b3c70">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8155e0" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8155e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x23039ba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x23039ba0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x194c35d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x194c35d0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x1946b5e0" />
-      <child nodeId="node-0x2306ebb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2306ebb0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x18395ba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18395ba0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d90f70" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d90f70">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x13ea3560" />
-    </children>
-  </item>
-  <item nodeId="node-0x13ea3560">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0xef217c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xef217c0">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You can see SnowCat (empty) here.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="581">YES</temporary>
-    <children>
-      <child nodeId="node-0x23067bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x23067bd0">
+  <item nodeId="node-0x1838f6b0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Off the Grid
-You can see SnowCat (empty) here.
+You are off the known grid and wandering the glacial plains.
+
+Your mobile phone buzzes.
 
 You can&apos;t feel your toes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="581">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0xf3f76a0" />
+      <child nodeId="node-0x3997e360" />
     </children>
   </item>
-  <item nodeId="node-0xf3f76a0">
+  <item nodeId="node-0x3997e360">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Grid 0-2
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="872">YES</temporary>
+    <children>
+      <child nodeId="node-0x399b4e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x399b4e30">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-You are getting cold.
+Grid 1-2
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="581">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x332d70" />
+      <child nodeId="node-0x399462f0" />
     </children>
   </item>
-  <item nodeId="node-0x332d70">
-    <command xml:space="preserve">e</command>
+  <item nodeId="node-0x399462f0">
+    <command xml:space="preserve">n</command>
     <result xml:space="preserve">
-Off the Grid
-You can see SnowCat (empty) here.
-
-Brrrrrrr.
+Grid 2-2
+Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="581">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x13e581e0" />
+      <child nodeId="node-0x194bbb80" />
     </children>
   </item>
-  <item nodeId="node-0x13e581e0">
-    <command xml:space="preserve">s</command>
+  <item nodeId="node-0x194bbb80">
+    <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Off the Grid
-You can see SnowCat (empty) here.
+You are off the known grid and wandering the frigid plains.
 
-You are getting cold.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 22 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="580">YES</temporary>
-  </item>
-  <item nodeId="node-0x1946b5e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-The fuel is low.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="561">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8fbd60" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8fbd60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You won&apos;t be able to drive much farther.
+Your mobile phone buzzes.
 
 It&apos;s kinda cold out here.
 
-SnowCat is out of fuel!
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 16 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="561">YES</temporary>
+    <temporary score="872">YES</temporary>
     <children>
-      <child nodeId="node-0x23083d10" />
+      <child nodeId="node-0x2304f180" />
     </children>
   </item>
-  <item nodeId="node-0x23083d10">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Please give one of the answers above.
+  <item nodeId="node-0x2304f180">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Grid 2-2
+[Previous turn undone.]
 
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="560">YES</temporary>
+    <temporary score="871">YES</temporary>
   </item>
   <item nodeId="node-0xa878560">
     <command xml:space="preserve">read ROBOST</command>
@@ -2702,632 +1994,5 @@ Humanoid 4 Housing Unit
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="839">YES</temporary>
-  </item>
-  <item nodeId="node-0x230e3790">
-    <command xml:space="preserve">take all / put on clothes / turn off alarm / go north</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="660">YES</temporary>
-  </item>
-  <item nodeId="node-0x23083d70">
-    <command xml:space="preserve"></command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x23086a70" />
-      <child nodeId="node-0xf380120" />
-    </children>
-  </item>
-  <item nodeId="node-0xf380120">
-    <command xml:space="preserve"></command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0xf300a10" />
-    </children>
-  </item>
-  <item nodeId="node-0xf300a10">
-    <command xml:space="preserve">Section - Operations</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0xf332430" />
-    </children>
-  </item>
-  <item nodeId="node-0xf332430">
-    <command xml:space="preserve"></command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x2cb76f00" />
-    </children>
-  </item>
-  <item nodeId="node-0x2cb76f00">
-    <command xml:space="preserve">Operations is east of Offices.</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x2cbb01d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2cbb01d0">
-    <command xml:space="preserve"></command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x2cb04550" />
-    </children>
-  </item>
-  <item nodeId="node-0x2cb04550">
-    <command xml:space="preserve"></command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x3995cfe0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3995cfe0">
-    <command xml:space="preserve">Section - Catwalk</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x399a6c30" />
-    </children>
-  </item>
-  <item nodeId="node-0x399a6c30">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x18306e90" />
-      <child nodeId="node-0x19482980" />
-    </children>
-  </item>
-  <item nodeId="node-0x19482980">
-    <command xml:space="preserve">Catwalk is north of Offices.</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="659">YES</temporary>
-  </item>
-  <item nodeId="node-0x18306e90">
-    <command xml:space="preserve">test awken</command>
-    <result xml:space="preserve">&gt;--&gt; The following tests are available:
-&apos;test awaken&apos;
-&apos;test breakfast&apos;
-&apos;test all&apos;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0xa82ca90" />
-    </children>
-  </item>
-  <item nodeId="node-0xa82ca90">
-    <command xml:space="preserve">test awaken</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] take all
-copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
-
-&gt;[2] put on clothes
-You put on the grey fatigues.
-
-&gt;[3] turn off alarm
-You switch the alarm clock off.
-
-&gt;[4] north.
-(first getting off your bunk bed)
-(first opening the hatch)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender tends to the prepared plates.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x18351890" />
-    </children>
-  </item>
-  <item nodeId="node-0x18351890">
-    <command xml:space="preserve">test breakfast</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] take plate
-You take a plate from the bar.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[2] take glass
-You take a pint glass from the bar.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[3] eat pancake
-(first taking the pancake)
-You eat the pancake. Not bad.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[4] eat egg
-(first taking the egg)
-You eat the egg. Not bad.
-
-Bart the Bartender tends to the beer taps.
-
-A scientist arrives from Offices.
-
-&gt;[5] eat bacon
-(first taking the slice of bacon)
-You eat the slice of bacon. Not bad.
-
-Bart the Bartender tends to the beer taps.
-
-&gt;[6] eat toast
-(first taking the slice of toast)
-You eat the slice of toast. Not bad.
-
-Bart the Bartender tends to the beer taps.
-
-A scientist heads to Offices.
-
-&gt;[7] drink orange juice
-You drink the orange juice. Refreshing.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;[8] drop plate and glass
-prepared plate: Dropped.
-pint glass: Dropped.
-
-Bart the Bartender tends to the pint glasses.
-
-A scientist arrives from Offices.
-
-&gt;[9] turn off bart
-You switch Bart the Bartender off.
-
-&gt;[10] east.
-
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (closed) here.
-
-A scientist arrives from Mess Hall.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x23010db0" />
-    </children>
-  </item>
-  <item nodeId="node-0x23010db0">
-    <command xml:space="preserve">open terminal</command>
-    <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e8e700" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e8e700">
-    <command xml:space="preserve">unlock terminal</command>
-    <result xml:space="preserve">What do you want to unlock the computer terminal with?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d97190" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d97190">
-    <command xml:space="preserve">unlock terminal with keycard</command>
-    <result xml:space="preserve">You unlock the computer terminal.
-
-A scientist heads to Operations.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x183f97e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183f97e0">
-    <command xml:space="preserve">open termianl</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e1c320" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e1c320">
-    <command xml:space="preserve">open terminal</command>
-    <result xml:space="preserve">You open the computer terminal, revealing ROBOTS file.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="687">YES</temporary>
-    <children>
-      <child nodeId="node-0x183ebcd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183ebcd0">
-    <command xml:space="preserve">examine self</command>
-    <result xml:space="preserve">As good-looking as ever.
-
-A scientist arrives from Operations.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="686">YES</temporary>
-  </item>
-  <item nodeId="node-0x23086a70">
-    <command xml:space="preserve">Instead of going by the SnowCat when the SnowCat is out-of-fuel:</command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x230e92f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x230e92f0">
-    <command xml:space="preserve"> Say &quot;[The SnowCat] is out of fuel!&quot;</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognize.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x13eef470" />
-    </children>
-  </item>
-  <item nodeId="node-0x13eef470">
-    <command xml:space="preserve">take all then put on clothes then turn off alarm then go north</command>
-    <result xml:space="preserve">copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: mobile phone: [Your score has just gone up by two points.]
-
-You put on the grey fatigues.
-
-You switch the alarm clock off.
-
-(first getting off your bunk bed)
-(first opening the hatch)
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating. East leads to Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d9ad10" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d9ad10">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Offices
-Offices
-
-You can see a computer terminal (closed) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x183a0660" />
-    </children>
-  </item>
-  <item nodeId="node-0x183a0660">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Catwalk
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x230e7050" />
-    </children>
-  </item>
-  <item nodeId="node-0x230e7050">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Garage
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x18361440" />
-    </children>
-  </item>
-  <item nodeId="node-0x18361440">
-    <command xml:space="preserve">enter snowcat</command>
-    <result xml:space="preserve">You get into SnowCat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0xef31ff0" />
-    </children>
-  </item>
-  <item nodeId="node-0xef31ff0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x230aa150" />
-    </children>
-  </item>
-  <item nodeId="node-0x230aa150">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2 (in SnowCat)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d59b20" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d59b20">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the frigid plains.
-
-The gas meter is getting lower.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0xef6d4a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xef6d4a0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the glacial plains.
-
-Running out of gas.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d1ef90" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d1ef90">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the frozen plains.
-
-The gas meter is getting lower.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d83e90" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d83e90">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the frigid plains.
-
-The fuel is low.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x13ecb880" />
-    </children>
-  </item>
-  <item nodeId="node-0x13ecb880">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Off the Grid (in SnowCat)
-You are off the known grid and wandering the icy plains.
-
-Running out of gas.
-
-SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x35df15e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35df15e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">SnowCat is out of fuel!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0xeffb890" />
-    </children>
-  </item>
-  <item nodeId="node-0xeffb890">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">You get out of SnowCat.
-
-Off the Grid
-You are off the known grid and wandering the frigid plains.
-
-You can see SnowCat (empty) here.
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x183094c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183094c0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the glacial plains.
-
-You can see SnowCat (empty) here.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x183eb960" />
-    </children>
-  </item>
-  <item nodeId="node-0x183eb960">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frozen plains.
-
-You can see SnowCat (empty) here.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d850c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d850c0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the icy plains.
-
-You can see SnowCat (empty) here.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="639">YES</temporary>
-    <children>
-      <child nodeId="node-0x18383260" />
-    </children>
-  </item>
-  <item nodeId="node-0x18383260">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frozen plains.
-
-You can see SnowCat (empty) here.
-
-It&apos;s kinda cold out here.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 21 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="638">YES</temporary>
   </item>
 </Skein>

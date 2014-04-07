@@ -8,7 +8,8 @@ When play begins: say "You awaken."
 
 Test awaken with "take all / put on clothes / turn off alarm / north."
 Test breakfast with "take plate / take glass / eat pancake / eat egg / eat bacon / eat toast / drink orange juice / drop plate and glass / turn off Bart / east."
-Test all with "test awaken / test breakfast."
+Test duties with "look at mobile / unlock terminal with keycard / open terminal / read ROBOTS."
+Test all with "test awaken / test breakfast / test duties."
 
 
 Part - New Kinds of Things
@@ -21,8 +22,12 @@ An environment is a kind of room. An environment can be outdoors. An environment
 A file is a kind of thing.
 
 
+[Mobile]
+A mobile device is a kind of thing. A mobile device can be buzzing.
+
+
 [People]
-A person can be cold.
+A person can be cold. A person can be notified-of-first-message. A person can be notified-of-second-message.
 
 
 [Robots]
@@ -51,7 +56,13 @@ Some sleeping crew are on other bunks. They are people. The description of some 
 The alarm clock is on your night stand. It is a device. It is fixed in place. It is switched on. The description of the alarm clock is "The [alarm clock][if switched on] buzzes loudly and[end if] reads [the time of day]."
 
 The night stand is in Sleeping Quarters. It is scenery.
-The keycard and the mobile phone are on the night stand.
+The keycard and the mobile phone are on the night stand. The mobile phone is a mobile device.
+Every turn when the mobile phone is buzzing:
+	Say "Your [mobile phone] buzzes.";
+After examining the mobile phone:
+	Now the mobile phone is not buzzing;
+	Now the mobile phone is not lit;
+	Continue the action.
 
 Instead of going to Mess Hall when the player does not have the keycard or the player does not have the mobile phone:
 	Say "You need [if player does not have keycard]your [keycard][end if][if player does not have keycard and player does not have mobile phone] and [end if][if player does not have mobile phone]your [mobile phone][end if] before starting your shift."
@@ -75,7 +86,7 @@ The hatch is north of Sleeping Quarters and south of Mess Hall. It is a door. It
 
 Section - Mess Hall
 
-Mess Hall is a room. "The [Mess Hall] is more properly a bar repurposed at mealtimes for eating. East leads to [Offices]."
+Mess Hall is a room. "The [Mess Hall] is more properly a bar repurposed at mealtimes for eating, and west of [Offices]."
 
 The bar is some scenery in the Mess Hall.
 
@@ -130,18 +141,44 @@ Section - Offices
 
 Offices is east of Mess Hall. "You pass through [Offices], with [Catwalk] to the north and [Operations] to the east."
 
+Before going to Offices when the player is not notified-of-first-message:
+	Now the mobile phone is buzzing;
+	Now the mobile phone is lit;
+	Now the description of mobile phone is "Text message: 'Today's duties:[line break]- Check status of robots on [computer terminal] in [Offices].[line break]- Activate robot workers in [Housing Unit].[line break]- Gear up in [Ready Room].'";
+	Now the player is notified-of-first-message;
+	Continue the action.
+
 A computer terminal is in Offices. It is a closed openable fixed in place lockable locked container. The matching key of the computer terminal is the keycard.
-ROBOTS file is a file in the computer terminal. It is fixed in place. The description of ROBOTS file is "Robot Locations[line break]Humanoid 1 [location of Humanoid 1][line break]Humanoid 2 [location of Humanoid 2][line break]Humanoid 3 [location of Humanoid 3][line break]Humanoid 4 [location of Humanoid 4]".
+ROBOTS file is a file in the computer terminal. It is fixed in place. The description of ROBOTS file is "Robot Locations[line break]Humanoid 1 [location of Humanoid 1][line break]Humanoid 2 [location of Humanoid 2][line break]Humanoid 3 UNKNOWN[line break]Humanoid 4 [location of Humanoid 4]".
 
 
 Section - Operations
 
-Operations is east of Offices. 
+Operations is east of Offices. "[if the supercomputer is switched on]The clicks and beeps of [the supercomputer] here match the [blinking lights] and [gauges]. [end if]West to [Offices]."
 
+Before going to Operations when the player is not notified-of-second-message:
+	Now the mobile phone is buzzing;
+	Now the mobile phone is lit;
+	Now the description of mobile phone is "Text message: 'Alert! A Humanoid worker is missing. Investigate [Housing Unit].'";
+	Now the player is notified-of-second-message;
+	Continue the action.
+
+The supercomputer is a switched on device in Operations. The description of the supercomputer is "This machine guides all the research here at Antarctic #57."
+Understand "computer" as supercomputer when player is in Operations.
+The blinking lights are part of the supercomputer. The description of the blinking lights is "They [one of]flicker[or]blink[or]twinkle[at random] faster than you can see."
+The gauges are part of the supercomputer. The description of the gauges is "The gauges report [a random number between -93 and 14] degrees celsius."
+
+After switching off the supercomputer:
+	Now all rooms are dark;
+	Hypothermia occurs in four turns from now;
+	Now the player is cold.
+
+Instead of switching on the supercomputer:
+	Say "You've shorted some sort of electrical breaker. Too bad."
 
 Section - Catwalk
 
-Catwalk is north of Offices.
+Catwalk is north of Offices. "Your shoes [one of]clank[or]jingle[or]clomp[or]bang[at random] along the metal surface between the railings leading west to [Ready Room] and east to [Garage]."
 
 
 Section - Ready Room
@@ -153,25 +190,24 @@ Section - Housing Unit
 
 Housing Unit is west of Ready Room. 
 
-Humanoid 1 is a robot in Housing Unit. The description of Humanoid 1 is "Look at me."
-Humanoid 2 is a robot in Housing Unit. The description of Humanoid 2 is "Look at you."
+Humanoid 1 is a robot in Housing Unit. The description of Humanoid 1 is "The eyes look dead."
+
+
+Humanoid 2 is a robot in Housing Unit. The description of Humanoid 2 is "The face is smashed."
+
 Humanoid 3 is in Ice Cave. Humanoid 3 is a robot.
-Humanoid 4 is a robot in Housing Unit. The description of Humanoid 3 is "Look at us."
+
+Humanoid 4 is a robot in Housing Unit. The description of Humanoid 4 is "The antennae are bent."
 
 
 Section - Garage
 
-Garage is east of Catwalk.
+Garage is an environment. It is east of Catwalk.
 
 In Garage is a vehicle called SnowCat.
 
 Instead of going by a vehicle to somewhere (called the destination) that is not outdoors:
-	Say "You cannot drive [the SnowCat] to [the destination]."
-
-
-Section - Ice Cave
-
-Ice Cave is a room.
+	Say "You cannot drive [the SnowCat] into [the destination]."
 
 
 Chapter - Antarctic Desert
@@ -208,7 +244,7 @@ Grid 1-2 is an environment. It is north of Grid 0-2. It is east of Grid 1-1.
 
 Section - Grid 2-0
 
-Grid 2-0 is an environment. It is north of Grid 1-0. It is west of Grid 2-1.
+Grid 2-0 is an environment. It is west of Grid 2-1.
 
 
 Section - Grid 2-1
@@ -218,7 +254,7 @@ Grid 2-1 is an environment. It is north of Grid 1-1.
 
 Section - Grid 2-2
 
-Grid 2-2 is an environment. It is north of Grid 1-2. It is east of Grid 2-1.
+Grid 2-2 is an environment. It is east of Grid 2-1.
 
 
 Section - Grid 3-0
@@ -228,7 +264,7 @@ Grid 3-0 is an environment. It is north of Grid 2-0. It is west of Grid 3-1.
 
 Section - Grid 3-1
 
-Grid 3-1 is an environment. It is north of Grid 2-1.
+Grid 3-1 is an environment.
 
 
 Section - Grid 3-2
@@ -241,6 +277,7 @@ Section - Off the Grid
 Off the Grid is an environment. "You are off the known grid and wandering the [one of]icy[or]frigid[or]frozen[or]glacial[at random] plains."
 It is west of Grid 2-0, west of Grid 1-0 and west of Grid 0-0.
 It is east of Grid 2-2, east of Grid 1-2 and east of Grid 0-2. It is south of Grid 0-2.
+It is north of Grid 3-1 and north of Grid 3-2.
 East of Off the Grid is Off the Grid. West of Off the Grid is Off the Grid. North of Off the Grid is Off the Grid. South of Off the Grid is Off the Grid.
 
 [SnowCat out of fuel]
@@ -269,3 +306,19 @@ Every turn when the player is cold:
 At the time when hypothermia occurs:
 	End the story saying "You have died of hypothermia."
 
+
+Chapter - Ices Caves
+
+Section - Ice Cave
+
+Ice Cave is north of Grid 3-0.
+
+
+Section - Ice Cavern
+
+Ice Cavern is west of Grid 3-0.
+
+
+Section - Ice Crevasse
+
+Ice Crevasse is east of Grid 3-2.
