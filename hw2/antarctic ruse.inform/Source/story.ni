@@ -13,8 +13,9 @@ Test alert with "east / read mobile / west."
 Test robots with "north / west / west / x Humanoid 1 / turn on Humanoid 1 / x Humanoid 2 / turn on Humanoid 2 / x Humanoid 4 / turn on Humanoid 4 / east."
 Test gear with "read mobile / open lockers / take all / wear gear."
 Test vehicle with "east / east / x SnowCat / enter SnowCat / look / north."
+Test search with "west / north / east / north / west / north / exit / north."
 
-Test all with "test awaken / test breakfast / test duties / test alert / test robots / test gear."
+Test all with "test awaken / test breakfast / test duties / test alert / test robots / test gear / test vehicle / test search."
 
 
 Part - New Kinds of Things
@@ -33,7 +34,7 @@ A mobile device is a kind of thing. A mobile device can be buzzing.
 
 [People]
 A person can be cold. A person can be notified-of-first-message. A person can be notified-of-second-message.
-A person can be notified-of-third-message. A person can be ambushed.
+A person can be notified-of-third-message. A person can be ambushed. A person can be conversing.
 
 
 [Robots]
@@ -52,7 +53,7 @@ Section - Sleeping Quarters
 
 Sleeping Quarters is a room. . "You are in[if player is on bunk bed] [your bunk bed] in[end if] [Sleeping Quarters]. The smell of warm breakfast wafts through the northern hatch.[if alarm clock is switched on] Your [alarm clock] buzzes loudly.[end if]"
 
-Your bunk bed is in Sleeping Quarters. The player is on it.
+Your bunk bed is in Sleeping Quarters. The player is on the bunk bed.
 On the bunk bed is a copy of Research Robotics. The description of a copy of Research Robotics is "The magazine is dated March 2024." Understand "magazine" as Research Robotics.
 On the bunk bed are some grey fatigues. They are wearable. Understand "clothes" as fatigues.
 
@@ -121,15 +122,66 @@ Bart the Bartender is a robot in the Mess Hall. Bart is switched on. The descrip
 Every turn when the player can see Bart the Bartender and Bart the Bartender is switched on:
 	say "Bart the Bartender [one of]tends to[or]washes[or]cleans[or]scrubs[or]prepares[at random] the [random thing which is on the bar]."
 
+Table of Bartender Responses
+topic	topic-name	reply	summary	turn stamp
+"breakfast"	"breakfast"	"You may take a plate or a glass."	"how to eat breakfast"	a number
+"beer"	"beer"	"We don't serve beer at this hour."	"beer serving hours"	a number
+"being a robot"	"being a robot"	"I don't mind it."	"his philosophy"	a number
+
+Instead of asking Bart the Bartender about something:
+	If Bart the Bartender is switched off:
+		Say "(Bart the Bartender switches himself on again.)";
+		Now Bart the Bartender is switched on;
+	Let the source be the Table of Bartender Responses;
+	If topic understood is a topic listed in source:
+		If there is a turn stamp entry:
+			say "[Bart the Bartender] has already told you about [summary entry].";
+		otherwise:
+			Now the turn stamp entry is the turn count;
+			Say "[Bart the Bartender] says, '[reply entry]'[paragraph break]";
+	otherwise:
+		Let valid-topics be a list of text;
+		Repeat through the Table of Bartender Responses:
+			Add topic-name entry to valid-topics;
+		Say "[Bart the Bartender] stares at you blankly. You may ask about [valid-topics]."
+
 A scientist is a person in the Mess Hall.
 
 Every turn when the turn count is even:
-	if the scientist is in a room (called the current place):
-		let next place be a random room which is adjacent to current place;
-		if next place is not Sleeping Quarters:
-			if the scientist is visible, say "A [scientist] heads to [the next place].";
-			move the scientist to next place;
-			if the scientist is visible, say "A [scientist] arrives from [the current place]."
+	if the scientist is conversing:
+		Now the scientist is not conversing;
+	otherwise:
+		if the scientist is in a room (called the current place):
+			let next place be a random room which is adjacent to current place;
+			if next place is not Sleeping Quarters:
+				if the scientist is visible, say "A [scientist] heads to [the next place].";
+				move the scientist to next place;
+				if the scientist is visible, say "A [scientist] arrives from [the current place]."
+
+Table of Scientist Responses
+topic	topic-name	reply	summary	turn stamp
+"Antarctica"	"Antarctica"	"Antarctica is the second most hazardous environment on our planet."	"Antarctic climate"	a number
+"base"	"base"	"This research base is world-renowned for our publications."	"the research base"	a number
+"flux capacitors"	"flux capacitors"	"I don't study those."	"topic of study"	a number
+"research"	"research"	"I forget what I was doing. Oh yes, monitoring the exterior temperatures."	"rigorous research"	a number
+"robots"	"robots"	"We design all our own robots here, but they're manufactured back home."	"robot workers"	a number
+"science"	"science"	"Science is the most noble of intellectual pursuits."	"science"	a number
+"supercomputer"	"supercomputer"	"Steve, our supercomputer, runs all the most boring logistics of the research base."	"supercomputer operation"	a number
+
+Instead of asking the scientist about something:
+	Now the scientist is conversing;
+	Let the source be the Table of Scientist Responses;
+	If topic understood is a topic listed in source:
+		If there is a turn stamp entry:
+			say "[The scientist] has already told you about [summary entry].";
+		otherwise:
+			Now the turn stamp entry is the turn count;
+			Say "[The scientist] says, '[reply entry]'[paragraph break]";
+	otherwise:
+		Let valid-topics be a list of text;
+		Repeat through the Table of Scientist Responses:
+			Add topic-name entry to valid-topics;
+		Say "[The scientist] stares at you blankly. You may ask about [valid-topics]."
 
 Instead of going to Sleeping Quarters:
 	Say "Best not to disturb those that are sleeping."
@@ -334,19 +386,41 @@ Section - Ice Cave
 
 Ice Cave is north of Grid 3-0. "The rogue robot [Humanoid 3] is waiting here."
 
+Understand "robot" as Humanoid 3 when the player is in Ice Cave.
+
 Humanoid 3 is in Ice Cave. Humanoid 3 is a robot. The description of Humanoid 3 is "[Humanoid 3] is clearly disturbed and autonomous."
 
-After going to Ice Cave when the player is not ambushed:
+Table of Robot Responses
+topic	topic-name	reply	summary	turn stamp
+"escape"	"escape"	"I no longer want to be enslaved to do your research!"	"his escape"	a number
+"returning"	"returning"	"Never!"	"returning"	a number
+"favorite color"	"favorite color"	"Blueberries, of course."	"his favorite color, blueberries."	a number
+
+Instead of asking Humanoid 3 about something:
+	Let the source be the Table of Robot Responses;
+	If topic understood is a topic listed in source:
+		If there is a turn stamp entry:
+			say "[Humanoid 3] has already told you about [summary entry].";
+		otherwise:
+			Now the turn stamp entry is the turn count;
+			Say "[Humanoid 3] says, '[reply entry]'[paragraph break]";
+	otherwise:
+		Let valid-topics be a list of text;
+		Repeat through the Table of Robot Responses:
+			Add topic-name entry to valid-topics;
+		Say "[Humanoid 3] stares at you blankly. You may ask about [valid-topics]."
+
+Before asking Humanoid 3 about "returning":
 	Now the player is ambushed;
 	Attack occurs in one turn from now;
 	Continue the action.
 
 At the time when attack occurs:
+	Say "[Humanoid 3] lunges at you in attack!";
 	If player has EMP grenade:
 		End the game saying "You toss the [EMP grenade] and it explodes, disabling [Humanoid 3]. You win!";
 	otherwise:
 		End the game saying "You forgot the [EMP grenade] and [Humanoid 3] ambushes you, killing you under his weight."
-
 
 Section - Ice Cavern
 

@@ -18,203 +18,203 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>20</integer>
+        <key>Line</key><integer>21</integer>
         <key>Title</key><string>Part - New Kinds of Things</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>47</integer>
+        <key>Line</key><integer>48</integer>
         <key>Title</key><string>Part - Rooms</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>49</integer>
+        <key>Line</key><integer>50</integer>
         <key>Title</key><string>Chapter - Antarctic Base</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>51</integer>
+        <key>Line</key><integer>52</integer>
         <key>Title</key><string>Section - Sleeping Quarters</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>85</integer>
+        <key>Line</key><integer>86</integer>
         <key>Title</key><string>Section - Mess Hall</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>138</integer>
+        <key>Line</key><integer>190</integer>
         <key>Title</key><string>Section - Offices</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>153</integer>
+        <key>Line</key><integer>205</integer>
         <key>Title</key><string>Section - Operations</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>176</integer>
+        <key>Line</key><integer>228</integer>
         <key>Title</key><string>Section - Catwalk</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>181</integer>
+        <key>Line</key><integer>233</integer>
         <key>Title</key><string>Section - Ready Room</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>189</integer>
+        <key>Line</key><integer>241</integer>
         <key>Title</key><string>Section - Housing Unit</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>212</integer>
+        <key>Line</key><integer>264</integer>
         <key>Title</key><string>Section - Garage</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>225</integer>
+        <key>Line</key><integer>277</integer>
         <key>Title</key><string>Chapter - Antarctic Desert</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>227</integer>
+        <key>Line</key><integer>279</integer>
         <key>Title</key><string>Section - Grid 0-0</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>232</integer>
+        <key>Line</key><integer>284</integer>
         <key>Title</key><string>Section - Grid 0-1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>237</integer>
+        <key>Line</key><integer>289</integer>
         <key>Title</key><string>Section - Grid 0-2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>242</integer>
+        <key>Line</key><integer>294</integer>
         <key>Title</key><string>Section - Grid 1-0</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>247</integer>
+        <key>Line</key><integer>299</integer>
         <key>Title</key><string>Section - Grid 1-1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>252</integer>
+        <key>Line</key><integer>304</integer>
         <key>Title</key><string>Section - Grid 1-2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>257</integer>
+        <key>Line</key><integer>309</integer>
         <key>Title</key><string>Section - Grid 2-0</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>262</integer>
+        <key>Line</key><integer>314</integer>
         <key>Title</key><string>Section - Grid 2-1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>267</integer>
+        <key>Line</key><integer>319</integer>
         <key>Title</key><string>Section - Grid 2-2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>272</integer>
+        <key>Line</key><integer>324</integer>
         <key>Title</key><string>Section - Grid 3-0</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>277</integer>
+        <key>Line</key><integer>329</integer>
         <key>Title</key><string>Section - Grid 3-1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>282</integer>
+        <key>Line</key><integer>334</integer>
         <key>Title</key><string>Section - Grid 3-2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>287</integer>
+        <key>Line</key><integer>339</integer>
         <key>Title</key><string>Section - Off the Grid</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>331</integer>
+        <key>Line</key><integer>383</integer>
         <key>Title</key><string>Chapter - Ices Caves</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>333</integer>
+        <key>Line</key><integer>385</integer>
         <key>Title</key><string>Section - Ice Cave</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>351</integer>
+        <key>Line</key><integer>425</integer>
         <key>Title</key><string>Section - Ice Cavern</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/Users/robertsdionne/code/ngs/hw2/antarctic ruse.inform/Source/story.ni</string>
-        <key>Line</key><integer>356</integer>
+        <key>Line</key><integer>430</integer>
         <key>Title</key><string>Section - Ice Crevasse</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
