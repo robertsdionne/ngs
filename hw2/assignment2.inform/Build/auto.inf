@@ -4294,7 +4294,7 @@ Global lightflag = false;
 ];
 
 
-Constant REQUISITION_STACK_SIZE = 3*51;
+Constant REQUISITION_STACK_SIZE = 3*66;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -8305,7 +8305,7 @@ Constant START_ROOM_INIS = 2;
 Constant START_TIME_INIS = 3;
 Constant DONE_INIS = 4;
 
-Array InitialSituation --> selfobj I91_your_bunk_bed I90_sleeping_quarters 540 0;
+Array InitialSituation --> selfobj I92_your_bunk_bed I91_sleeping_quarters 540 0;
 
 
 
@@ -8601,61 +8601,67 @@ Constant p47_locked = locked;
 Constant p49_female = female;
 Constant p51_neuter = neuter;
 Constant p52_switched_on = on;
-Constant p56 = vector;
-Constant p57 = room_index;
-Constant p58 = door_dir;
-Constant p59 = door_to;
-Constant p60 = found_in;
-Constant p61 = absent;
-Constant p62 = list_together;
-Constant p63 = cap_short_name;
-Constant p64 = mark_as_room;
-Constant p65 = mark_as_thing;
-Constant p66 = component_parent;
-Constant p67 = component_child;
-Constant p68 = component_sibling;
-Constant p69 = regional_found_in;
-Constant p70 = IK1_Count;
-Constant p71 = IK1_Link;
-Constant p72 = IK2_Count;
-Constant p73 = IK2_Link;
-Constant p74 = IK3_Count;
-Constant p75 = IK3_Link;
-Constant p76 = IK4_Count;
-Constant p77 = IK4_Link;
-Constant p78 = IK5_Count;
-Constant p79 = IK5_Link;
-Constant p80 = IK6_Count;
-Constant p81 = IK6_Link;
-Constant p82 = IK7_Count;
-Constant p83 = IK7_Link;
-Constant p84 = IK8_Count;
-Constant p85 = IK8_Link;
-Constant p86 = IK9_Count;
-Constant p87 = IK9_Link;
-Constant p88 = IK10_Count;
-Constant p89 = IK10_Link;
-Constant p90 = IK11_Count;
-Constant p91 = IK11_Link;
-Constant p92 = IK12_Count;
-Constant p93 = IK12_Link;
-Constant p94 = IK13_Count;
-Constant p95 = IK13_Link;
-Constant p96 = IK14_Count;
-Constant p97 = IK14_Link;
-Constant p98 = IK15_Count;
-Constant p99 = IK15_Link;
-Constant p100 = IK16_Count;
-Constant p101 = IK16_Link;
-Constant p102 = IK17_Count;
-Constant p103 = IK17_Link;
-Constant p104 = IK18_Count;
-Constant p105 = IK18_Link;
-Constant p106 = KD_Count;
-Constant p107 = name;
-Constant p108 = parse_name;
-Constant p109 = action_bitmap;
+Constant p60 = vector;
+Constant p61 = room_index;
+Constant p62 = door_dir;
+Constant p63 = door_to;
+Constant p64 = found_in;
+Constant p65 = absent;
+Constant p66 = list_together;
+Constant p67 = cap_short_name;
+Constant p68 = mark_as_room;
+Constant p69 = mark_as_thing;
+Constant p70 = component_parent;
+Constant p71 = component_child;
+Constant p72 = component_sibling;
+Constant p73 = regional_found_in;
+Constant p74 = IK1_Count;
+Constant p75 = IK1_Link;
+Constant p76 = IK2_Count;
+Constant p77 = IK2_Link;
+Constant p78 = IK3_Count;
+Constant p79 = IK3_Link;
+Constant p80 = IK4_Count;
+Constant p81 = IK4_Link;
+Constant p82 = IK5_Count;
+Constant p83 = IK5_Link;
+Constant p84 = IK6_Count;
+Constant p85 = IK6_Link;
+Constant p86 = IK7_Count;
+Constant p87 = IK7_Link;
+Constant p88 = IK8_Count;
+Constant p89 = IK8_Link;
+Constant p90 = IK9_Count;
+Constant p91 = IK9_Link;
+Constant p92 = IK10_Count;
+Constant p93 = IK10_Link;
+Constant p94 = IK11_Count;
+Constant p95 = IK11_Link;
+Constant p96 = IK12_Count;
+Constant p97 = IK12_Link;
+Constant p98 = IK13_Count;
+Constant p99 = IK13_Link;
+Constant p100 = IK14_Count;
+Constant p101 = IK14_Link;
+Constant p102 = IK15_Count;
+Constant p103 = IK15_Link;
+Constant p104 = IK16_Count;
+Constant p105 = IK16_Link;
+Constant p106 = IK17_Count;
+Constant p107 = IK17_Link;
+Constant p108 = IK18_Count;
+Constant p109 = IK18_Link;
+Constant p110 = IK19_Count;
+Constant p111 = IK19_Link;
+Constant p112 = KD_Count;
+Constant p113 = name;
+Constant p114 = parse_name;
+Constant p115 = action_bitmap;
 
+Attribute p56_outdoors;
+Attribute p57_cold;
+Attribute p58_low_on_fuel;
+Attribute p59_out_of_fuel;
 Constant FBNA_PROP_NUMBER = p54_recurring;
 Object property_numberspace_forcer
     with p54_recurring false
@@ -8735,122 +8741,134 @@ Array property_metadata -->
     ! offset 137: property neuter
     "neuter" K8_person NULL
     ! offset 140: property on
-    "switched on" K13_device NULL
-    ! offset 143: property p54_recurring
+    "switched on" K13_device K18_robot NULL
+    ! offset 144: property p54_recurring
     "recurring" NULL
-    ! offset 145: property vector
+    ! offset 146: property p56_outdoors
+    "outdoors" K16_environment NULL
+    ! offset 149: property p57_cold
+    "cold" K8_person NULL
+    ! offset 152: property p58_low_on_fuel
+    "low-on-fuel" K14_vehicle NULL
+    ! offset 155: property p59_out_of_fuel
+    "out-of-fuel" K14_vehicle NULL
+    ! offset 158: property vector
     "<nameless>" NULL
-    ! offset 147: property room_index
+    ! offset 160: property room_index
     "<nameless>" NULL
-    ! offset 149: property door_dir
+    ! offset 162: property door_dir
     "<nameless>" NULL
-    ! offset 151: property door_to
+    ! offset 164: property door_to
     "<nameless>" K4_door NULL
-    ! offset 154: property found_in
+    ! offset 167: property found_in
     "<nameless>" NULL
-    ! offset 156: property absent
+    ! offset 169: property absent
     "<nameless>" NULL
-    ! offset 158: property list_together
+    ! offset 171: property list_together
     "<nameless>" NULL
-    ! offset 160: property cap_short_name
+    ! offset 173: property cap_short_name
     "<nameless>" NULL
-    ! offset 162: property mark_as_room
+    ! offset 175: property mark_as_room
     "<nameless>" NULL
-    ! offset 164: property mark_as_thing
+    ! offset 177: property mark_as_thing
     "<nameless>" NULL
-    ! offset 166: property component_parent
+    ! offset 179: property component_parent
     "<nameless>" NULL
-    ! offset 168: property component_child
+    ! offset 181: property component_child
     "<nameless>" NULL
-    ! offset 170: property component_sibling
+    ! offset 183: property component_sibling
     "<nameless>" NULL
-    ! offset 172: property regional_found_in
+    ! offset 185: property regional_found_in
     "<nameless>" NULL
-    ! offset 174: property IK1_Count
+    ! offset 187: property IK1_Count
     "<nameless>" NULL
-    ! offset 176: property IK1_Link
+    ! offset 189: property IK1_Link
     "<nameless>" NULL
-    ! offset 178: property IK2_Count
+    ! offset 191: property IK2_Count
     "<nameless>" NULL
-    ! offset 180: property IK2_Link
+    ! offset 193: property IK2_Link
     "<nameless>" NULL
-    ! offset 182: property IK3_Count
+    ! offset 195: property IK3_Count
     "<nameless>" NULL
-    ! offset 184: property IK3_Link
+    ! offset 197: property IK3_Link
     "<nameless>" NULL
-    ! offset 186: property IK4_Count
+    ! offset 199: property IK4_Count
     "<nameless>" NULL
-    ! offset 188: property IK4_Link
+    ! offset 201: property IK4_Link
     "<nameless>" NULL
-    ! offset 190: property IK5_Count
+    ! offset 203: property IK5_Count
     "<nameless>" NULL
-    ! offset 192: property IK5_Link
+    ! offset 205: property IK5_Link
     "<nameless>" NULL
-    ! offset 194: property IK6_Count
+    ! offset 207: property IK6_Count
     "<nameless>" NULL
-    ! offset 196: property IK6_Link
+    ! offset 209: property IK6_Link
     "<nameless>" NULL
-    ! offset 198: property IK7_Count
+    ! offset 211: property IK7_Count
     "<nameless>" NULL
-    ! offset 200: property IK7_Link
+    ! offset 213: property IK7_Link
     "<nameless>" NULL
-    ! offset 202: property IK8_Count
+    ! offset 215: property IK8_Count
     "<nameless>" NULL
-    ! offset 204: property IK8_Link
+    ! offset 217: property IK8_Link
     "<nameless>" NULL
-    ! offset 206: property IK9_Count
+    ! offset 219: property IK9_Count
     "<nameless>" NULL
-    ! offset 208: property IK9_Link
+    ! offset 221: property IK9_Link
     "<nameless>" NULL
-    ! offset 210: property IK10_Count
+    ! offset 223: property IK10_Count
     "<nameless>" NULL
-    ! offset 212: property IK10_Link
+    ! offset 225: property IK10_Link
     "<nameless>" NULL
-    ! offset 214: property IK11_Count
+    ! offset 227: property IK11_Count
     "<nameless>" NULL
-    ! offset 216: property IK11_Link
+    ! offset 229: property IK11_Link
     "<nameless>" NULL
-    ! offset 218: property IK12_Count
+    ! offset 231: property IK12_Count
     "<nameless>" NULL
-    ! offset 220: property IK12_Link
+    ! offset 233: property IK12_Link
     "<nameless>" NULL
-    ! offset 222: property IK13_Count
+    ! offset 235: property IK13_Count
     "<nameless>" NULL
-    ! offset 224: property IK13_Link
+    ! offset 237: property IK13_Link
     "<nameless>" NULL
-    ! offset 226: property IK14_Count
+    ! offset 239: property IK14_Count
     "<nameless>" NULL
-    ! offset 228: property IK14_Link
+    ! offset 241: property IK14_Link
     "<nameless>" NULL
-    ! offset 230: property IK15_Count
+    ! offset 243: property IK15_Count
     "<nameless>" NULL
-    ! offset 232: property IK15_Link
+    ! offset 245: property IK15_Link
     "<nameless>" NULL
-    ! offset 234: property IK16_Count
+    ! offset 247: property IK16_Count
     "<nameless>" NULL
-    ! offset 236: property IK16_Link
+    ! offset 249: property IK16_Link
     "<nameless>" NULL
-    ! offset 238: property IK17_Count
+    ! offset 251: property IK17_Count
     "<nameless>" NULL
-    ! offset 240: property IK17_Link
+    ! offset 253: property IK17_Link
     "<nameless>" NULL
-    ! offset 242: property IK18_Count
+    ! offset 255: property IK18_Count
     "<nameless>" NULL
-    ! offset 244: property IK18_Link
+    ! offset 257: property IK18_Link
     "<nameless>" NULL
-    ! offset 246: property KD_Count
+    ! offset 259: property IK19_Count
     "<nameless>" NULL
-    ! offset 248: property name
+    ! offset 261: property IK19_Link
     "<nameless>" NULL
-    ! offset 250: property parse_name
+    ! offset 263: property KD_Count
     "<nameless>" NULL
-    ! offset 252: property action_bitmap
+    ! offset 265: property name
+    "<nameless>" NULL
+    ! offset 267: property parse_name
+    "<nameless>" NULL
+    ! offset 269: property action_bitmap
     "<nameless>" NULL
 ;
 
 Constant attributed_property_offsets_SIZE 48;
 Array attributed_property_offsets --> attributed_property_offsets_SIZE;
-Constant valued_property_offsets_SIZE (100 + 110 + INDIV_PROP_START-48);
+Constant valued_property_offsets_SIZE (100 + 116 + INDIV_PROP_START-48);
 Array valued_property_offsets --> valued_property_offsets_SIZE;
 
 [ CreatePropertyOffsets i;
@@ -8893,61 +8911,67 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
     attributed_property_offsets-->female = 134;
     attributed_property_offsets-->neuter = 137;
     attributed_property_offsets-->on = 140;
-    valued_property_offsets-->p54_recurring = 143;
-    valued_property_offsets-->vector = 145;
-    valued_property_offsets-->room_index = 147;
-    valued_property_offsets-->door_dir = 149;
-    valued_property_offsets-->door_to = 151;
-    valued_property_offsets-->found_in = 154;
-    attributed_property_offsets-->absent = 156;
-    valued_property_offsets-->list_together = 158;
-    valued_property_offsets-->cap_short_name = 160;
-    attributed_property_offsets-->mark_as_room = 162;
-    attributed_property_offsets-->mark_as_thing = 164;
-    valued_property_offsets-->component_parent = 166;
-    valued_property_offsets-->component_child = 168;
-    valued_property_offsets-->component_sibling = 170;
-    valued_property_offsets-->regional_found_in = 172;
-    valued_property_offsets-->IK1_Count = 174;
-    valued_property_offsets-->IK1_Link = 176;
-    valued_property_offsets-->IK2_Count = 178;
-    valued_property_offsets-->IK2_Link = 180;
-    valued_property_offsets-->IK3_Count = 182;
-    valued_property_offsets-->IK3_Link = 184;
-    valued_property_offsets-->IK4_Count = 186;
-    valued_property_offsets-->IK4_Link = 188;
-    valued_property_offsets-->IK5_Count = 190;
-    valued_property_offsets-->IK5_Link = 192;
-    valued_property_offsets-->IK6_Count = 194;
-    valued_property_offsets-->IK6_Link = 196;
-    valued_property_offsets-->IK7_Count = 198;
-    valued_property_offsets-->IK7_Link = 200;
-    valued_property_offsets-->IK8_Count = 202;
-    valued_property_offsets-->IK8_Link = 204;
-    valued_property_offsets-->IK9_Count = 206;
-    valued_property_offsets-->IK9_Link = 208;
-    valued_property_offsets-->IK10_Count = 210;
-    valued_property_offsets-->IK10_Link = 212;
-    valued_property_offsets-->IK11_Count = 214;
-    valued_property_offsets-->IK11_Link = 216;
-    valued_property_offsets-->IK12_Count = 218;
-    valued_property_offsets-->IK12_Link = 220;
-    valued_property_offsets-->IK13_Count = 222;
-    valued_property_offsets-->IK13_Link = 224;
-    valued_property_offsets-->IK14_Count = 226;
-    valued_property_offsets-->IK14_Link = 228;
-    valued_property_offsets-->IK15_Count = 230;
-    valued_property_offsets-->IK15_Link = 232;
-    valued_property_offsets-->IK16_Count = 234;
-    valued_property_offsets-->IK16_Link = 236;
-    valued_property_offsets-->IK17_Count = 238;
-    valued_property_offsets-->IK17_Link = 240;
-    valued_property_offsets-->IK18_Count = 242;
-    valued_property_offsets-->IK18_Link = 244;
-    valued_property_offsets-->KD_Count = 246;
-    valued_property_offsets-->name = 248;
-    valued_property_offsets-->parse_name = 250;
-    valued_property_offsets-->action_bitmap = 252;
+    valued_property_offsets-->p54_recurring = 144;
+    attributed_property_offsets-->p56_outdoors = 146;
+    attributed_property_offsets-->p57_cold = 149;
+    attributed_property_offsets-->p58_low_on_fuel = 152;
+    attributed_property_offsets-->p59_out_of_fuel = 155;
+    valued_property_offsets-->vector = 158;
+    valued_property_offsets-->room_index = 160;
+    valued_property_offsets-->door_dir = 162;
+    valued_property_offsets-->door_to = 164;
+    valued_property_offsets-->found_in = 167;
+    attributed_property_offsets-->absent = 169;
+    valued_property_offsets-->list_together = 171;
+    valued_property_offsets-->cap_short_name = 173;
+    attributed_property_offsets-->mark_as_room = 175;
+    attributed_property_offsets-->mark_as_thing = 177;
+    valued_property_offsets-->component_parent = 179;
+    valued_property_offsets-->component_child = 181;
+    valued_property_offsets-->component_sibling = 183;
+    valued_property_offsets-->regional_found_in = 185;
+    valued_property_offsets-->IK1_Count = 187;
+    valued_property_offsets-->IK1_Link = 189;
+    valued_property_offsets-->IK2_Count = 191;
+    valued_property_offsets-->IK2_Link = 193;
+    valued_property_offsets-->IK3_Count = 195;
+    valued_property_offsets-->IK3_Link = 197;
+    valued_property_offsets-->IK4_Count = 199;
+    valued_property_offsets-->IK4_Link = 201;
+    valued_property_offsets-->IK5_Count = 203;
+    valued_property_offsets-->IK5_Link = 205;
+    valued_property_offsets-->IK6_Count = 207;
+    valued_property_offsets-->IK6_Link = 209;
+    valued_property_offsets-->IK7_Count = 211;
+    valued_property_offsets-->IK7_Link = 213;
+    valued_property_offsets-->IK8_Count = 215;
+    valued_property_offsets-->IK8_Link = 217;
+    valued_property_offsets-->IK9_Count = 219;
+    valued_property_offsets-->IK9_Link = 221;
+    valued_property_offsets-->IK10_Count = 223;
+    valued_property_offsets-->IK10_Link = 225;
+    valued_property_offsets-->IK11_Count = 227;
+    valued_property_offsets-->IK11_Link = 229;
+    valued_property_offsets-->IK12_Count = 231;
+    valued_property_offsets-->IK12_Link = 233;
+    valued_property_offsets-->IK13_Count = 235;
+    valued_property_offsets-->IK13_Link = 237;
+    valued_property_offsets-->IK14_Count = 239;
+    valued_property_offsets-->IK14_Link = 241;
+    valued_property_offsets-->IK15_Count = 243;
+    valued_property_offsets-->IK15_Link = 245;
+    valued_property_offsets-->IK16_Count = 247;
+    valued_property_offsets-->IK16_Link = 249;
+    valued_property_offsets-->IK17_Count = 251;
+    valued_property_offsets-->IK17_Link = 253;
+    valued_property_offsets-->IK18_Count = 255;
+    valued_property_offsets-->IK18_Link = 257;
+    valued_property_offsets-->IK19_Count = 259;
+    valued_property_offsets-->IK19_Link = 261;
+    valued_property_offsets-->KD_Count = 263;
+    valued_property_offsets-->name = 265;
+    valued_property_offsets-->parse_name = 267;
+    valued_property_offsets-->action_bitmap = 269;
 ];
 
 
@@ -9292,9 +9316,10 @@ Constant REL_BLOCK_HEADER ($100*6 + $$1101)*$10000;
     if (k == K13_device) print "device";
     if (k == K14_vehicle) print "vehicle";
     if (k == K15_player_s_holdall) print "player's holdall";
-    if (k == K16_file) print "file";
-    if (k == K17_robot) print "robot";
-    if (k == K18_drink) print "drink";
+    if (k == K16_environment) print "environment";
+    if (k == K17_file) print "file";
+    if (k == K18_robot) print "robot";
+    if (k == K19_drink) print "drink";
 ];
 
 Constant RBNO_0 = "allow access";
@@ -9316,25 +9341,26 @@ Constant RBNO_12 = "it does";
 
 
 
-Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person (2) K9_region (0) K10_man (8) K11_woman (8) K12_animal (8) K13_device (2) K14_vehicle (5) K15_player_s_holdall (5) K16_file (2) K17_robot (8) K18_drink (2) ;
-Constant IK1_First = I90_sleeping_quarters;
-Constant IK2_First = I91_your_bunk_bed;
+Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person (2) K9_region (0) K10_man (8) K11_woman (8) K12_animal (8) K13_device (2) K14_vehicle (5) K15_player_s_holdall (5) K16_environment (1) K17_file (2) K18_robot (8) K19_drink (2) ;
+Constant IK1_First = I91_sleeping_quarters;
+Constant IK2_First = I92_your_bunk_bed;
 Constant IK3_First = I46_north;
-Constant IK4_First = I100_hatch;
-Constant IK5_First = I107_prepared_plate;
-Constant IK6_First = I91_your_bunk_bed;
+Constant IK4_First = I101_hatch;
+Constant IK5_First = I108_prepared_plate;
+Constant IK6_First = I92_your_bunk_bed;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = nothing;
 Constant IK10_First = nothing;
 Constant IK11_First = nothing;
 Constant IK12_First = nothing;
-Constant IK13_First = I96_alarm_clock;
-Constant IK14_First = nothing;
+Constant IK13_First = I97_alarm_clock;
+Constant IK14_First = I127_snowcat;
 Constant IK15_First = nothing;
-Constant IK16_First = I127_robots_file;
-Constant IK17_First = I115_bart_the_bartender;
-Constant IK18_First = I114_orange_juice;
+Constant IK16_First = I132_grid_0_0;
+Constant IK17_First = I130_robots_file;
+Constant IK18_First = I116_bart_the_bartender;
+Constant IK19_First = I115_orange_juice;
 Constant No_Directions = 12;
 ! Table of direction object alias constants:
 Constant DirectionObject_0 = I46_north;
@@ -9350,14 +9376,28 @@ Constant DirectionObject_9 = I55_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- I100_hatch 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I90_sleeping_quarters
- 0 0 0 I100_hatch 0 0 I125_offices 0 0 0 0 0 ! Exits from: I101_mess_hall
- 0 0 0 0 0 0 0 I118_catwalk 0 0 0 0 ! Exits from: I117_housing_unit
- 0 0 0 I125_offices 0 0 I117_housing_unit I124_garage 0 0 0 0 ! Exits from: I118_catwalk
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I122_ice_cave
- 0 0 0 0 0 0 I118_catwalk 0 0 0 0 0 ! Exits from: I124_garage
- I118_catwalk 0 0 0 0 0 I128_operations I101_mess_hall 0 0 0 0 ! Exits from: I125_offices
- 0 0 0 0 0 0 0 I125_offices 0 0 0 0 ! Exits from: I128_operations
+ I101_hatch 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I91_sleeping_quarters
+ 0 0 0 I101_hatch 0 0 I128_offices 0 0 0 0 0 ! Exits from: I102_mess_hall
+ 0 0 0 0 0 0 I119_catwalk I120_housing_unit 0 0 0 0 ! Exits from: I118_ready_room
+ 0 0 0 I128_offices 0 0 I126_garage I118_ready_room 0 0 0 0 ! Exits from: I119_catwalk
+ 0 0 0 0 0 0 I118_ready_room 0 0 0 0 0 ! Exits from: I120_housing_unit
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I124_ice_cave
+ I133_grid_0_1 0 0 0 0 0 0 I119_catwalk 0 0 0 0 ! Exits from: I126_garage
+ I119_catwalk 0 0 0 0 0 I131_operations I102_mess_hall 0 0 0 0 ! Exits from: I128_offices
+ 0 0 0 0 0 0 0 I128_offices 0 0 0 0 ! Exits from: I131_operations
+ I135_grid_1_0 0 0 0 0 0 I133_grid_0_1 I144_off_the_grid 0 0 0 0 ! Exits from: I132_grid_0_0
+ 0 0 0 I126_garage 0 0 I134_grid_0_2 I132_grid_0_0 0 0 0 0 ! Exits from: I133_grid_0_1
+ I137_grid_1_2 0 0 I144_off_the_grid 0 0 I144_off_the_grid I133_grid_0_1 0 0 0 0 ! Exits from: I134_grid_0_2
+ I138_grid_2_0 0 0 I132_grid_0_0 0 0 I136_grid_1_1 I144_off_the_grid 0 0 0 0 ! Exits from: I135_grid_1_0
+ I139_grid_2_1 0 0 0 0 0 I137_grid_1_2 I135_grid_1_0 0 0 0 0 ! Exits from: I136_grid_1_1
+ I140_grid_2_2 0 0 I134_grid_0_2 0 0 I144_off_the_grid I136_grid_1_1 0 0 0 0 ! Exits from: I137_grid_1_2
+ I141_grid_3_0 0 0 I135_grid_1_0 0 0 I139_grid_2_1 I144_off_the_grid 0 0 0 0 ! Exits from: I138_grid_2_0
+ I142_grid_3_1 0 0 I136_grid_1_1 0 0 I140_grid_2_2 I138_grid_2_0 0 0 0 0 ! Exits from: I139_grid_2_1
+ I143_grid_3_2 0 0 I137_grid_1_2 0 0 I144_off_the_grid I139_grid_2_1 0 0 0 0 ! Exits from: I140_grid_2_2
+ 0 0 0 I138_grid_2_0 0 0 I142_grid_3_1 0 0 0 0 0 ! Exits from: I141_grid_3_0
+ 0 0 0 I139_grid_2_1 0 0 I143_grid_3_2 I141_grid_3_0 0 0 0 0 ! Exits from: I142_grid_3_1
+ 0 0 0 I140_grid_2_2 0 0 0 I142_grid_3_1 0 0 0 0 ! Exits from: I143_grid_3_2
+ I144_off_the_grid 0 0 I144_off_the_grid 0 0 I144_off_the_grid I144_off_the_grid 0 0 0 0 ! Exits from: I144_off_the_grid
 ;
 
 Class VPH_Class;
@@ -9386,6 +9426,11 @@ Class K1_room
     has ~privately_named
     has light
     has ~visited
+;
+
+Class K16_environment 
+    class K1_room
+    has p56_outdoors
 ;
 
 Class K2_thing 
@@ -9431,6 +9476,7 @@ Class K8_person
     with capacity 100
     has ~female
     has ~neuter
+    has ~p57_cold
 ;
 
 Class K10_man 
@@ -9452,10 +9498,11 @@ Class K12_animal
     with plural "animals"
 ;
 
-Class K17_robot 
+Class K18_robot 
     class K8_person
     with plural "robots"
     has neuter
+    has ~on
 ;
 
 Class K4_door 
@@ -9491,6 +9538,8 @@ Class K14_vehicle
     with plural "vehicles"
     has static
     has enterable
+    has ~p58_low_on_fuel
+    has ~p59_out_of_fuel
 ;
 
 Class K15_player_s_holdall 
@@ -9515,12 +9564,12 @@ Class K13_device
     has ~on
 ;
 
-Class K16_file 
+Class K17_file 
     class K2_thing
     with plural "files"
 ;
 
-Class K18_drink 
+Class K19_drink 
     class K2_thing
     with plural "drinks"
 ;
@@ -9722,7 +9771,7 @@ Object out_obj "" Compass
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I90_sleeping_quarters ""
+Object I91_sleeping_quarters ""
     class K1_room
     with short_name "Sleeping Quarters"
     with description text_routine_0
@@ -9733,12 +9782,12 @@ Object I90_sleeping_quarters ""
     with cap_short_name "Sleeping Quarters"
     has mark_as_room
     with IK1_Count 0
-    with IK1_Link I101_mess_hall
+    with IK1_Link I102_mess_hall
     with KD_Count 1
     with name 'sleeping' 'quarters' 
 ;
 
-Object -> I91_your_bunk_bed ""
+Object -> I92_your_bunk_bed ""
     class K6_supporter
     with short_name "your bunk bed"
     has proper
@@ -9749,7 +9798,7 @@ Object -> I91_your_bunk_bed ""
     with IK2_Count 1
     with IK2_Link selfobj
     with IK6_Count 0
-    with IK6_Link I94_other_bunks
+    with IK6_Link I95_other_bunks
     with KD_Count 6
     with name 'my' 'bunk' 'bed' 
     with action_bitmap 0 0 0 0 0 0 
@@ -9769,15 +9818,15 @@ Object -> -> selfobj ""
     with cap_short_name "Yourself"
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I92_copy_of_research_robotic
+    with IK2_Link I93_copy_of_research_robotic
     with IK8_Count 0
-    with IK8_Link I95_sleeping_crew
+    with IK8_Link I96_sleeping_crew
     with KD_Count 8
     with name 'yourself' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I92_copy_of_research_robotic ""
+Object -> -> I93_copy_of_research_robotic ""
     class K2_thing
     with short_name "copy of Research Robotics"
     with description SC_5
@@ -9785,14 +9834,14 @@ Object -> -> I92_copy_of_research_robotic ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 2
-    with IK2_Link I93_grey_fatigues
+    with IK2_Link I94_grey_fatigues
     with KD_Count 2
     with name 'copy' 'of' 'research' 'robotics' 'magazine' 
     with parse_name Parse_Name_GV95
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I93_grey_fatigues ""
+Object -> -> I94_grey_fatigues ""
     class K2_thing
     with short_name "grey fatigues"
     has pluralname
@@ -9801,14 +9850,14 @@ Object -> -> I93_grey_fatigues ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 3
-    with IK2_Link I94_other_bunks
+    with IK2_Link I95_other_bunks
     with KD_Count 2
     with name 'grey' 'fatigues' 'clothes' 
     with parse_name Parse_Name_GV96
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I94_other_bunks ""
+Object -> I95_other_bunks ""
     class K6_supporter
     with short_name "other bunks"
     has pluralname
@@ -9818,15 +9867,15 @@ Object -> I94_other_bunks ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 4
-    with IK2_Link I95_sleeping_crew
+    with IK2_Link I96_sleeping_crew
     with IK6_Count 1
-    with IK6_Link I97_your_night_stand
+    with IK6_Link I98_your_night_stand
     with KD_Count 6
     with name 'other' 'bunks' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I95_sleeping_crew ""
+Object -> -> I96_sleeping_crew ""
     class K8_person
     with short_name "sleeping crew"
     with description SC_6
@@ -9835,15 +9884,15 @@ Object -> -> I95_sleeping_crew ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 5
-    with IK2_Link I97_your_night_stand
+    with IK2_Link I98_your_night_stand
     with IK8_Count 1
-    with IK8_Link I115_bart_the_bartender
+    with IK8_Link I116_bart_the_bartender
     with KD_Count 8
     with name 'sleeping' 'crew' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I97_your_night_stand ""
+Object -> I98_your_night_stand ""
     class K6_supporter
     with short_name "your night stand"
     has proper
@@ -9854,15 +9903,15 @@ Object -> I97_your_night_stand ""
     with cap_short_name "Your night stand"
     has mark_as_thing
     with IK2_Count 7
-    with IK2_Link I96_alarm_clock
+    with IK2_Link I97_alarm_clock
     with IK6_Count 2
-    with IK6_Link I102_bar
+    with IK6_Link I103_bar
     with KD_Count 6
     with name 'my' 'night' 'stand' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I96_alarm_clock ""
+Object -> -> I97_alarm_clock ""
     class K13_device
     with short_name "alarm clock"
     with description text_routine_1
@@ -9872,7 +9921,7 @@ Object -> -> I96_alarm_clock ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 6
-    with IK2_Link I98_keycard
+    with IK2_Link I99_keycard
     with IK13_Count 0
     with IK13_Link nothing
     with KD_Count 13
@@ -9880,48 +9929,48 @@ Object -> -> I96_alarm_clock ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I98_keycard ""
+Object -> -> I99_keycard ""
     class K2_thing
     with short_name "keycard"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 8
-    with IK2_Link I99_mobile_phone
+    with IK2_Link I100_mobile_phone
     with KD_Count 2
     with name 'keycard' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I99_mobile_phone ""
+Object -> -> I100_mobile_phone ""
     class K2_thing
     with short_name "mobile phone"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 9
-    with IK2_Link I100_hatch
+    with IK2_Link I101_hatch
     with KD_Count 2
     with name 'mobile' 'phone' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I100_hatch ""
+Object I101_hatch ""
     class K4_door
     with short_name "hatch"
     has scenery
     with vector 0
     with door_dir [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I101_mess_hall) return I49_south; return I46_north; ],
+            if (loc == I102_mess_hall) return I49_south; return I46_north; ],
     with door_to [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I101_mess_hall) return I90_sleeping_quarters; return I101_mess_hall; ],
-    with found_in I101_mess_hall I90_sleeping_quarters
+            if (loc == I102_mess_hall) return I91_sleeping_quarters; return I102_mess_hall; ],
+    with found_in I102_mess_hall I91_sleeping_quarters
     with list_together 0
     has mark_as_thing
     with IK2_Count 10
-    with IK2_Link I102_bar
+    with IK2_Link I103_bar
     with IK4_Count 0
     with IK4_Link nothing
     with KD_Count 4
@@ -9929,7 +9978,7 @@ Object I100_hatch ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I101_mess_hall ""
+Object I102_mess_hall ""
     class K1_room
     with short_name "Mess Hall"
     with description text_routine_2
@@ -9940,12 +9989,12 @@ Object I101_mess_hall ""
     with cap_short_name "Mess Hall"
     has mark_as_room
     with IK1_Count 1
-    with IK1_Link I117_housing_unit
+    with IK1_Link I118_ready_room
     with KD_Count 1
     with name 'mess' 'hall' 
 ;
 
-Object -> I102_bar ""
+Object -> I103_bar ""
     class K6_supporter
     with short_name "bar"
     has static
@@ -9954,7 +10003,7 @@ Object -> I102_bar ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 11
-    with IK2_Link I103_prepared_plates
+    with IK2_Link I104_prepared_plates
     with IK6_Count 3
     with IK6_Link nothing
     with KD_Count 6
@@ -9962,7 +10011,7 @@ Object -> I102_bar ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I103_prepared_plates ""
+Object -> -> I104_prepared_plates ""
     class K2_thing
     with short_name "prepared plates"
     has proper
@@ -9971,14 +10020,14 @@ Object -> -> I103_prepared_plates ""
     with cap_short_name "Prepared plates"
     has mark_as_thing
     with IK2_Count 12
-    with IK2_Link I104_pint_glasses
+    with IK2_Link I105_pint_glasses
     with KD_Count 2
     with name 'prepared' 'plates' 
     with parse_name Parse_Name_GV97
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I104_pint_glasses ""
+Object -> -> I105_pint_glasses ""
     class K2_thing
     with short_name "pint glasses"
     has proper
@@ -9987,14 +10036,14 @@ Object -> -> I104_pint_glasses ""
     with cap_short_name "Pint glasses"
     has mark_as_thing
     with IK2_Count 13
-    with IK2_Link I105_beer_taps
+    with IK2_Link I106_beer_taps
     with KD_Count 2
     with name 'pint' 'glasses' 
     with parse_name Parse_Name_GV98
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I105_beer_taps ""
+Object -> -> I106_beer_taps ""
     class K2_thing
     with short_name "beer taps"
     has pluralname
@@ -10003,13 +10052,13 @@ Object -> -> I105_beer_taps ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 14
-    with IK2_Link I106_stovetop
+    with IK2_Link I107_stovetop
     with KD_Count 2
     with name 'beer' 'taps' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I106_stovetop ""
+Object -> -> I107_stovetop ""
     class K2_thing
     with short_name "stovetop"
     has static
@@ -10018,63 +10067,64 @@ Object -> -> I106_stovetop ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 15
-    with IK2_Link I115_bart_the_bartender
+    with IK2_Link I116_bart_the_bartender
     with KD_Count 2
     with name 'stovetop' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I115_bart_the_bartender ""
-    class K17_robot
+Object -> I116_bart_the_bartender ""
+    class K18_robot
     with short_name "Bart the Bartender"
     with description SC_7
     has proper
+    has on
     with vector 0
     with list_together 0
     with cap_short_name "Bart the Bartender"
     has mark_as_thing
     with IK2_Count 23
-    with IK2_Link I116_scientist
+    with IK2_Link I117_scientist
     with IK8_Count 2
-    with IK8_Link I116_scientist
-    with IK17_Count 0
-    with IK17_Link I119_humanoid_1
-    with KD_Count 17
+    with IK8_Link I117_scientist
+    with IK18_Count 0
+    with IK18_Link I121_humanoid_1
+    with KD_Count 18
     with name 'bart' 'the' 'bartender' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I116_scientist ""
+Object -> I117_scientist ""
     class K8_person
     with short_name "scientist"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 24
-    with IK2_Link I107_prepared_plate
+    with IK2_Link I108_prepared_plate
     with IK8_Count 3
-    with IK8_Link I119_humanoid_1
+    with IK8_Link I121_humanoid_1
     with KD_Count 8
     with name 'scientist' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I107_prepared_plate ""
+Object I108_prepared_plate ""
     class K5_container
     with short_name "prepared plate"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 16
-    with IK2_Link I109_egg
+    with IK2_Link I110_egg
     with IK5_Count 0
-    with IK5_Link I108_pint_glass
+    with IK5_Link I109_pint_glass
     with KD_Count 5
     with name 'prepared' 'plate' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I109_egg ""
+Object -> I110_egg ""
     class K2_thing
     with short_name "egg"
     has edible
@@ -10082,13 +10132,13 @@ Object -> I109_egg ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 18
-    with IK2_Link I110_pancake
+    with IK2_Link I111_pancake
     with KD_Count 2
     with name 'egg' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I110_pancake ""
+Object -> I111_pancake ""
     class K2_thing
     with short_name "pancake"
     has edible
@@ -10096,13 +10146,13 @@ Object -> I110_pancake ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 19
-    with IK2_Link I111_slice_of_bacon
+    with IK2_Link I112_slice_of_bacon
     with KD_Count 2
     with name 'pancake' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I111_slice_of_bacon ""
+Object -> I112_slice_of_bacon ""
     class K2_thing
     with short_name "slice of bacon"
     has edible
@@ -10110,13 +10160,13 @@ Object -> I111_slice_of_bacon ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 20
-    with IK2_Link I112_slice_of_toast
+    with IK2_Link I113_slice_of_toast
     with KD_Count 2
     with name 'slice' 'of' 'bacon' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I112_slice_of_toast ""
+Object -> I113_slice_of_toast ""
     class K2_thing
     with short_name "slice of toast"
     has edible
@@ -10124,116 +10174,59 @@ Object -> I112_slice_of_toast ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 21
-    with IK2_Link I108_pint_glass
+    with IK2_Link I109_pint_glass
     with KD_Count 2
     with name 'slice' 'of' 'toast' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I108_pint_glass ""
+Object I109_pint_glass ""
     class K5_container
     with short_name "pint glass"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 17
-    with IK2_Link I114_orange_juice
+    with IK2_Link I115_orange_juice
     with IK5_Count 1
-    with IK5_Link I126_computer_terminal
+    with IK5_Link I127_snowcat
     with KD_Count 5
     with name 'pint' 'glass' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I114_orange_juice ""
-    class K18_drink
+Object -> I115_orange_juice ""
+    class K19_drink
     with short_name "orange juice"
     has pluralname
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 22
-    with IK2_Link I119_humanoid_1
-    with IK18_Count 0
-    with IK18_Link nothing
-    with KD_Count 18
+    with IK2_Link I121_humanoid_1
+    with IK19_Count 0
+    with IK19_Link nothing
+    with KD_Count 19
     with name 'orange' 'juice' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I117_housing_unit ""
+Object I118_ready_room ""
     class K1_room
-    with short_name "Housing Unit"
+    with short_name "Ready Room"
     has proper
     with vector 0
     with room_index -1
     with list_together 0
-    with cap_short_name "Housing Unit"
+    with cap_short_name "Ready Room"
     has mark_as_room
     with IK1_Count 2
-    with IK1_Link I118_catwalk
+    with IK1_Link I119_catwalk
     with KD_Count 1
-    with name 'housing' 'unit' 
+    with name 'ready' 'room' 
 ;
 
-Object -> I119_humanoid_1 ""
-    class K17_robot
-    with short_name "Humanoid 1"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Humanoid 1"
-    has mark_as_thing
-    with IK2_Count 25
-    with IK2_Link I120_humanoid_2
-    with IK8_Count 4
-    with IK8_Link I120_humanoid_2
-    with IK17_Count 1
-    with IK17_Link I120_humanoid_2
-    with KD_Count 17
-    with name 'humanoid' '1//' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I120_humanoid_2 ""
-    class K17_robot
-    with short_name "Humanoid 2"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Humanoid 2"
-    has mark_as_thing
-    with IK2_Count 26
-    with IK2_Link I123_humanoid_4
-    with IK8_Count 5
-    with IK8_Link I123_humanoid_4
-    with IK17_Count 2
-    with IK17_Link I123_humanoid_4
-    with KD_Count 17
-    with name 'humanoid' '2//' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I123_humanoid_4 ""
-    class K17_robot
-    with short_name "Humanoid 4"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Humanoid 4"
-    has mark_as_thing
-    with IK2_Count 28
-    with IK2_Link I121_humanoid_3
-    with IK8_Count 7
-    with IK8_Link I121_humanoid_3
-    with IK17_Count 4
-    with IK17_Link I121_humanoid_3
-    with KD_Count 17
-    with name 'humanoid' '4//' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object I118_catwalk ""
+Object I119_catwalk ""
     class K1_room
     with short_name "Catwalk"
     has proper
@@ -10243,12 +10236,86 @@ Object I118_catwalk ""
     with cap_short_name "Catwalk"
     has mark_as_room
     with IK1_Count 3
-    with IK1_Link I122_ice_cave
+    with IK1_Link I120_housing_unit
     with KD_Count 1
     with name 'catwalk' 
 ;
 
-Object I122_ice_cave ""
+Object I120_housing_unit ""
+    class K1_room
+    with short_name "Housing Unit"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Housing Unit"
+    has mark_as_room
+    with IK1_Count 4
+    with IK1_Link I124_ice_cave
+    with KD_Count 1
+    with name 'housing' 'unit' 
+;
+
+Object -> I121_humanoid_1 ""
+    class K18_robot
+    with short_name "Humanoid 1"
+    with description SC_8
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Humanoid 1"
+    has mark_as_thing
+    with IK2_Count 25
+    with IK2_Link I122_humanoid_2
+    with IK8_Count 4
+    with IK8_Link I122_humanoid_2
+    with IK18_Count 1
+    with IK18_Link I122_humanoid_2
+    with KD_Count 18
+    with name 'humanoid' '1//' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I122_humanoid_2 ""
+    class K18_robot
+    with short_name "Humanoid 2"
+    with description SC_9
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Humanoid 2"
+    has mark_as_thing
+    with IK2_Count 26
+    with IK2_Link I125_humanoid_4
+    with IK8_Count 5
+    with IK8_Link I125_humanoid_4
+    with IK18_Count 2
+    with IK18_Link I125_humanoid_4
+    with KD_Count 18
+    with name 'humanoid' '2//' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I125_humanoid_4 ""
+    class K18_robot
+    with short_name "Humanoid 4"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Humanoid 4"
+    has mark_as_thing
+    with IK2_Count 28
+    with IK2_Link I123_humanoid_3
+    with IK8_Count 7
+    with IK8_Link I123_humanoid_3
+    with IK18_Count 4
+    with IK18_Link I123_humanoid_3
+    with KD_Count 18
+    with name 'humanoid' '4//' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I124_ice_cave ""
     class K1_room
     with short_name "Ice Cave"
     has proper
@@ -10257,32 +10324,33 @@ Object I122_ice_cave ""
     with list_together 0
     with cap_short_name "Ice Cave"
     has mark_as_room
-    with IK1_Count 4
-    with IK1_Link I124_garage
+    with IK1_Count 5
+    with IK1_Link I126_garage
     with KD_Count 1
     with name 'ice' 'cave' 
 ;
 
-Object -> I121_humanoid_3 ""
-    class K17_robot
+Object -> I123_humanoid_3 ""
+    class K18_robot
     with short_name "Humanoid 3"
+    with description SC_10
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Humanoid 3"
     has mark_as_thing
     with IK2_Count 27
-    with IK2_Link I126_computer_terminal
+    with IK2_Link I127_snowcat
     with IK8_Count 6
     with IK8_Link nothing
-    with IK17_Count 3
-    with IK17_Link nothing
-    with KD_Count 17
+    with IK18_Count 3
+    with IK18_Link nothing
+    with KD_Count 18
     with name 'humanoid' '3//' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I124_garage ""
+Object I126_garage ""
     class K1_room
     with short_name "Garage"
     has proper
@@ -10291,46 +10359,67 @@ Object I124_garage ""
     with list_together 0
     with cap_short_name "Garage"
     has mark_as_room
-    with IK1_Count 5
-    with IK1_Link I125_offices
+    with IK1_Count 6
+    with IK1_Link I128_offices
     with KD_Count 1
     with name 'garage' 
 ;
 
-Object I125_offices ""
+Object -> I127_snowcat ""
+    class K14_vehicle
+    with short_name "SnowCat"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "SnowCat"
+    has mark_as_thing
+    with IK2_Count 29
+    with IK2_Link I129_computer_terminal
+    with IK5_Count 2
+    with IK5_Link I129_computer_terminal
+    with IK14_Count 0
+    with IK14_Link nothing
+    with KD_Count 14
+    with name 'snowcat' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I128_offices ""
     class K1_room
     with short_name "Offices"
-    with description SC_8
+    with description SC_11
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Offices"
     has mark_as_room
-    with IK1_Count 6
-    with IK1_Link I128_operations
+    with IK1_Count 7
+    with IK1_Link I131_operations
     with KD_Count 1
     with name 'offices' 
 ;
 
-Object -> I126_computer_terminal ""
+Object -> I129_computer_terminal ""
     class K5_container
     with short_name "computer terminal"
     has static
+    has ~open
+    has openable
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 29
-    with IK2_Link I127_robots_file
-    with IK5_Count 2
+    with IK2_Count 30
+    with IK2_Link I130_robots_file
+    with IK5_Count 3
     with IK5_Link nothing
     with KD_Count 5
     with name 'computer' 'terminal' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I127_robots_file ""
-    class K16_file
+Object -> -> I130_robots_file ""
+    class K17_file
     with short_name "ROBOTS file"
     with description text_routine_3
     has proper
@@ -10339,16 +10428,16 @@ Object -> -> I127_robots_file ""
     with list_together 0
     with cap_short_name "ROBOTS file"
     has mark_as_thing
-    with IK2_Count 30
+    with IK2_Count 31
     with IK2_Link nothing
-    with IK16_Count 0
-    with IK16_Link nothing
-    with KD_Count 16
+    with IK17_Count 0
+    with IK17_Link nothing
+    with KD_Count 17
     with name 'robots' 'file' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I128_operations ""
+Object I131_operations ""
     class K1_room
     with short_name "Operations"
     has proper
@@ -10357,10 +10446,232 @@ Object I128_operations ""
     with list_together 0
     with cap_short_name "Operations"
     has mark_as_room
-    with IK1_Count 7
-    with IK1_Link nothing
+    with IK1_Count 8
+    with IK1_Link I132_grid_0_0
     with KD_Count 1
     with name 'operations' 
+;
+
+Object I132_grid_0_0 ""
+    class K16_environment
+    with short_name "Grid 0-0"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 0-0"
+    has mark_as_room
+    with IK1_Count 9
+    with IK1_Link I133_grid_0_1
+    with IK16_Count 0
+    with IK16_Link I133_grid_0_1
+    with KD_Count 16
+    with name 'grid' '0-0' 
+;
+
+Object I133_grid_0_1 ""
+    class K16_environment
+    with short_name "Grid 0-1"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 0-1"
+    has mark_as_room
+    with IK1_Count 10
+    with IK1_Link I134_grid_0_2
+    with IK16_Count 1
+    with IK16_Link I134_grid_0_2
+    with KD_Count 16
+    with name 'grid' '0-1' 
+;
+
+Object I134_grid_0_2 ""
+    class K16_environment
+    with short_name "Grid 0-2"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 0-2"
+    has mark_as_room
+    with IK1_Count 11
+    with IK1_Link I135_grid_1_0
+    with IK16_Count 2
+    with IK16_Link I135_grid_1_0
+    with KD_Count 16
+    with name 'grid' '0-2' 
+;
+
+Object I135_grid_1_0 ""
+    class K16_environment
+    with short_name "Grid 1-0"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 1-0"
+    has mark_as_room
+    with IK1_Count 12
+    with IK1_Link I136_grid_1_1
+    with IK16_Count 3
+    with IK16_Link I136_grid_1_1
+    with KD_Count 16
+    with name 'grid' '1-0' 
+;
+
+Object I136_grid_1_1 ""
+    class K16_environment
+    with short_name "Grid 1-1"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 1-1"
+    has mark_as_room
+    with IK1_Count 13
+    with IK1_Link I137_grid_1_2
+    with IK16_Count 4
+    with IK16_Link I137_grid_1_2
+    with KD_Count 16
+    with name 'grid' '1-1' 
+;
+
+Object I137_grid_1_2 ""
+    class K16_environment
+    with short_name "Grid 1-2"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 1-2"
+    has mark_as_room
+    with IK1_Count 14
+    with IK1_Link I138_grid_2_0
+    with IK16_Count 5
+    with IK16_Link I138_grid_2_0
+    with KD_Count 16
+    with name 'grid' '1-2' 
+;
+
+Object I138_grid_2_0 ""
+    class K16_environment
+    with short_name "Grid 2-0"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 2-0"
+    has mark_as_room
+    with IK1_Count 15
+    with IK1_Link I139_grid_2_1
+    with IK16_Count 6
+    with IK16_Link I139_grid_2_1
+    with KD_Count 16
+    with name 'grid' '2-0' 
+;
+
+Object I139_grid_2_1 ""
+    class K16_environment
+    with short_name "Grid 2-1"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 2-1"
+    has mark_as_room
+    with IK1_Count 16
+    with IK1_Link I140_grid_2_2
+    with IK16_Count 7
+    with IK16_Link I140_grid_2_2
+    with KD_Count 16
+    with name 'grid' '2-1' 
+;
+
+Object I140_grid_2_2 ""
+    class K16_environment
+    with short_name "Grid 2-2"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 2-2"
+    has mark_as_room
+    with IK1_Count 17
+    with IK1_Link I141_grid_3_0
+    with IK16_Count 8
+    with IK16_Link I141_grid_3_0
+    with KD_Count 16
+    with name 'grid' '2-2' 
+;
+
+Object I141_grid_3_0 ""
+    class K16_environment
+    with short_name "Grid 3-0"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 3-0"
+    has mark_as_room
+    with IK1_Count 18
+    with IK1_Link I142_grid_3_1
+    with IK16_Count 9
+    with IK16_Link I142_grid_3_1
+    with KD_Count 16
+    with name 'grid' '3-0' 
+;
+
+Object I142_grid_3_1 ""
+    class K16_environment
+    with short_name "Grid 3-1"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 3-1"
+    has mark_as_room
+    with IK1_Count 19
+    with IK1_Link I143_grid_3_2
+    with IK16_Count 10
+    with IK16_Link I143_grid_3_2
+    with KD_Count 16
+    with name 'grid' '3-1' 
+;
+
+Object I143_grid_3_2 ""
+    class K16_environment
+    with short_name "Grid 3-2"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Grid 3-2"
+    has mark_as_room
+    with IK1_Count 20
+    with IK1_Link I144_off_the_grid
+    with IK16_Count 11
+    with IK16_Link I144_off_the_grid
+    with KD_Count 16
+    with name 'grid' '3-2' 
+;
+
+Object I144_off_the_grid ""
+    class K16_environment
+    with short_name "Off the Grid"
+    with description text_routine_4
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Off the Grid"
+    has mark_as_room
+    with IK1_Count 21
+    with IK1_Link nothing
+    with IK16_Count 12
+    with IK16_Link nothing
+    with KD_Count 16
+    with name 'off' 'the' 'grid' 
 ;
 
 Constant I65_figure_of_cover = 1;
@@ -10387,7 +10698,7 @@ Constant I86_referred_to_a_determinat = 19;
 Constant I87_i_beg_your_pardon_error = 20;
 Array Global_Vars -->
   (false) ! 7
-  (SC_9) ! 24
+  (SC_12) ! 24
   (SC_2) ! 29
   (EMPTY_TEXT_VALUE) ! 30
   (EMPTY_TEXT_VALUE) ! 31
@@ -10400,14 +10711,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0064 0  (SC_10)  (SC_11)  (SC_12)  (SC_13)  (SC_14) ;
+Array tab_0_0 table $0064 0  (SC_13)  (SC_14)  (SC_15)  (SC_16)  (SC_17) ;
 Array tab_0_1 table $0465 1  (0)  (0)  (1)  (0)  (0) ;
 Array tab_0_2 table $2066 2  (Consult_Grammar_99)  (Consult_Grammar_100)  (Consult_Grammar_101)  (Consult_Grammar_102)  (Consult_Grammar_103) ;
 Array tab_0_3 table $0067 3  (IMMEDIATELY_RESTART_VM_R)  (IMMEDIATELY_RESTORE_SAVED_R)  TABLE_NOVALUE (IMMEDIATELY_QUIT_R)  (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4  TABLE_NOVALUE TABLE_NOVALUE (V26_amusing_a_victorious_pla)  TABLE_NOVALUE TABLE_NOVALUE;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -10417,7 +10728,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $ff $ff $ff  ! Column 1
+  $ff $ff $ff $ff $01  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -10528,7 +10839,7 @@ Array ActionData table
 Constant AD_RECORDS = 80;
 [ ANSTVC_7 pos state;
     if (state == 1) {
-        MStack-->pos = I90_sleeping_quarters; pos++;
+        MStack-->pos = I91_sleeping_quarters; pos++;
         MStack-->pos = nothing; pos++;
         MStack-->pos = nothing; pos++;
         MStack-->pos = nothing; pos++;
@@ -10950,7 +11261,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_740 ;
       ! phrase 1
       ! [1: say ~You awaken.~]
-      say__p=1;ParaContent();  print (PrintText) SC_15;  new_line; .L_Say1; .L_SayX1;
+      say__p=1;ParaContent();  print (PrintText) SC_18;  new_line; .L_Say1; .L_SayX1;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -10980,18 +11291,71 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: Every turn (B9_every_turn)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/2 ! Every turn when the player can see Bart the Bartender:
+! Rule 1/6 ! Every turn when the player is not cold and the location of the player is Off the Grid and the player is not in the SnowCat:
+!   >>> II - When/while requirement >>>
+! Rule 2/6 ! Every turn when the SnowCat is not low-on-fuel and the location of the player is Off the Grid and the player is in the SnowCat:
 !   === which is equally specific with ===
-! Rule 2/2 ! Every turn when the turn count is even:
+! Rule 3/6 ! Every turn when the player is in the SnowCat and the SnowCat is low-on-fuel and the SnowCat is not out-of-fuel:
+!   >>> II - When/while requirement >>>
+! Rule 4/6 ! Every turn when the player can see Bart the Bartender and Bart the Bartender is switched on:
+!   >>> II - When/while requirement >>>
+! Rule 5/6 ! Every turn when the turn count is even:
+!   === which is equally specific with ===
+! Rule 6/6 ! Every turn when the player is cold:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
-! Every turn when the player can see Bart the Bartender:
+! Every turn when the player is not cold and the location of the player is Off the Grid and the player is not in the SnowCat:
+[ R_757 ;
+   if (((((((~~(((Adj_75_t1_v9(player))))))) && (((( LocationOf(player)  == I144_off_the_grid))) && (((~~((I127_snowcat == ContainerOf(player))))))))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_757, 757);
+      ! phrase 1
+      ! [1: hypothermia occurs in four turns from now]
+       SetTimedEvent(R_759, 4+1, 0); 
+      ! phrase 2
+      ! [2: now the player is cold]
+       (Adj_75_t2_v9(player)); 
+   } ! Runs only while condition holds
+   else if (debug_rules > 1) DB_Rule(R_757, 757, true);
+   rfalse;
+];
+! No specific request
+! Every turn when the SnowCat is not low-on-fuel and the location of the player is Off the Grid and the player is in the SnowCat:
+[ R_753 ;
+   if (((((((~~(((Adj_76_t1_v9(I127_snowcat))))))) && (((( LocationOf(player)  == I144_off_the_grid))) && (((I127_snowcat == ContainerOf(player))))))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_753, 753);
+      ! phrase 1
+      ! [1: out of fuel occurs in four turns from now]
+       SetTimedEvent(R_755, 4+1, 0); 
+      ! phrase 2
+      ! [2: now the snowcat is low-on-fuel]
+       (Adj_76_t2_v9(I127_snowcat)); 
+   } ! Runs only while condition holds
+   else if (debug_rules > 1) DB_Rule(R_753, 753, true);
+   rfalse;
+];
+! No specific request
+! Every turn when the player is in the SnowCat and the SnowCat is low-on-fuel and the SnowCat is not out-of-fuel:
+[ R_754 ;
+   if (((((((I127_snowcat == ContainerOf(player)))) && (((((Adj_76_t1_v9(I127_snowcat))))) && (((~~(((Adj_77_t1_v9(I127_snowcat)))))))))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_754, 754);
+      ! phrase 1
+      ! [1: say ~[one of]The gas meter is getting lower.[or]You won't be able to drive much farther.[or]The fuel is low.[or]Running out of gas.[at random]~]
+      say__p=1;ParaContent();  I7_ST_say_one_of-->0 =
+	i7_soo_ran(I7_ST_say_one_of-->0, 4);
+	switch((I7_ST_say_one_of-->0)%(4+1)-1) {
+		0: ParaContent();  print (PrintText) SC_19;  new_line;ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_20;  new_line;ParaContent();  @nop; 2: ParaContent();  print (PrintText) SC_21;  new_line;ParaContent();  @nop; 3: ParaContent();  print (PrintText) SC_22;  new_line;ParaContent();  }  .L_Say3; .L_SayX3;
+   } ! Runs only while condition holds
+   else if (debug_rules > 1) DB_Rule(R_754, 754, true);
+   rfalse;
+];
+! No specific request
+! Every turn when the player can see Bart the Bartender and Bart the Bartender is switched on:
 [ R_749 ;
-   if ((((((TestVisibility(player,I115_bart_the_bartender))))))) { ! Runs only while condition holds
+   if (((((((TestVisibility(player,I116_bart_the_bartender)))) && ((((Adj_70_t1_v9(I116_bart_the_bartender))))))))) { ! Runs only while condition holds
    if (debug_rules) DB_Rule(R_749, 749);
       ! phrase 1
       ! [1: say ~Bart the Bartender tends to the [random thing which is on the bar].~]
-      say__p=1;ParaContent();  print (PrintText) SC_16; ParaContent();  print (PrintShortName)  (Prop_0()) ; ParaContent();  print (PrintText) SC_17;  new_line; .L_Say3; .L_SayX3;
+      say__p=1;ParaContent();  print (PrintText) SC_23; ParaContent();  print (PrintShortName)  (Prop_0()) ; ParaContent();  print (PrintText) SC_24;  new_line; .L_Say4; .L_SayX4;
    } ! Runs only while condition holds
    else if (debug_rules > 1) DB_Rule(R_749, 749, true);
    rfalse;
@@ -11006,22 +11370,22 @@ Array ActionHappened --> 0 0 0 0 0 0;
    if (debug_rules) DB_Rule(R_750, 750);
       ! phrase 1
       ! [1: if the scientist is in a room ( called the current place ) begin]
-       if (((ContainerOf(I116_scientist) ofclass K1_room) && (t_0=(ContainerOf(I116_scientist)), true)))  {
+       if (((ContainerOf(I117_scientist) ofclass K1_room) && (t_0=(ContainerOf(I117_scientist)), true)))  {
          ! phrase 2
          ! [2: let next place be a random room which is adjacent to current place]
           t_1 =  (Prop_1(,t_0)) ; 
          ! phrase 3
          ! [3: if next place is not sleeping quarters begin]
-          if (((~~((t_1 == I90_sleeping_quarters)))))  {
+          if (((~~((t_1 == I91_sleeping_quarters)))))  {
             ! phrase 4
             ! [4: if the scientist is visible , say ~A [scientist] heads to [the next place].~]
-             if ((((Adj_3_t1_v9(I116_scientist))))) { say__p=1;ParaContent();  print (PrintText) SC_18; ParaContent();  print (PrintShortName) I116_scientist; ParaContent();  print (PrintText) SC_19; ParaContent();  print (the) t_1; ParaContent();  print (PrintText) SC_17;  new_line; .L_Say4; .L_SayX4;  }
+             if ((((Adj_3_t1_v9(I117_scientist))))) { say__p=1;ParaContent();  print (PrintText) SC_25; ParaContent();  print (PrintShortName) I117_scientist; ParaContent();  print (PrintText) SC_26; ParaContent();  print (the) t_1; ParaContent();  print (PrintText) SC_24;  new_line; .L_Say5; .L_SayX5;  }
             ! phrase 5
             ! [5: move the scientist to next place]
-             MoveObject(I116_scientist, t_1, 0, false); 
+             MoveObject(I117_scientist, t_1, 0, false); 
             ! phrase 6
             ! [6: if the scientist is visible , say ~A [scientist] arrives from [the current place].~]
-             if ((((Adj_3_t1_v9(I116_scientist))))) { say__p=1;ParaContent();  print (PrintText) SC_18; ParaContent();  print (PrintShortName) I116_scientist; ParaContent();  print (PrintText) SC_20; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_17;  new_line; .L_Say5; .L_SayX5;  }
+             if ((((Adj_3_t1_v9(I117_scientist))))) { say__p=1;ParaContent();  print (PrintText) SC_25; ParaContent();  print (PrintShortName) I117_scientist; ParaContent();  print (PrintText) SC_27; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_24;  new_line; .L_Say6; .L_SayX6;  }
             ! phrase 7
             ! [7: end if]
             }
@@ -11032,6 +11396,21 @@ Array ActionHappened --> 0 0 0 0 0 0;
 
    } ! Runs only while condition holds
    else if (debug_rules > 1) DB_Rule(R_750, 750, true);
+   rfalse;
+];
+! No specific request
+! Every turn when the player is cold:
+[ R_758 ;
+   if (((((((Adj_75_t1_v9(player)))))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_758, 758);
+      ! phrase 1
+      ! [1: say ~[one of]It's kinda cold out here.[or]You can't feel your toes.[or]Brrrrrrr.[or]You are getting cold.[at random]~]
+      say__p=1;ParaContent();  I7_ST_say_one_of-->1 =
+	i7_soo_ran(I7_ST_say_one_of-->1, 4);
+	switch((I7_ST_say_one_of-->1)%(4+1)-1) {
+		0: ParaContent();  print (PrintText) SC_28;  new_line;ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_29;  new_line;ParaContent();  @nop; 2: ParaContent();  print (PrintText) SC_30;  new_line;ParaContent();  @nop; 3: ParaContent();  print (PrintText) SC_31;  new_line;ParaContent();  }  .L_Say7; .L_SayX7;
+   } ! Runs only while condition holds
+   else if (debug_rules > 1) DB_Rule(R_758, 758, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -11067,7 +11446,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_20 ;
       ! phrase 1
       ! [1: if the current item from the multiple object list is not nothing , say ~[current item from the multiple object list]: [run paragraph on]~]
-       if (((~~((multiple_object_item == nothing))))) { say__p=1;ParaContent();  print (PrintShortName) multiple_object_item; ParaContent();  print (PrintText) SC_21; ParaContent();  RunParagraphOn();  .L_Say6; .L_SayX6;  }
+       if (((~~((multiple_object_item == nothing))))) { say__p=1;ParaContent();  print (PrintShortName) multiple_object_item; ParaContent();  print (PrintText) SC_32; ParaContent();  RunParagraphOn();  .L_Say8; .L_SayX8;  }
    rfalse;
 ];
 ! No specific request
@@ -11391,29 +11770,63 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: Instead (B21_instead)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/7 ! Instead of going to Mess Hall when the player is not wearing grey fatigues:
+! Rule 1/9 ! Instead of going by the SnowCat when the SnowCat is out-of-fuel:
+!   >>> III.2.1 - Action/Where/Going In Exotic Ways >>>
+! Rule 2/9 ! Instead of going by a vehicle to somewhere ( called the destination ) that is not outdoors:
+!   >>> III.2.1 - Action/Where/Going In Exotic Ways >>>
+! Rule 3/9 ! Instead of going to Mess Hall when the player is not wearing grey fatigues:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 2/7 ! Instead of going to Mess Hall when the alarm clock is switched on:
+! Rule 4/9 ! Instead of going to Mess Hall when the alarm clock is switched on:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 3/7 ! Instead of going to Mess Hall when the player does not have the keycard or the player does not have the mobile phone:
+! Rule 5/9 ! Instead of going to Mess Hall when the player does not have the keycard or the player does not have the mobile phone:
 !   >>> I - Number of aspects constrained >>>
-! Rule 4/7 ! Instead of going to Sleeping Quarters:
+! Rule 6/9 ! Instead of going to Sleeping Quarters:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 5/7 ! Instead of taking the prepared plates:
+! Rule 7/9 ! Instead of taking the prepared plates:
 !   === which is equally specific with ===
-! Rule 6/7 ! Instead of taking the pint glasses:
+! Rule 8/9 ! Instead of taking the pint glasses:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 7/7 ! Instead of drinking a drink:
+! Rule 9/9 ! Instead of drinking a drink:
 ! ----------------------------------------------------------------------------------------------------
+! No specific request
+! Instead of going by the SnowCat when the SnowCat is out-of-fuel:
+[ R_756 ;
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,3)) == I127_snowcat) && (true)) && ((MStack-->MstVON(20007,1)) ~= nothing) && (self=actor,true) && ((((Adj_77_t1_v9(I127_snowcat)))))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_756, 756);
+      ! phrase 1
+      ! [1: say ~[The SnowCat] is out of fuel!~]
+      say__p=1;ParaContent();  print (The) I127_snowcat; ParaContent();  print (PrintText) SC_33;  new_line; .L_Say9; .L_SayX9;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_756, 756, true);
+   rfalse;
+];
+! No specific request
+! Instead of going by a vehicle to somewhere ( called the destination ) that is not outdoors:
+[ R_752 
+    t_0 ! Local variable e.g. 'destination' = room
+    ;
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) ofclass K1_room) && (t_0=((MStack-->MstVON(20007,1))), true) && (~~(((Adj_74_t1_v9((MStack-->MstVON(20007,1)))))))) && (((MStack-->MstVON(20007,3)) ofclass K14_vehicle))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_752, 752);
+      ! phrase 1
+      ! [1: say ~You cannot drive [the SnowCat] to [the destination].~]
+      say__p=1;ParaContent();  print (PrintText) SC_34; ParaContent();  print (the) I127_snowcat; ParaContent();  print (PrintText) SC_35; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_24;  new_line; .L_Say10; .L_SayX10;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_752, 752, true);
+   rfalse;
+];
 ! No specific request
 ! Instead of going to Mess Hall when the player is not wearing grey fatigues:
 [ R_742 ;
-   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I101_mess_hall) && (true)) && (self=actor,true) && (((~~((player == WearerOf(I93_grey_fatigues))))))) { ! Runs only when pattern matches
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I102_mess_hall) && (true)) && (self=actor,true) && (((~~((player == WearerOf(I94_grey_fatigues))))))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_742, 742);
       ! phrase 1
       ! [1: say ~You should probably get dressed first!~]
-      say__p=1;ParaContent();  print (PrintText) SC_22;  new_line; .L_Say7; .L_SayX7;
+      say__p=1;ParaContent();  print (PrintText) SC_36;  new_line; .L_Say11; .L_SayX11;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_742, 742, true);
@@ -11422,12 +11835,12 @@ self = noun;
 ! No specific request
 ! Instead of going to Mess Hall when the alarm clock is switched on:
 [ R_743 ;
-   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I101_mess_hall) && (true)) && (self=actor,true) && ((((Adj_70_t1_v9(I96_alarm_clock)))))) { ! Runs only when pattern matches
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I102_mess_hall) && (true)) && (self=actor,true) && ((((Adj_70_t1_v9(I97_alarm_clock)))))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_743, 743);
       ! phrase 1
       ! [1: say ~A dozing crew member whispers abruptly, 'Could you shut that thing off!'~]
-      say__p=1;ParaContent();  print (PrintText) SC_23;  new_line; .L_Say8; .L_SayX8;
+      say__p=1;ParaContent();  print (PrintText) SC_37;  new_line; .L_Say12; .L_SayX12;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_743, 743, true);
@@ -11436,24 +11849,24 @@ self = noun;
 ! No specific request
 ! Instead of going to Mess Hall when the player does not have the keycard or the player does not have the mobile phone:
 [ R_741 ;
-   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I101_mess_hall) && (true)) && (self=actor,true) && ((((~~((player == OwnerOf(I98_keycard)))))) || (((~~((player == OwnerOf(I99_mobile_phone)))))))) { ! Runs only when pattern matches
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I102_mess_hall) && (true)) && (self=actor,true) && ((((~~((player == OwnerOf(I99_keycard)))))) || (((~~((player == OwnerOf(I100_mobile_phone)))))))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_741, 741);
       ! phrase 1
       ! [1: say ~You need [if player does not have keycard]your [keycard][end if][if player does not have keycard and player does not have mobile phone] and [end if][if player does not have mobile phone]your [mobile phone][end if] before starting your shift.~]
-      say__p=1;ParaContent();  print (PrintText) SC_24; 
-	if (~~((((~~((player == OwnerOf(I98_keycard)))))))) jump L_Say9;
-		ParaContent();  print (PrintText) SC_25; ParaContent();  print (PrintShortName) I98_keycard; 
-	.L_Say9; .L_SayX9;
+      say__p=1;ParaContent();  print (PrintText) SC_38; 
+	if (~~((((~~((player == OwnerOf(I99_keycard)))))))) jump L_Say13;
+		ParaContent();  print (PrintText) SC_39; ParaContent();  print (PrintShortName) I99_keycard; 
+	.L_Say13; .L_SayX13;
 		
-	if (~~(((((~~((player == OwnerOf(I98_keycard)))))) && (((~~((player == OwnerOf(I99_mobile_phone))))))))) jump L_Say10;
-		ParaContent();  print (PrintText) SC_26; 
-	.L_Say10; .L_SayX10;
+	if (~~(((((~~((player == OwnerOf(I99_keycard)))))) && (((~~((player == OwnerOf(I100_mobile_phone))))))))) jump L_Say14;
+		ParaContent();  print (PrintText) SC_40; 
+	.L_Say14; .L_SayX14;
 		
-	if (~~((((~~((player == OwnerOf(I99_mobile_phone)))))))) jump L_Say11;
-		ParaContent();  print (PrintText) SC_25; ParaContent();  print (PrintShortName) I99_mobile_phone; 
-	.L_Say11; .L_SayX11;
-		ParaContent();  print (PrintText) SC_27;  new_line; .L_Say12; .L_SayX12;
+	if (~~((((~~((player == OwnerOf(I100_mobile_phone)))))))) jump L_Say15;
+		ParaContent();  print (PrintText) SC_39; ParaContent();  print (PrintShortName) I100_mobile_phone; 
+	.L_Say15; .L_SayX15;
+		ParaContent();  print (PrintText) SC_41;  new_line; .L_Say16; .L_SayX16;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_741, 741, true);
@@ -11462,12 +11875,12 @@ self = noun;
 ! No specific request
 ! Instead of going to Sleeping Quarters:
 [ R_751 ;
-   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I90_sleeping_quarters) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I91_sleeping_quarters) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_751, 751);
       ! phrase 1
       ! [1: say ~Best not to disturb those that are sleeping.~]
-      say__p=1;ParaContent();  print (PrintText) SC_28;  new_line; .L_Say13; .L_SayX13;
+      say__p=1;ParaContent();  print (PrintText) SC_42;  new_line; .L_Say17; .L_SayX17;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_751, 751, true);
@@ -11476,25 +11889,25 @@ self = noun;
 ! No specific request
 ! Instead of taking the prepared plates:
 [ R_747 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I103_prepared_plates) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I104_prepared_plates) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_747, 747);
       ! phrase 1
       ! [1: if the prepared plate is off-stage begin]
-       if ((((~~Adj_9_t1_v9(I107_prepared_plate)))))  {
+       if ((((~~Adj_9_t1_v9(I108_prepared_plate)))))  {
          ! phrase 2
          ! [2: move the prepared plate to the player]
-          MoveObject(I107_prepared_plate, player, 0, false); 
+          MoveObject(I108_prepared_plate, player, 0, false); 
          ! phrase 3
          ! [3: say ~You take a plate from the bar.~]
-         say__p=1;ParaContent();  print (PrintText) SC_29;  new_line; .L_Say14; .L_SayX14;
+         say__p=1;ParaContent();  print (PrintText) SC_43;  new_line; .L_Say18; .L_SayX18;
          ! phrase 4
          ! [4: otherwise]
          } else {
 
          ! phrase 5
          ! [5: say ~You already have a plate.~]
-         say__p=1;ParaContent();  print (PrintText) SC_30;  new_line; .L_Say15; .L_SayX15;
+         say__p=1;ParaContent();  print (PrintText) SC_44;  new_line; .L_Say19; .L_SayX19;
          ! phrase 6
          ! [6: end if]
          }
@@ -11507,25 +11920,25 @@ self = noun;
 ! No specific request
 ! Instead of taking the pint glasses:
 [ R_748 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I104_pint_glasses) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I105_pint_glasses) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_748, 748);
       ! phrase 1
       ! [1: if the pint glass is off-stage begin]
-       if ((((~~Adj_9_t1_v9(I108_pint_glass)))))  {
+       if ((((~~Adj_9_t1_v9(I109_pint_glass)))))  {
          ! phrase 2
          ! [2: move the pint glass to the player]
-          MoveObject(I108_pint_glass, player, 0, false); 
+          MoveObject(I109_pint_glass, player, 0, false); 
          ! phrase 3
          ! [3: say ~You take a pint glass from the bar.~]
-         say__p=1;ParaContent();  print (PrintText) SC_31;  new_line; .L_Say16; .L_SayX16;
+         say__p=1;ParaContent();  print (PrintText) SC_45;  new_line; .L_Say20; .L_SayX20;
          ! phrase 4
          ! [4: otherwise]
          } else {
 
          ! phrase 5
          ! [5: say ~You already have a pint glass.~]
-         say__p=1;ParaContent();  print (PrintText) SC_32;  new_line; .L_Say17; .L_SayX17;
+         say__p=1;ParaContent();  print (PrintText) SC_46;  new_line; .L_Say21; .L_SayX21;
          ! phrase 6
          ! [6: end if]
          }
@@ -11538,7 +11951,7 @@ self = noun;
 ! No specific request
 ! Instead of drinking a drink:
 [ R_746 ;
-   if ((action ==##Drink) &&  (actor==player) && ((noun ofclass K18_drink))) { ! Runs only when pattern matches
+   if ((action ==##Drink) &&  (actor==player) && ((noun ofclass K19_drink))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_746, 746);
       ! phrase 1
@@ -11546,7 +11959,7 @@ self = noun;
        RemoveFromPlay(noun); 
       ! phrase 2
       ! [2: say ~You drink [the noun]. Refreshing.~]
-      say__p=1;ParaContent();  print (PrintText) SC_33; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_34;  new_line; .L_Say18; .L_SayX18;
+      say__p=1;ParaContent();  print (PrintText) SC_47; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_48;  new_line; .L_Say22; .L_SayX22;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_746, 746, true);
@@ -11564,7 +11977,7 @@ self = noun;
 ! No specific request
 ! After taking the keycard:
 [ R_744 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I98_keycard) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I99_keycard) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_744, 744);
       ! phrase 1
@@ -11578,7 +11991,7 @@ self = noun;
 ! No specific request
 ! After taking the mobile phone:
 [ R_745 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I99_mobile_phone) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I100_mobile_phone) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_745, 745);
       ! phrase 1
@@ -11650,7 +12063,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_59, 59);
       ! phrase 1
       ! [1: say the printed plural name of the item]
-      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,plural); @pull self;  .L_Say19; .L_SayX19;
+      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,plural); @pull self;  .L_Say23; .L_SayX23;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_59, 59, true);
@@ -11673,7 +12086,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_60, 60);
       ! phrase 1
       ! [1: say ~[listing group size in words] ~]
-      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_35;  .L_Say20; .L_SayX20;
+      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_49;  .L_Say24; .L_SayX24;
       ! phrase 2
       ! [2: carry out the printing the plural name activity with the item]
        CarryOutActivity(V1_printing_the_plural_name_, t_0); 
@@ -11886,7 +12299,7 @@ self = noun;
        if (((t_0 < 1))) {  if (ProcessRulebook(IMMEDIATELY_QUIT_R)) rtrue;   }
       ! phrase 10
       ! [10: say ~Would you like to ~]
-      say__p=1;ParaContent();  print (PrintText) SC_36;  .L_Say21; .L_SayX21;
+      say__p=1;ParaContent();  print (PrintText) SC_50;  .L_Say25; .L_SayX25;
       ! phrase 11
       ! [11: repeat through the table of final question options begin]
        @push ct_0; @push ct_1;
@@ -11904,7 +12317,7 @@ self = noun;
                 if (( (ExistsTableLookUpEntry(ct_0,100,ct_1)) ))  {
                   ! phrase 15
                   ! [15: say final question wording entry]
-                  say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,100,ct_1);  .L_Say22; .L_SayX22;
+                  say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,100,ct_1);  .L_Say26; .L_SayX26;
                   ! phrase 16
                   ! [16: decrease named options count by 1]
                    t_0 = t_0 - 1; 
@@ -11913,23 +12326,23 @@ self = noun;
                    if (((t_0 == 0)))  {
                      ! phrase 18
                      ! [18: say ~?[line break]~]
-                     say__p=1;ParaContent();  print (PrintText) SC_37; ParaContent();  new_line;  .L_Say23; .L_SayX23;
+                     say__p=1;ParaContent();  print (PrintText) SC_51; ParaContent();  new_line;  .L_Say27; .L_SayX27;
                      ! phrase 19
                      ! [19: otherwise if the named options count is 1]
                       } else if (((t_0 == 1))) { 
                      ! phrase 20
                      ! [20: if the serial comma option is active , say ~,~]
-                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_38;  .L_Say24; .L_SayX24;  }
+                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_52;  .L_Say28; .L_SayX28;  }
                      ! phrase 21
                      ! [21: say ~ or ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_39;  .L_Say25; .L_SayX25;
+                     say__p=1;ParaContent();  print (PrintText) SC_53;  .L_Say29; .L_SayX29;
                      ! phrase 22
                      ! [22: otherwise]
                      } else {
 
                      ! phrase 23
                      ! [23: say ~, ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_40;  .L_Say26; .L_SayX26;
+                     say__p=1;ParaContent();  print (PrintText) SC_54;  .L_Say30; .L_SayX30;
                      ! phrase 24
                      ! [24: end if]
                      }
@@ -11958,7 +12371,7 @@ self = noun;
 [ R_68 ;
       ! phrase 1
       ! [1: say ~> [run paragraph on]~]
-      say__p=1;ParaContent();  print (PrintText) SC_41; ParaContent();  RunParagraphOn();  .L_Say27; .L_SayX27;
+      say__p=1;ParaContent();  print (PrintText) SC_55; ParaContent();  RunParagraphOn();  .L_Say31; .L_SayX31;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -12211,40 +12624,40 @@ self = noun;
                 if (((t_0 ofclass K1_room)))  {
                   ! phrase 22
                   ! [22: if the domain is the location , say ~You ~]
-                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_42;  .L_Say28; .L_SayX28;  }
+                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_56;  .L_Say32; .L_SayX32;  }
                   ! phrase 23
                   ! [23: otherwise say ~In [the domain] you ~]
-                   else { say__p=1;ParaContent();  print (PrintText) SC_43; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_44;  .L_Say29; .L_SayX29;  }
+                   else { say__p=1;ParaContent();  print (PrintText) SC_57; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_58;  .L_Say33; .L_SayX33;  }
                   ! phrase 24
                   ! [24: otherwise if the domain is a supporter]
                    } else if (((t_0 ofclass K6_supporter))) { 
                   ! phrase 25
                   ! [25: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_45; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_44;  .L_Say30; .L_SayX30;
+                  say__p=1;ParaContent();  print (PrintText) SC_59; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_58;  .L_Say34; .L_SayX34;
                   ! phrase 26
                   ! [26: otherwise if the domain is an animal]
                    } else if (((t_0 ofclass K12_animal))) { 
                   ! phrase 27
                   ! [27: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_45; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_44;  .L_Say31; .L_SayX31;
+                  say__p=1;ParaContent();  print (PrintText) SC_59; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_58;  .L_Say35; .L_SayX35;
                   ! phrase 28
                   ! [28: otherwise]
                   } else {
 
                   ! phrase 29
                   ! [29: say ~In [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_43; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_44;  .L_Say32; .L_SayX32;
+                  say__p=1;ParaContent();  print (PrintText) SC_57; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_58;  .L_Say36; .L_SayX36;
                   ! phrase 30
                   ! [30: end if]
                   }
 
                ! phrase 31
                ! [31: say ~can [if the locale paragraph count is greater than 0]also [end if]see ~]
-               say__p=1;ParaContent();  print (PrintText) SC_46; 
-	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say33;
-		ParaContent();  print (PrintText) SC_47; 
-	.L_Say33; .L_SayX33;
-		ParaContent();  print (PrintText) SC_48;  .L_Say34; .L_SayX34;
+               say__p=1;ParaContent();  print (PrintText) SC_60; 
+	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say37;
+		ParaContent();  print (PrintText) SC_61; 
+	.L_Say37; .L_SayX37;
+		ParaContent();  print (PrintText) SC_62;  .L_Say38; .L_SayX38;
                ! phrase 32
                ! [32: let the common holder be nothing]
                 t_2 = nothing; 
@@ -12287,13 +12700,13 @@ self = noun;
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT+RECURSE_BIT+PARTINV_BIT+
 			TERSE_BIT+CONCEAL_BIT);
-		@pull subst__v;  .L_Say35; .L_SayX35;  }
+		@pull subst__v;  .L_Say39; .L_SayX39;  }
                ! phrase 44
                ! [44: if the domain is the location , say ~ here~]
-                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_49;  .L_Say36; .L_SayX36;  }
+                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_63;  .L_Say40; .L_SayX40;  }
                ! phrase 45
                ! [45: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_17; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say37; .L_SayX37;
+               say__p=1;ParaContent();  print (PrintText) SC_24; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say41; .L_SayX41;
                ! phrase 46
                ! [46: unfilter list recursion]
                 list_filter_routine = 0; 
@@ -12472,7 +12885,7 @@ self = noun;
        if (((~~(((Adj_55_t1_v9(t_0)))))))  {
          ! phrase 2
          ! [2: if a paragraph break is pending , say ~[conditional paragraph break]~]
-          if (( (say__p) )) { say__p=1;ParaContent();  DivideParagraphPoint();  .L_Say38; .L_SayX38;  }
+          if (( (say__p) )) { say__p=1;ParaContent();  DivideParagraphPoint();  .L_Say42; .L_SayX42;  }
          ! phrase 3
          ! [3: carry out the writing a paragraph about activity with the item]
           CarryOutActivity(V6_writing_a_paragraph_about, t_0); 
@@ -12487,7 +12900,7 @@ self = noun;
              (Adj_55_t2_v9(t_0)); 
             ! phrase 7
             ! [7: say ~[command clarification break]~]
-            say__p=1;ParaContent();  CommandClarificationBreak();  .L_Say39; .L_SayX39;
+            say__p=1;ParaContent();  CommandClarificationBreak();  .L_Say43; .L_SayX43;
             ! phrase 8
             ! [8: end if]
             }
@@ -12525,10 +12938,10 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 4
             ! [4: say ~[initial appearance of the item]~]
-            say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,initial); @pull self;  .L_Say40; .L_SayX40;
+            say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,initial); @pull self;  .L_Say44; .L_SayX44;
             ! phrase 5
             ! [5: say ~[paragraph break]~]
-            say__p=1;ParaContent();  DivideParagraphPoint(); new_line;  .L_Say41; .L_SayX41;
+            say__p=1;ParaContent();  DivideParagraphPoint(); new_line;  .L_Say45; .L_SayX45;
             ! phrase 6
             ! [6: if a locale-supportable thing is on the item begin]
              if ((Prop_9(,t_0)))  {
@@ -12554,13 +12967,13 @@ self = noun;
 
                ! phrase 13
                ! [13: say ~On [the item] ~]
-               say__p=1;ParaContent();  print (PrintText) SC_45; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_35;  .L_Say42; .L_SayX42;
+               say__p=1;ParaContent();  print (PrintText) SC_59; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_49;  .L_Say46; .L_SayX46;
                ! phrase 14
                ! [14: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
                 WriteListFrom(child(t_0), 3800); 
                ! phrase 15
                ! [15: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_17; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say43; .L_SayX43;
+               say__p=1;ParaContent();  print (PrintText) SC_24; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say47; .L_SayX47;
                ! phrase 16
                ! [16: end if]
                }
@@ -12628,13 +13041,13 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 11
             ! [11: say ~On [the item] ~]
-            say__p=1;ParaContent();  print (PrintText) SC_45; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_35;  .L_Say44; .L_SayX44;
+            say__p=1;ParaContent();  print (PrintText) SC_59; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_49;  .L_Say48; .L_SayX48;
             ! phrase 12
             ! [12: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
              WriteListFrom(child(t_0), 3800); 
             ! phrase 13
             ! [13: say ~.[paragraph break]~]
-            say__p=1;ParaContent();  print (PrintText) SC_17; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say45; .L_SayX45;
+            say__p=1;ParaContent();  print (PrintText) SC_24; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say49; .L_SayX49;
             ! phrase 14
             ! [14: end if]
             }
@@ -12684,7 +13097,7 @@ self = noun;
        GL__M(##Inv,2,noun); 
       ! phrase 2
       ! [2: say ~:[line break]~]
-      say__p=1;ParaContent();  print (PrintText) SC_50; ParaContent();  new_line;  .L_Say46; .L_SayX46;
+      say__p=1;ParaContent();  print (PrintText) SC_64; ParaContent();  new_line;  .L_Say50; .L_SayX50;
       ! phrase 3
       ! [3: list the contents of the player , with newlines , indented , including contents , giving inventory information , with extra indentation]
        WriteListFrom(child(player), 8215); 
@@ -14280,7 +14693,7 @@ self = noun;
           if (((~~(((MStack-->MstVO(20007,3)) == nothing)))))  {
             ! phrase 49
             ! [49: say ~ ~]
-            say__p=1;ParaContent();  print (PrintText) SC_35;  .L_Say47; .L_SayX47;
+            say__p=1;ParaContent();  print (PrintText) SC_49;  .L_Say51; .L_SayX51;
             ! phrase 50
             ! [50: if the vehicle gone by is a supporter , issue actor-based library message going action number 20 for the vehicle gone by]
              if ((((MStack-->MstVO(20007,3)) ofclass K6_supporter))) {  AGL__M(##Go,20,(MStack-->MstVO(20007,3)));   }
@@ -14335,7 +14748,7 @@ self = noun;
              AGL__M(##Go,26,noun); 
             ! phrase 66
             ! [66: say ~.~]
-            say__p=1;ParaContent();  print (PrintText) SC_17;  new_line; .L_Say48; .L_SayX48;
+            say__p=1;ParaContent();  print (PrintText) SC_24;  new_line; .L_Say52; .L_SayX52;
             ! phrase 67
             ! [67: try looking]
              TryAction(0, player, ##Look, 0, 0);; 
@@ -14348,7 +14761,7 @@ self = noun;
 
          ! phrase 70
          ! [70: say ~.~]
-         say__p=1;ParaContent();  print (PrintText) SC_17;  new_line; .L_Say49; .L_SayX49;
+         say__p=1;ParaContent();  print (PrintText) SC_24;  new_line; .L_Say53; .L_SayX53;
          ! phrase 71
          ! [71: end if]
          }
@@ -14935,7 +15348,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_172, 172);
       ! phrase 1
       ! [1: say bold type]
-      say__p=1;ParaContent();  style bold;  .L_Say50; .L_SayX50;
+      say__p=1;ParaContent();  style bold;  .L_Say54; .L_SayX54;
       ! phrase 2
       ! [2: if the visibility level count is 0 begin]
        if ((((MStack-->MstVO(20011,2)) == 0)))  {
@@ -14953,21 +15366,21 @@ self = noun;
           } else if ((((MStack-->MstVO(20011,3)) == real_location))) { 
          ! phrase 7
          ! [7: say ~[visibility ceiling]~]
-         say__p=1;ParaContent();  print (PrintShortName) (MStack-->MstVO(20011,3));  .L_Say51; .L_SayX51;
+         say__p=1;ParaContent();  print (PrintShortName) (MStack-->MstVO(20011,3));  .L_Say55; .L_SayX55;
          ! phrase 8
          ! [8: otherwise]
          } else {
 
          ! phrase 9
          ! [9: say ~[The visibility ceiling]~]
-         say__p=1;ParaContent();  print (The) (MStack-->MstVO(20011,3));  .L_Say52; .L_SayX52;
+         say__p=1;ParaContent();  print (The) (MStack-->MstVO(20011,3));  .L_Say56; .L_SayX56;
          ! phrase 10
          ! [10: end if]
          }
 
       ! phrase 11
       ! [11: say roman type]
-      say__p=1;ParaContent();  style roman;  .L_Say53; .L_SayX53;
+      say__p=1;ParaContent();  style roman;  .L_Say57; .L_SayX57;
       ! phrase 12
       ! [12: let intermediate level be the visibility-holder of the actor]
        t_0 =  VisibilityParent(actor) ; 
@@ -14986,10 +15399,10 @@ self = noun;
 
       ! phrase 17
       ! [17: say line break]
-      say__p=1;ParaContent();  new_line;  .L_Say54; .L_SayX54;
+      say__p=1;ParaContent();  new_line;  .L_Say58; .L_SayX58;
       ! phrase 18
       ! [18: say run paragraph on with special look spacing]
-      say__p=1;ParaContent();  SpecialLookSpacingBreak();  .L_Say55; .L_SayX55;
+      say__p=1;ParaContent();  SpecialLookSpacingBreak();  .L_Say59; .L_SayX59;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_172, 172, true);
    rfalse;
@@ -15195,7 +15608,7 @@ self = noun;
        if ((((WhetherProvides(noun, false, description)))) && (((~~((GProperty(OBJECT_TY, noun,description) == EMPTY_TEXT_VALUE))))))  {
          ! phrase 2
          ! [2: say ~[the description of the noun][line break]~]
-         say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  new_line;  .L_Say56; .L_SayX56;
+         say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  new_line;  .L_Say60; .L_SayX60;
          ! phrase 3
          ! [3: now examine text printed is true]
           (MStack-->MstVO(20012,0)) = 1; 
@@ -17852,6 +18265,25 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! Definitions of displaced and unbooked rules
 
+! No specific request
+! At the time when out of fuel occurs:
+[ R_755 ;
+      ! phrase 1
+      ! [1: say ~[The SnowCat] is out of fuel!~]
+      say__p=1;ParaContent();  print (The) I127_snowcat; ParaContent();  print (PrintText) SC_33;  new_line; .L_Say61; .L_SayX61;
+      ! phrase 2
+      ! [2: now the snowcat is out-of-fuel]
+       (Adj_77_t2_v9(I127_snowcat)); 
+   rfalse;
+];
+! No specific request
+! At the time when hypothermia occurs:
+[ R_759 ;
+      ! phrase 1
+      ! [1: end the story saying ~You have died of hypothermia.~]
+       deadflag=SC_65; story_complete=false; 
+   rfalse;
+];
 ! Definitions of adjectives
 
 ! No specific request
@@ -18774,7 +19206,39 @@ return (GProperty(SCENE_TY, t_0, p54_recurring) == false);
     rfalse;
 ];
 
-[ Adj_74_t1_v9 ! meaning of "<nameless>"
+[ Adj_74_t1_v9 ! meaning of "outdoors"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (GetEitherOrProperty(t_0, p56_outdoors));
+    rfalse;
+];
+
+[ Adj_75_t1_v9 ! meaning of "cold"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (GetEitherOrProperty(t_0, p57_cold));
+    rfalse;
+];
+
+[ Adj_76_t1_v9 ! meaning of "low-on-fuel"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (GetEitherOrProperty(t_0, p58_low_on_fuel));
+    rfalse;
+];
+
+[ Adj_77_t1_v9 ! meaning of "out-of-fuel"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (GetEitherOrProperty(t_0, p59_out_of_fuel));
+    rfalse;
+];
+
+[ Adj_78_t1_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -18782,7 +19246,7 @@ return (GProperty(SCENE_TY, t_0, p54_recurring) == false);
     rfalse;
 ];
 
-[ Adj_75_t1_v9 ! meaning of "<nameless>"
+[ Adj_79_t1_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -18790,7 +19254,7 @@ return (GProperty(SCENE_TY, t_0, p54_recurring) == false);
     rfalse;
 ];
 
-[ Adj_76_t1_v9 ! meaning of "<nameless>"
+[ Adj_80_t1_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19222,7 +19686,39 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring));
     rfalse;
 ];
 
-[ Adj_74_t2_v9 ! meaning of "<nameless>"
+[ Adj_74_t2_v9 ! meaning of "outdoors"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p56_outdoors));
+    rfalse;
+];
+
+[ Adj_75_t2_v9 ! meaning of "cold"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p57_cold));
+    rfalse;
+];
+
+[ Adj_76_t2_v9 ! meaning of "low-on-fuel"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p58_low_on_fuel));
+    rfalse;
+];
+
+[ Adj_77_t2_v9 ! meaning of "out-of-fuel"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p59_out_of_fuel));
+    rfalse;
+];
+
+[ Adj_78_t2_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19230,7 +19726,7 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring));
     rfalse;
 ];
 
-[ Adj_75_t2_v9 ! meaning of "<nameless>"
+[ Adj_79_t2_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19238,7 +19734,7 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring));
     rfalse;
 ];
 
-[ Adj_76_t2_v9 ! meaning of "<nameless>"
+[ Adj_80_t2_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19670,7 +20166,39 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring, true));
     rfalse;
 ];
 
-[ Adj_74_t3_v9 ! meaning of "<nameless>"
+[ Adj_74_t3_v9 ! meaning of "outdoors"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p56_outdoors, true));
+    rfalse;
+];
+
+[ Adj_75_t3_v9 ! meaning of "cold"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p57_cold, true));
+    rfalse;
+];
+
+[ Adj_76_t3_v9 ! meaning of "low-on-fuel"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p58_low_on_fuel, true));
+    rfalse;
+];
+
+[ Adj_77_t3_v9 ! meaning of "out-of-fuel"
+
+    t_0 ! Call parameter 'it' = object
+    ;
+  if (t_0) return (SetEitherOrProperty(t_0, p59_out_of_fuel, true));
+    rfalse;
+];
+
+[ Adj_78_t3_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19678,7 +20206,7 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring, true));
     rfalse;
 ];
 
-[ Adj_75_t3_v9 ! meaning of "<nameless>"
+[ Adj_79_t3_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19686,7 +20214,7 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring, true));
     rfalse;
 ];
 
-[ Adj_76_t3_v9 ! meaning of "<nameless>"
+[ Adj_80_t3_v9 ! meaning of "<nameless>"
 
     t_0 ! Call parameter 'it' = object
     ;
@@ -19696,9 +20224,9 @@ return (WriteGProperty(SCENE_TY, t_0, p54_recurring, true));
 
 
 
-Array TimedEventsTable table 0 0;
+Array TimedEventsTable table 0 0 0 0 0 0;
 
-Array TimedEventTimesTable table 0 0;
+Array TimedEventTimesTable table 0 0 0 0 0 0;
 
 
 
@@ -19713,7 +20241,7 @@ Array B5_when_play_begins --> R_740 NULL; ! 1 rule(s)
 Constant B6_when_play_ends = EMPTY_RULEBOOK;
 Array B7_when_scene_begins --> R_57 NULL; ! 1 rule(s)
 Constant B8_when_scene_ends = EMPTY_RULEBOOK;
-Array B9_every_turn --> R_749 R_750 NULL; ! 2 rule(s)
+Array B9_every_turn --> R_757 R_753 R_754 R_749 R_750 R_758 NULL; ! 6 rule(s)
 Array B10_action_processing --> R_20 R_19 R_21 BASIC_VISIBILITY_R BASIC_ACCESSIBILITY_R CARRYING_REQUIREMENTS_R R_22 REQUESTED_ACTIONS_REQUIRE_R CARRY_OUT_REQUESTED_ACTIONS_R DESCEND_TO_SPECIFIC_ACTION_R R_23 NULL; ! 11 rule(s)
 Array B11_setting_action_variables --> R_137 R_171 R_159 NULL; ! 3 rule(s)
 Array B12_specific_action_processi --> WORK_OUT_DETAILS_OF_SPECIFIC_R R_24 R_25 R_26 R_27 R_28 R_29 R_30 NULL; ! 8 rule(s)
@@ -19725,7 +20253,7 @@ Array B17_visibility --> R_35 NULL; ! 1 rule(s)
 Constant B18_persuasion = EMPTY_RULEBOOK;
 Constant B19_unsuccessful_attempt_by = EMPTY_RULEBOOK;
 Constant B20_before = EMPTY_RULEBOOK;
-Array B21_instead --> R_742 R_743 R_741 R_751 R_747 R_748 R_746 NULL; ! 7 rule(s)
+Array B21_instead --> R_756 R_752 R_742 R_743 R_741 R_751 R_747 R_748 R_746 NULL; ! 9 rule(s)
 Constant B22_check = EMPTY_RULEBOOK;
 Constant B23_carry_out = EMPTY_RULEBOOK;
 Array B24_after --> R_744 R_745 NULL; ! 2 rule(s)
@@ -20335,28 +20863,28 @@ Constant BR_261 = R_296;
 Constant BR_262 = R_297;
 Constant BR_263 = R_298;
 Constant BR_264 = R_299;
-Constant BR_703 = R_8;
-Constant BR_709 = R_9;
-Constant BR_710 = R_10;
-Constant BR_711 = R_11;
-Constant BR_712 = R_12;
-Constant BR_720 = R_16;
-Constant BR_721 = R_17;
-Constant BR_723 = R_18;
-Constant BR_726 = R_21;
-Constant BR_727 = R_19;
-Constant BR_728 = R_20;
-Constant BR_732 = R_22;
-Constant BR_736 = R_23;
-Constant BR_742 = R_35;
-Constant BR_744 = R_59;
-Constant BR_745 = R_60;
-Constant BR_747 = R_61;
-Constant BR_752 = R_69;
-Constant BR_753 = R_68;
-Constant BR_755 = R_70;
-Constant BR_756 = R_91;
-Constant BR_757 = R_148;
+Constant BR_711 = R_8;
+Constant BR_717 = R_9;
+Constant BR_718 = R_10;
+Constant BR_719 = R_11;
+Constant BR_720 = R_12;
+Constant BR_728 = R_16;
+Constant BR_729 = R_17;
+Constant BR_731 = R_18;
+Constant BR_734 = R_21;
+Constant BR_735 = R_19;
+Constant BR_736 = R_20;
+Constant BR_740 = R_22;
+Constant BR_744 = R_23;
+Constant BR_750 = R_35;
+Constant BR_752 = R_59;
+Constant BR_753 = R_60;
+Constant BR_755 = R_61;
+Constant BR_760 = R_69;
+Constant BR_761 = R_68;
+Constant BR_763 = R_70;
+Constant BR_764 = R_91;
+Constant BR_765 = R_148;
 
 
 
@@ -22592,7 +23120,7 @@ Constant SLOW_ROUTE_FINDING;
 #endif;
 
 Constant NUM_DOORS = 1;
-Constant NUM_ROOMS = 8;
+Constant NUM_ROOMS = 22;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -22779,7 +23307,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ];
 #ENDIF;
 
-Constant MAX_ROUTE_LENGTH = 51 + 32;
+Constant MAX_ROUTE_LENGTH = 66 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -24265,84 +24793,92 @@ Array RulebookNames -->
 		if (R == R_746) { print "Instead of drinking a drink"; return; } ! 697, case 2
 		if (R == R_747) { print "Instead of taking the prepared plates"; return; } ! 698, case 2
 		if (R == R_748) { print "Instead of taking the pint glasses"; return; } ! 699, case 2
-		if (R == R_749) { print "Every turn when the player can see Bart the Bartender"; return; } ! 700, case 2
+		if (R == R_749) { print "Every turn when the player can see Bart the Bartender and Bart the Bartender is switched on"; return; } ! 700, case 2
 		if (R == R_750) { print "Every turn when the turn count is even"; return; } ! 701, case 2
 		if (R == R_751) { print "Instead of going to Sleeping Quarters"; return; } ! 702, case 2
-		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 703, case 1
-		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 704, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 705, case 1
-		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 706, case 1
-		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 707, case 1
-		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 708, case 1
-		if (R == R_9) { print "when play begins stage rule"; return; } ! 709, case 1
-		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 710, case 1
-		if (R == R_11) { print "display banner rule"; return; } ! 711, case 1
-		if (R == R_12) { print "initial room description rule"; return; } ! 712, case 1
-		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 713, case 1
-		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 714, case 1
-		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 715, case 1
-		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 716, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 717, case 1
-		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 718, case 1
-		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 719, case 1
-		if (R == R_16) { print "notify score changes rule"; return; } ! 720, case 1
-		if (R == R_17) { print "when play ends stage rule"; return; } ! 721, case 1
-		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 722, case 1
-		if (R == R_18) { print "print player's obituary rule"; return; } ! 723, case 1
-		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 724, case 1
-		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 725, case 1
-		if (R == R_21) { print "before stage rule"; return; } ! 726, case 1
-		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 727, case 1
-		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 728, case 1
-		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 729, case 1
-		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 730, case 1
-		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 731, case 1
-		if (R == R_22) { print "instead stage rule"; return; } ! 732, case 1
-		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 733, case 1
-		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 734, case 1
-		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 735, case 1
-		if (R == R_23) { print "end action-processing in success rule"; return; } ! 736, case 1
-		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 737, case 1
-		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 738, case 1
-		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 739, case 1
-		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 740, case 1
-		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 741, case 1
-		if (R == R_35) { print "can't act in the dark rule"; return; } ! 742, case 1
-		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 743, case 1
-		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 744, case 1
-		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 745, case 1
-		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 746, case 1
-		if (R == R_61) { print "look around once light available rule"; return; } ! 747, case 1
-		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 748, case 1
-		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 749, case 1
-		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 750, case 1
-		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 751, case 1
-		if (R == R_69) { print "print the final question rule"; return; } ! 752, case 1
-		if (R == R_68) { print "print the final prompt rule"; return; } ! 753, case 1
-		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 754, case 1
-		if (R == R_70) { print "standard respond to final question rule"; return; } ! 755, case 1
-		if (R == R_91) { print "can't take component parts rule"; return; } ! 756, case 1
-		if (R == R_148) { print "find what to enter rule"; return; } ! 757, case 1
-		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 758, case 1
-		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 759, case 1
-		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 760, case 1
-		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 761, case 1
-		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 762, case 1
-		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 763, case 1
-		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 764, case 1
-		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 765, case 1
-		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 766, case 1
-		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 767, case 1
-		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 768, case 1
-		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 769, case 1
-		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 770, case 1
-		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 771, case 1
-		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 772, case 1
-		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 773, case 1
-		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 774, case 1
-		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 775, case 1
-		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 776, case 1
-		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 777, case 1
+		if (R == R_752) { print "Instead of going by a vehicle to somewhere ( called the destination ) that is not outdoors"; return; } ! 703, case 2
+		if (R == R_753) { print "Every turn when the SnowCat is not low-on-fuel and the location of the player is Off the Grid and the player is in the SnowCat"; return; } ! 704, case 2
+		if (R == R_754) { print "Every turn when the player is in the SnowCat and the SnowCat is low-on-fuel and the SnowCat is not out-of-fuel"; return; } ! 705, case 2
+		if (R == R_755) { print "out of fuel occurs"; return; } ! 706, case 1
+		if (R == R_756) { print "Instead of going by the SnowCat when the SnowCat is out-of-fuel"; return; } ! 707, case 2
+		if (R == R_757) { print "Every turn when the player is not cold and the location of the player is Off the Grid and the player is not in the SnowCat"; return; } ! 708, case 2
+		if (R == R_758) { print "Every turn when the player is cold"; return; } ! 709, case 2
+		if (R == R_759) { print "hypothermia occurs"; return; } ! 710, case 1
+		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 711, case 1
+		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 712, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 713, case 1
+		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 714, case 1
+		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 715, case 1
+		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 716, case 1
+		if (R == R_9) { print "when play begins stage rule"; return; } ! 717, case 1
+		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 718, case 1
+		if (R == R_11) { print "display banner rule"; return; } ! 719, case 1
+		if (R == R_12) { print "initial room description rule"; return; } ! 720, case 1
+		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 721, case 1
+		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 722, case 1
+		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 723, case 1
+		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 724, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 725, case 1
+		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 726, case 1
+		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 727, case 1
+		if (R == R_16) { print "notify score changes rule"; return; } ! 728, case 1
+		if (R == R_17) { print "when play ends stage rule"; return; } ! 729, case 1
+		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 730, case 1
+		if (R == R_18) { print "print player's obituary rule"; return; } ! 731, case 1
+		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 732, case 1
+		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 733, case 1
+		if (R == R_21) { print "before stage rule"; return; } ! 734, case 1
+		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 735, case 1
+		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 736, case 1
+		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 737, case 1
+		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 738, case 1
+		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 739, case 1
+		if (R == R_22) { print "instead stage rule"; return; } ! 740, case 1
+		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 741, case 1
+		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 742, case 1
+		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 743, case 1
+		if (R == R_23) { print "end action-processing in success rule"; return; } ! 744, case 1
+		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 745, case 1
+		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 746, case 1
+		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 747, case 1
+		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 748, case 1
+		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 749, case 1
+		if (R == R_35) { print "can't act in the dark rule"; return; } ! 750, case 1
+		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 751, case 1
+		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 752, case 1
+		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 753, case 1
+		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 754, case 1
+		if (R == R_61) { print "look around once light available rule"; return; } ! 755, case 1
+		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 756, case 1
+		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 757, case 1
+		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 758, case 1
+		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 759, case 1
+		if (R == R_69) { print "print the final question rule"; return; } ! 760, case 1
+		if (R == R_68) { print "print the final prompt rule"; return; } ! 761, case 1
+		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 762, case 1
+		if (R == R_70) { print "standard respond to final question rule"; return; } ! 763, case 1
+		if (R == R_91) { print "can't take component parts rule"; return; } ! 764, case 1
+		if (R == R_148) { print "find what to enter rule"; return; } ! 765, case 1
+		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 766, case 1
+		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 767, case 1
+		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 768, case 1
+		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 769, case 1
+		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 770, case 1
+		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 771, case 1
+		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 772, case 1
+		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 773, case 1
+		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 774, case 1
+		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 775, case 1
+		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 776, case 1
+		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 777, case 1
+		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 778, case 1
+		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 779, case 1
+		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 780, case 1
+		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 781, case 1
+		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 782, case 1
+		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 783, case 1
+		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 784, case 1
+		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 785, case 1
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -25613,11 +26149,11 @@ Array CheckTableEntryIsNonBlank_LU
 
 
 [ Cond_Token_162 ;
-if ((((~~(((Adj_3_t1_v9(I107_prepared_plate)))))))) return GPR_PREPOSITION;
+if ((((~~(((Adj_3_t1_v9(I108_prepared_plate)))))))) return GPR_PREPOSITION;
     return GPR_FAIL;
 ];
 [ Cond_Token_163 ;
-if ((((~~(((Adj_3_t1_v9(I108_pint_glass)))))))) return GPR_PREPOSITION;
+if ((((~~(((Adj_3_t1_v9(I109_pint_glass)))))))) return GPR_PREPOSITION;
     return GPR_FAIL;
 ];
 
@@ -26062,8 +26598,20 @@ if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(female)) && (t_0  has female)) { if (na++ > 0) print ", "; print "female"; }
     if ((AllowInShowme(female)) && (t_0  hasnt female)) { if (na++ > 0) print ", "; print "male"; }
     if ((AllowInShowme(neuter)) && (t_0  has neuter)) { if (na++ > 0) print ", "; print "neuter"; }
+    if ((AllowInShowme(p57_cold)) && (t_0  has p57_cold)) { if (na++ > 0) print ", "; print "cold"; }
 }
 if (t_0 ofclass K13_device) {if (na > 0) { na = 0; print "; "; }
+    if ((AllowInShowme(on)) && (t_0  has on)) { if (na++ > 0) print ", "; print "switched on"; }
+    if ((AllowInShowme(on)) && (t_0  hasnt on)) { if (na++ > 0) print ", "; print "switched off"; }
+}
+if (t_0 ofclass K14_vehicle) {if (na > 0) { na = 0; print "; "; }
+    if ((AllowInShowme(p58_low_on_fuel)) && (t_0  has p58_low_on_fuel)) { if (na++ > 0) print ", "; print "low-on-fuel"; }
+    if ((AllowInShowme(p59_out_of_fuel)) && (t_0  has p59_out_of_fuel)) { if (na++ > 0) print ", "; print "out-of-fuel"; }
+}
+if (t_0 ofclass K16_environment) {if (na > 0) { na = 0; print "; "; }
+    if ((AllowInShowme(p56_outdoors)) && (t_0  has p56_outdoors)) { if (na++ > 0) print ", "; print "outdoors"; }
+}
+if (t_0 ofclass K18_robot) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(on)) && (t_0  has on)) { if (na++ > 0) print ", "; print "switched on"; }
     if ((AllowInShowme(on)) && (t_0  hasnt on)) { if (na++ > 0) print ", "; print "switched off"; }
 }
@@ -26566,34 +27114,42 @@ Verb meta 'tree'
    rfalse;
 ];
 [ text_routine_0;
-say__p=1;ParaContent();  print (PrintText) SC_51; 
-	if (~~((((I91_your_bunk_bed == SupporterOf(player)))))) jump L_Say57;
-		ParaContent();  print (PrintText) SC_35; ParaContent();  print (PrintShortName) I91_your_bunk_bed; ParaContent();  print (PrintText) SC_52; 
-	.L_Say57; .L_SayX57;
-		ParaContent();  print (PrintText) SC_35; ParaContent();  print (PrintShortName) I90_sleeping_quarters; ParaContent();  print (PrintText) SC_53; 
-	if (~~(((((Adj_70_t1_v9(I96_alarm_clock))))))) jump L_Say58;
-		ParaContent();  print (PrintText) SC_54; ParaContent();  print (PrintShortName) I96_alarm_clock; ParaContent();  print (PrintText) SC_55; 
-	.L_Say58; .L_SayX58;
-		 .L_Say59; .L_SayX59;
+say__p=1;ParaContent();  print (PrintText) SC_66; 
+	if (~~((((I92_your_bunk_bed == SupporterOf(player)))))) jump L_Say62;
+		ParaContent();  print (PrintText) SC_49; ParaContent();  print (PrintShortName) I92_your_bunk_bed; ParaContent();  print (PrintText) SC_67; 
+	.L_Say62; .L_SayX62;
+		ParaContent();  print (PrintText) SC_49; ParaContent();  print (PrintShortName) I91_sleeping_quarters; ParaContent();  print (PrintText) SC_68; 
+	if (~~(((((Adj_70_t1_v9(I97_alarm_clock))))))) jump L_Say63;
+		ParaContent();  print (PrintText) SC_69; ParaContent();  print (PrintShortName) I97_alarm_clock; ParaContent();  print (PrintText) SC_70; 
+	.L_Say63; .L_SayX63;
+		 .L_Say64; .L_SayX64;
     rtrue;
 ];
 
 [ text_routine_1;
-say__p=1;ParaContent();  print (PrintText) SC_56; ParaContent();  print (PrintShortName) I96_alarm_clock; 
-	if (~~(((((Adj_70_t1_v9(self))))))) jump L_Say60;
-		ParaContent();  print (PrintText) SC_57; 
-	.L_Say60; .L_SayX60;
-		ParaContent();  print (PrintText) SC_58; ParaContent();  print (PrintTimeOfDay) the_time; ParaContent();  print (PrintText) SC_17;  .L_Say61; .L_SayX61;
+say__p=1;ParaContent();  print (PrintText) SC_71; ParaContent();  print (PrintShortName) I97_alarm_clock; 
+	if (~~(((((Adj_70_t1_v9(self))))))) jump L_Say65;
+		ParaContent();  print (PrintText) SC_72; 
+	.L_Say65; .L_SayX65;
+		ParaContent();  print (PrintText) SC_73; ParaContent();  print (PrintTimeOfDay) the_time; ParaContent();  print (PrintText) SC_24;  .L_Say66; .L_SayX66;
     rtrue;
 ];
 
 [ text_routine_2;
-say__p=1;ParaContent();  print (PrintText) SC_56; ParaContent();  print (PrintShortName) I101_mess_hall; ParaContent();  print (PrintText) SC_59; ParaContent();  print (PrintShortName) I125_offices; ParaContent();  print (PrintText) SC_17;  .L_Say62; .L_SayX62;
+say__p=1;ParaContent();  print (PrintText) SC_71; ParaContent();  print (PrintShortName) I102_mess_hall; ParaContent();  print (PrintText) SC_74; ParaContent();  print (PrintShortName) I128_offices; ParaContent();  print (PrintText) SC_24;  .L_Say67; .L_SayX67;
     rtrue;
 ];
 
 [ text_routine_3;
-say__p=1;ParaContent();  print (PrintText) SC_60; ParaContent();  new_line; ParaContent();  print (PrintText) SC_61; ParaContent();  print (PrintShortName)  LocationOf(I119_humanoid_1) ; ParaContent();  new_line; ParaContent();  print (PrintText) SC_62; ParaContent();  print (PrintShortName)  LocationOf(I120_humanoid_2) ; ParaContent();  new_line; ParaContent();  print (PrintText) SC_63; ParaContent();  print (PrintShortName)  LocationOf(I121_humanoid_3) ; ParaContent();  new_line; ParaContent();  print (PrintText) SC_64; ParaContent();  print (PrintShortName)  LocationOf(I123_humanoid_4) ;  .L_Say63; .L_SayX63;
+say__p=1;ParaContent();  print (PrintText) SC_75; ParaContent();  new_line; ParaContent();  print (PrintText) SC_76; ParaContent();  print (PrintShortName)  LocationOf(I121_humanoid_1) ; ParaContent();  new_line; ParaContent();  print (PrintText) SC_77; ParaContent();  print (PrintShortName)  LocationOf(I122_humanoid_2) ; ParaContent();  new_line; ParaContent();  print (PrintText) SC_78; ParaContent();  print (PrintShortName)  LocationOf(I123_humanoid_3) ; ParaContent();  new_line; ParaContent();  print (PrintText) SC_79; ParaContent();  print (PrintShortName)  LocationOf(I125_humanoid_4) ;  .L_Say68; .L_SayX68;
+    rtrue;
+];
+
+[ text_routine_4;
+say__p=1;ParaContent();  print (PrintText) SC_80; ParaContent();  I7_ST_say_one_of-->2 =
+	i7_soo_ran(I7_ST_say_one_of-->2, 4);
+	switch((I7_ST_say_one_of-->2)%(4+1)-1) {
+		0: ParaContent();  print (PrintText) SC_81; ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_82; ParaContent();  @nop; 2: ParaContent();  print (PrintText) SC_83; ParaContent();  @nop; 3: ParaContent();  print (PrintText) SC_84; ParaContent();  } ParaContent();  print (PrintText) SC_85;  .L_Say69; .L_SayX69;
     rtrue;
 ];
 
@@ -28053,7 +28609,7 @@ Array Rel_Record_65 -->
     selection = -1;
     while (true) {
         counter = 0;
-        objectloop (x in I102_bar) if (SupporterOf(x)==parent(x)){
+        objectloop (x in I103_bar) if (SupporterOf(x)==parent(x)){
             if ((x ofclass K2_thing)){
                 counter++;
                 if (counter == selection) return x;
@@ -28521,69 +29077,90 @@ ArgumentTypeFailed(filename, line);
 Array ConstantListPointers --> 
  0 0;
 
-Constant SC_35 = " ";
-Constant SC_54 = " Your ";
-Constant SC_26 = " and ";
-Constant SC_20 = " arrives from ";
-Constant SC_27 = " before starting your shift.";
-Constant SC_57 = " buzzes loudly and";
-Constant SC_55 = " buzzes loudly.";
-Constant SC_19 = " heads to ";
-Constant SC_49 = " here";
-Constant SC_52 = " in";
-Constant SC_59 = " is more properly a bar repurposed at mealtimes for eating. East to ";
-Constant SC_39 = " or ";
-Constant SC_58 = " reads ";
-Constant SC_44 = " you ";
-Constant SC_40 = ", ";
-Constant SC_38 = ",";
-Constant SC_34 = ". Refreshing.";
-Constant SC_53 = ". The smell of warm breakfast wafts through the northern hatch.";
-Constant SC_17 = ".";
-Constant SC_21 = ": ";
-Constant SC_50 = ":";
-Constant SC_41 = "> ";
-Constant SC_9 = ">";
-Constant SC_37 = "?";
-Constant SC_18 = "A ";
-Constant SC_23 = "A dozing crew member whispers abruptly, ~Could you shut that thing off!~";
+Constant SC_49 = " ";
+Constant SC_69 = " Your ";
+Constant SC_40 = " and ";
+Constant SC_27 = " arrives from ";
+Constant SC_41 = " before starting your shift.";
+Constant SC_72 = " buzzes loudly and";
+Constant SC_70 = " buzzes loudly.";
+Constant SC_26 = " heads to ";
+Constant SC_63 = " here";
+Constant SC_67 = " in";
+Constant SC_74 = " is more properly a bar repurposed at mealtimes for eating. East leads to ";
+Constant SC_33 = " is out of fuel!";
+Constant SC_53 = " or ";
+Constant SC_85 = " plains.";
+Constant SC_73 = " reads ";
+Constant SC_35 = " to ";
+Constant SC_58 = " you ";
+Constant SC_54 = ", ";
+Constant SC_52 = ",";
+Constant SC_48 = ". Refreshing.";
+Constant SC_68 = ". The smell of warm breakfast wafts through the northern hatch.";
+Constant SC_24 = ".";
+Constant SC_32 = ": ";
+Constant SC_64 = ":";
+Constant SC_55 = "> ";
+Constant SC_12 = ">";
+Constant SC_51 = "?";
+Constant SC_25 = "A ";
+Constant SC_37 = "A dozing crew member whispers abruptly, ~Could you shut that thing off!~";
 Constant SC_4 = "As good-looking as ever.";
 Constant SC_6 = "At this research outpost the crew works rotating shifts.";
-Constant SC_16 = "Bart the Bartender tends to the ";
-Constant SC_28 = "Best not to disturb those that are sleeping.";
-Constant SC_61 = "Humanoid 1 ";
-Constant SC_62 = "Humanoid 2 ";
-Constant SC_63 = "Humanoid 3 ";
-Constant SC_64 = "Humanoid 4 ";
-Constant SC_43 = "In ";
-Constant SC_8 = "Offices";
-Constant SC_45 = "On ";
-Constant SC_13 = "QUIT";
-Constant SC_10 = "RESTART";
-Constant SC_11 = "RESTORE a saved game";
+Constant SC_23 = "Bart the Bartender tends to the ";
+Constant SC_42 = "Best not to disturb those that are sleeping.";
+Constant SC_30 = "Brrrrrrr.";
+Constant SC_76 = "Humanoid 1 ";
+Constant SC_77 = "Humanoid 2 ";
+Constant SC_78 = "Humanoid 3 ";
+Constant SC_79 = "Humanoid 4 ";
+Constant SC_57 = "In ";
+Constant SC_28 = "It's kinda cold out here.";
+Constant SC_8 = "Look at me.";
+Constant SC_10 = "Look at us.";
+Constant SC_9 = "Look at you.";
+Constant SC_11 = "Offices";
+Constant SC_59 = "On ";
+Constant SC_16 = "QUIT";
+Constant SC_13 = "RESTART";
+Constant SC_14 = "RESTORE a saved game";
 Constant SC_2 = "Robert Dionne";
-Constant SC_60 = "Robot Locations";
-Constant SC_56 = "The ";
+Constant SC_75 = "Robot Locations";
+Constant SC_22 = "Running out of gas.";
+Constant SC_71 = "The ";
+Constant SC_21 = "The fuel is low.";
+Constant SC_19 = "The gas meter is getting lower.";
 Constant SC_5 = "The magazine is dated March 2024.";
 Constant SC_7 = "The serving robot prepares meals here.";
-Constant SC_14 = "UNDO the last command";
-Constant SC_36 = "Would you like to ";
-Constant SC_42 = "You ";
-Constant SC_32 = "You already have a pint glass.";
-Constant SC_30 = "You already have a plate.";
-Constant SC_51 = "You are in";
-Constant SC_15 = "You awaken.";
-Constant SC_33 = "You drink ";
-Constant SC_24 = "You need ";
-Constant SC_22 = "You should probably get dressed first!";
-Constant SC_31 = "You take a pint glass from the bar.";
-Constant SC_29 = "You take a plate from the bar.";
-Constant SC_47 = "also ";
-Constant SC_46 = "can ";
-Constant SC_48 = "see ";
-Constant SC_12 = "see some suggestions for AMUSING things to do";
+Constant SC_17 = "UNDO the last command";
+Constant SC_50 = "Would you like to ";
+Constant SC_56 = "You ";
+Constant SC_46 = "You already have a pint glass.";
+Constant SC_44 = "You already have a plate.";
+Constant SC_31 = "You are getting cold.";
+Constant SC_66 = "You are in";
+Constant SC_80 = "You are off the known grid and wandering the ";
+Constant SC_18 = "You awaken.";
+Constant SC_29 = "You can't feel your toes.";
+Constant SC_34 = "You cannot drive ";
+Constant SC_47 = "You drink ";
+Constant SC_65 = "You have died of hypothermia.";
+Constant SC_38 = "You need ";
+Constant SC_36 = "You should probably get dressed first!";
+Constant SC_45 = "You take a pint glass from the bar.";
+Constant SC_43 = "You take a plate from the bar.";
+Constant SC_20 = "You won't be able to drive much farther.";
+Constant SC_61 = "also ";
+Constant SC_60 = "can ";
+Constant SC_82 = "frigid";
+Constant SC_83 = "frozen";
+Constant SC_84 = "glacial";
+Constant SC_81 = "icy";
+Constant SC_62 = "see ";
+Constant SC_15 = "see some suggestions for AMUSING things to do";
 Constant SC_3 = "the";
-Constant SC_25 = "your ";
+Constant SC_39 = "your ";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;
@@ -28623,6 +29200,10 @@ Constant SC_25 = "your ";
 #ifndef neuter; Constant neuter = 0; #endif;
 #ifndef on; Constant on = 0; #endif;
 #ifndef p54_recurring; Constant p54_recurring = 0; #endif;
+#ifndef p56_outdoors; Constant p56_outdoors = 0; #endif;
+#ifndef p57_cold; Constant p57_cold = 0; #endif;
+#ifndef p58_low_on_fuel; Constant p58_low_on_fuel = 0; #endif;
+#ifndef p59_out_of_fuel; Constant p59_out_of_fuel = 0; #endif;
 #ifndef vector; Constant vector = 0; #endif;
 #ifndef room_index; Constant room_index = 0; #endif;
 #ifndef door_dir; Constant door_dir = 0; #endif;
@@ -28673,6 +29254,8 @@ Constant SC_25 = "your ";
 #ifndef IK17_Link; Constant IK17_Link = 0; #endif;
 #ifndef IK18_Count; Constant IK18_Count = 0; #endif;
 #ifndef IK18_Link; Constant IK18_Link = 0; #endif;
+#ifndef IK19_Count; Constant IK19_Count = 0; #endif;
+#ifndef IK19_Link; Constant IK19_Link = 0; #endif;
 #ifndef KD_Count; Constant KD_Count = 0; #endif;
 #ifndef name; Constant name = 0; #endif;
 #ifndef parse_name; Constant parse_name = 0; #endif;
@@ -28681,6 +29264,7 @@ Constant SC_25 = "your ";
 #IFNDEF cap_short_name;
 Constant cap_short_name = short_name;
 #ENDIF;
+Array I7_ST_say_one_of --> 5;
 
 Array Runtime_Quotations_Displayed --> 1;
 
