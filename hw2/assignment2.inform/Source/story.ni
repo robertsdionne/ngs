@@ -28,6 +28,7 @@ A mobile device is a kind of thing. A mobile device can be buzzing.
 
 [People]
 A person can be cold. A person can be notified-of-first-message. A person can be notified-of-second-message.
+A person can be notified-of-third-message.
 
 
 [Robots]
@@ -163,15 +164,13 @@ Before going to Operations when the player is not notified-of-second-message:
 	Now the player is notified-of-second-message;
 	Continue the action.
 
-The supercomputer is a switched on device in Operations. The description of the supercomputer is "This machine guides all the research here at Antarctic #57."
+The supercomputer is a switched on fixed in place device in Operations. The description of the supercomputer is "This machine guides all the research here at Antarctic #57."
 Understand "computer" as supercomputer when player is in Operations.
 The blinking lights are part of the supercomputer. The description of the blinking lights is "They [one of]flicker[or]blink[or]twinkle[at random] faster than you can see."
-The gauges are part of the supercomputer. The description of the gauges is "The gauges report [a random number between -93 and 14] degrees celsius."
+The gauges are part of the supercomputer. The description of the gauges is "The gauges report outside temperature [a random number between -93 and 14] degrees celsius."
 
 After switching off the supercomputer:
 	Now all rooms are dark;
-	Hypothermia occurs in four turns from now;
-	Now the player is cold.
 
 Instead of switching on the supercomputer:
 	Say "You've shorted some sort of electrical breaker. Too bad."
@@ -183,7 +182,11 @@ Catwalk is north of Offices. "Your shoes [one of]clank[or]jingle[or]clomp[or]ban
 
 Section - Ready Room
 
-Ready Room is west of Catwalk.
+Ready Room is west of Catwalk. "Your gear is stored in [the lockers]. [Housing Unit] to west, [Catwalk] east."
+
+Some lockers are a closed openable fixed in place container in Ready Room.
+The thick outdoor gear is in the lockers. It is wearable.
+The EMP Grenade is in the lockers.
 
 
 Section - Housing Unit
@@ -191,20 +194,33 @@ Section - Housing Unit
 Housing Unit is west of Ready Room. 
 
 Humanoid 1 is a robot in Housing Unit. The description of Humanoid 1 is "The eyes look dead."
-
+Instead of switching on Humanoid 1:
+	Say "The humanoid twitches for a second, but collapses after blowing a fuse."
 
 Humanoid 2 is a robot in Housing Unit. The description of Humanoid 2 is "The face is smashed."
+Instead of switching on Humanoid 2:
+	Say "The humanoid doesn't even respond."
 
 Humanoid 3 is in Ice Cave. Humanoid 3 is a robot.
 
 Humanoid 4 is a robot in Housing Unit. The description of Humanoid 4 is "The antennae are bent."
+Instead of switching on Humanoid 4:
+	Say "The head spins around three times before the eyes roll back and the unit shuts down."
 
+After going from Housing Unit when the player is not notified-of-third-message:
+	Now the mobile phone is buzzing;
+	Now the mobile phone is lit;
+	Now the description of mobile phone is "Text message: 'Urgent! Suit up in [Ready Room]. Track down rogue [Humanoid 3] outside via [Garage].'";
+	Now the player is notified-of-third-message;
+	Continue the action.
 
 Section - Garage
 
-Garage is an environment. It is east of Catwalk.
+Garage is an environment. It is east of Catwalk. "The [SnowCat] [if player is in SnowCat]roars to life[otherwise]lies dormant[end if] in the [Garage]. Outside to north."
 
-In Garage is a vehicle called SnowCat.
+Some empty fuel canisters are in Garage. The empty fuel canisters are fixed in place.
+
+In Garage is a vehicle called SnowCat. The description of SnowCat is "A rugged, tracked vehicle with enclosed cab for navigating the treacherous climate outside."
 
 Instead of going by a vehicle to somewhere (called the destination) that is not outdoors:
 	Say "You cannot drive [the SnowCat] into [the destination]."
@@ -296,6 +312,14 @@ Instead of going by the SnowCat when the SnowCat is out-of-fuel:
 	Say "[The SnowCat] is out of fuel!"
 
 [Player Hypothermia]
+Every turn when the player is not cold and the location of the player is an environment and the player is not wearing thick outdoor gear and the player is not in the SnowCat:
+	Hypothermia occurs in four turns from now;
+	Now the player is cold.
+
+Every turn when the player is not cold and the location of the player is dark and the player is not wearing thick outdoor gear:
+	Hypothermia occurs in four turns from now;
+	Now the player is cold.
+
 Every turn when the player is not cold and the location of the player is Off the Grid and the player is not in the SnowCat:
 	Hypothermia occurs in four turns from now;
 	Now the player is cold.

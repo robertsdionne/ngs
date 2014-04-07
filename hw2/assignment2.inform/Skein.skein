@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x2df3c0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2df3c0" />
+  <activeNode nodeId="node-0x194f8c70" />
   <item nodeId="node-0x2df3c0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -26,646 +26,12 @@ On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="893">NO</temporary>
+    <temporary score="1129">NO</temporary>
     <children>
-      <child nodeId="node-0xa878560" />
+      <child nodeId="node-0x3999e9e0" />
       <child nodeId="node-0x18326350" />
       <child nodeId="node-0x183f4ac0" />
-      <child nodeId="node-0x183a1670" />
-      <child nodeId="node-0x230b4c50" />
     </children>
-  </item>
-  <item nodeId="node-0x230b4c50">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Sleeping Quarters (on your bunk bed)
-You are in your bunk bed in Sleeping Quarters. The smell of warm breakfast wafts through the northern hatch. Your alarm clock buzzes loudly.
-
-On the other bunks are some sleeping crew.
-
-On your night stand are an alarm clock, a keycard and a mobile phone.
-
-On your bunk bed you can see a copy of Research Robotics and some grey fatigues.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x3996f000" />
-    </children>
-  </item>
-  <item nodeId="node-0x3996f000">
-    <command xml:space="preserve">test all</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] test awaken
-(Testing.)
-
-&gt;[2] take all
-copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: Taken.
-mobile phone: Taken.
-
-[Your score has just gone up by two points.]
-
-&gt;[3] put on clothes
-You put on the grey fatigues.
-
-&gt;[4] turn off alarm
-You switch the alarm clock off.
-
-&gt;[5] north.
-(first getting off your bunk bed)
-(first opening the hatch)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender prepares the pint glasses.
-
-&gt;[6] test breakfast
-(Testing.)
-
-&gt;[7] take plate
-You take a plate from the bar.
-
-Bart the Bartender tends to the prepared plates.
-
-&gt;[8] take glass
-You take a pint glass from the bar.
-
-Bart the Bartender washes the pint glasses.
-
-&gt;[9] eat pancake
-(first taking the pancake)
-You eat the pancake. Not bad.
-
-Bart the Bartender cleans the beer taps.
-
-&gt;[10] eat egg
-(first taking the egg)
-You eat the egg. Not bad.
-
-Bart the Bartender tends to the prepared plates.
-
-&gt;[11] eat bacon
-(first taking the slice of bacon)
-You eat the slice of bacon. Not bad.
-
-Bart the Bartender washes the prepared plates.
-
-&gt;[12] eat toast
-(first taking the slice of toast)
-You eat the slice of toast. Not bad.
-
-Bart the Bartender scrubs the prepared plates.
-
-&gt;[13] drink orange juice
-You drink the orange juice. Refreshing.
-
-Bart the Bartender washes the stovetop.
-
-&gt;[14] drop plate and glass
-prepared plate: Dropped.
-pint glass: Dropped.
-
-Bart the Bartender prepares the prepared plates.
-
-&gt;[15] turn off bart
-You switch Bart the Bartender off.
-
-&gt;[16] east.
-
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (closed) here.
-
-Your mobile phone buzzes.
-
-&gt;[17] test duties.
-(Testing.)
-
-&gt;[18] look at mobile
-Text message: &quot;Today&apos;s duties:
-- Check status of robots on computer terminal in Offices.
-- Activate robot workers in Housing Unit.
-- Gear up in Ready Room.&quot;
-
-&gt;[19] unlock terminal with keycard
-You unlock the computer terminal.
-
-&gt;[20] open terminal
-You open the computer terminal, revealing ROBOTS file.
-
-&gt;[21] read robots.
-Robot Locations
-Humanoid 1 Housing Unit
-Humanoid 2 Housing Unit
-Humanoid 3 UNKNOWN
-Humanoid 4 Housing Unit
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3ec830" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3ec830">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Catwalk
-Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x194ad130" />
-    </children>
-  </item>
-  <item nodeId="node-0x194ad130">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Garage
-You can see SnowCat (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0xef7aa60" />
-    </children>
-  </item>
-  <item nodeId="node-0xef7aa60">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0xf3db2a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf3db2a0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x18331300" />
-    </children>
-  </item>
-  <item nodeId="node-0x18331300">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x194f5830" />
-    </children>
-  </item>
-  <item nodeId="node-0x194f5830">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 0-2
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x546bb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x546bb0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 1-2
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0xef749e0" />
-    </children>
-  </item>
-  <item nodeId="node-0xef749e0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 2-2
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d58390" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d58390">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Grid 2-1
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x399f0bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x399f0bd0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 3-1
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d21b20" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d21b20">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x32eee0" />
-    </children>
-  </item>
-  <item nodeId="node-0x32eee0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Grid 3-0
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e3e1b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e3e1b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 3-1
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0xa8a0950" />
-    </children>
-  </item>
-  <item nodeId="node-0xa8a0950">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Grid 3-2
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d14060" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d14060">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x39941e40" />
-    </children>
-  </item>
-  <item nodeId="node-0x39941e40">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Grid 2-2
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x23073c40" />
-    </children>
-  </item>
-  <item nodeId="node-0x23073c40">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the icy plains.
-
-You can see a scientist here.
-
-A scientist heads to Off the Grid.
-A scientist arrives from Off the Grid.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x183a94a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183a94a0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the glacial plains.
-
-You can see a scientist here.
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x399ee340" />
-    </children>
-  </item>
-  <item nodeId="node-0x399ee340">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frozen plains.
-
-You can see a scientist here.
-
-A scientist heads to Off the Grid.
-A scientist arrives from Off the Grid.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x399c3b00" />
-    </children>
-  </item>
-  <item nodeId="node-0x399c3b00">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the icy plains.
-
-You can see a scientist here.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="859">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d524d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d524d0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the glacial plains.
-
-You can see a scientist here.
-
-A scientist heads to Off the Grid.
-A scientist arrives from Off the Grid.
-
-You are getting cold.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 40 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="858">YES</temporary>
-  </item>
-  <item nodeId="node-0x183a1670">
-    <command xml:space="preserve">test breakfast</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] take plate
-You can&apos;t see any such thing.
-
-&gt;[2] take glass
-You can&apos;t see any such thing.
-
-&gt;[3] eat pancake
-You can&apos;t see any such thing.
-
-&gt;[4] eat egg
-You can&apos;t see any such thing.
-
-&gt;[5] eat bacon
-You can&apos;t see any such thing.
-
-&gt;[6] eat toast
-You can&apos;t see any such thing.
-
-&gt;[7] drink orange juice
-You can&apos;t see any such thing.
-
-&gt;[8] drop plate and glass
-You can&apos;t see any such thing.
-
-&gt;[9] turn off bart
-You can&apos;t see any such thing.
-
-&gt;[10] east.
-(first getting off your bunk bed)
-You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="752">YES</temporary>
-    <children>
-      <child nodeId="node-0xef3dd50" />
-    </children>
-  </item>
-  <item nodeId="node-0xef3dd50">
-    <command xml:space="preserve">test all</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] test awaken
-(Testing.)
-
-&gt;[2] take all
-copy of Research Robotics: Taken.
-grey fatigues: Taken.
-keycard: Taken.
-mobile phone: Taken.
-
-[Your score has just gone up by two points.]
-
-&gt;[3] put on clothes
-You put on the grey fatigues.
-
-&gt;[4] turn off alarm
-You switch the alarm clock off.
-
-&gt;[5] north.
-(first opening the hatch)
-
-Mess Hall
-The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
-
-On the bar are prepared plates, pint glasses and some beer taps.
-
-You can also see Bart the Bartender here.
-
-Bart the Bartender cleans the pint glasses.
-
-&gt;[6] test breakfast
-(Testing.)
-
-&gt;[7] take plate
-You take a plate from the bar.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[8] take glass
-You take a pint glass from the bar.
-
-Bart the Bartender scrubs the prepared plates.
-
-&gt;[9] eat pancake
-(first taking the pancake)
-You eat the pancake. Not bad.
-
-Bart the Bartender tends to the pint glasses.
-
-&gt;[10] eat egg
-(first taking the egg)
-You eat the egg. Not bad.
-
-Bart the Bartender prepares the prepared plates.
-
-&gt;[11] eat bacon
-(first taking the slice of bacon)
-You eat the slice of bacon. Not bad.
-
-Bart the Bartender washes the beer taps.
-
-&gt;[12] eat toast
-(first taking the slice of toast)
-You eat the slice of toast. Not bad.
-
-Bart the Bartender tends to the stovetop.
-
-&gt;[13] drink orange juice
-You drink the orange juice. Refreshing.
-
-Bart the Bartender prepares the beer taps.
-
-&gt;[14] drop plate and glass
-prepared plate: Dropped.
-pint glass: Dropped.
-
-Bart the Bartender cleans the pint glasses.
-
-&gt;[15] turn off bart
-You switch Bart the Bartender off.
-
-&gt;[16] east.
-
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (closed) here.
-
-Your mobile phone buzzes.
-
-&gt;[17] test duties.
-(Testing.)
-
-&gt;[18] look at mobile
-Text message: &quot;Today&apos;s duties:
-- Check status of robots on computer terminal in Offices.
-- Activate robot workers in Housing Unit.
-- Gear up in Garage.&quot;
-
-&gt;[19] unlock terminal with keycard
-You unlock the computer terminal.
-
-&gt;[20] open terminal
-You open the computer terminal, revealing ROBOTS file.
-
-&gt;[21] read robots.
-Robot Locations
-Humanoid 1 Housing Unit
-Humanoid 2 Housing Unit
-Humanoid 3 UNKNOWN
-Humanoid 4 Housing Unit
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="752">YES</temporary>
-    <children>
-      <child nodeId="node-0x230d1f40" />
-    </children>
-  </item>
-  <item nodeId="node-0x230d1f40">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (in which is ROBOTS file) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="752">YES</temporary>
   </item>
   <item nodeId="node-0x183f4ac0">
     <command xml:space="preserve">test all</command>
@@ -699,7 +65,7 @@ On the bar are prepared plates, pint glasses and some beer taps.
 
 You can also see Bart the Bartender here.
 
-Bart the Bartender prepares the pint glasses.
+Bart the Bartender washes the pint glasses.
 
 &gt;[6] test breakfast
 (Testing.)
@@ -707,12 +73,12 @@ Bart the Bartender prepares the pint glasses.
 &gt;[7] take plate
 You take a plate from the bar.
 
-Bart the Bartender cleans the prepared plates.
+Bart the Bartender tends to the beer taps.
 
 &gt;[8] take glass
 You take a pint glass from the bar.
 
-Bart the Bartender tends to the prepared plates.
+Bart the Bartender cleans the beer taps.
 
 &gt;[9] eat pancake
 (first taking the pancake)
@@ -724,30 +90,34 @@ Bart the Bartender prepares the stovetop.
 (first taking the egg)
 You eat the egg. Not bad.
 
-Bart the Bartender scrubs the prepared plates.
+Bart the Bartender scrubs the beer taps.
+
+A scientist arrives from Offices.
 
 &gt;[11] eat bacon
 (first taking the slice of bacon)
 You eat the slice of bacon. Not bad.
 
-Bart the Bartender tends to the prepared plates.
+Bart the Bartender cleans the stovetop.
 
 &gt;[12] eat toast
 (first taking the slice of toast)
 You eat the slice of toast. Not bad.
 
-Bart the Bartender cleans the beer taps.
+Bart the Bartender tends to the prepared plates.
+
+A scientist heads to Offices.
 
 &gt;[13] drink orange juice
 You drink the orange juice. Refreshing.
 
-Bart the Bartender tends to the beer taps.
+Bart the Bartender washes the prepared plates.
 
 &gt;[14] drop plate and glass
 prepared plate: Dropped.
 pint glass: Dropped.
 
-Bart the Bartender cleans the beer taps.
+Bart the Bartender scrubs the pint glasses.
 
 &gt;[15] turn off bart
 You switch Bart the Bartender off.
@@ -761,8 +131,6 @@ You can see a computer terminal (closed) here.
 
 Your mobile phone buzzes.
 
-A scientist arrives from Catwalk.
-
 &gt;[17] test duties.
 (Testing.)
 
@@ -775,8 +143,6 @@ Text message: &quot;Today&apos;s duties:
 &gt;[19] unlock terminal with keycard
 You unlock the computer terminal.
 
-A scientist heads to Mess Hall.
-
 &gt;[20] open terminal
 You open the computer terminal, revealing ROBOTS file.
 
@@ -787,16 +153,727 @@ Humanoid 2 Housing Unit
 Humanoid 3 UNKNOWN
 Humanoid 4 Housing Unit
 
-A scientist arrives from Mess Hall.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d112c0" />
+      <child nodeId="node-0x23026240" />
+      <child nodeId="node-0x35d77710" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d77710">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="893">YES</temporary>
+    <temporary score="1129">YES</temporary>
     <children>
-      <child nodeId="node-0x35d112c0" />
-      <child nodeId="node-0x23026240" />
+      <child nodeId="node-0x312490" />
+      <child nodeId="node-0x55d52b60" />
     </children>
+  </item>
+  <item nodeId="node-0x55d52b60">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d12a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d12a30">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x230d34f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230d34f0">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x3995e150" />
+    </children>
+  </item>
+  <item nodeId="node-0x3995e150">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">thick outdoor gear: Taken.
+EMP Grenade: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d88b50" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d88b50">
+    <command xml:space="preserve">wear gear</command>
+    <result xml:space="preserve">You put on the thick outdoor gear.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e01a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e01a30">
+    <command xml:space="preserve">ee</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognize.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x5238d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5238d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x183c93e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x183c93e0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+The SnowCat lies dormant in the Garage. Outside to north.
+
+You can see some empty fuel canisters and SnowCat (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x23037880" />
+    </children>
+  </item>
+  <item nodeId="node-0x23037880">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 0-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x5474e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5474e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 0-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x19422f40" />
+    </children>
+  </item>
+  <item nodeId="node-0x19422f40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 1-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x55d987d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x55d987d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x5f9fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5f9fb0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 1-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x1839cf70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1839cf70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 2-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0xefba440" />
+    </children>
+  </item>
+  <item nodeId="node-0xefba440">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 2-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x19404830" />
+    </children>
+  </item>
+  <item nodeId="node-0x19404830">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 3-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x326c50" />
+    </children>
+  </item>
+  <item nodeId="node-0x326c50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Ice Cave
+You can see Humanoid 3 here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d2cc90" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d2cc90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Grid 3-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x39923890" />
+    </children>
+  </item>
+  <item nodeId="node-0x39923890">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x55d7f170" />
+    </children>
+  </item>
+  <item nodeId="node-0x55d7f170">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 3-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x55daa090" />
+    </children>
+  </item>
+  <item nodeId="node-0x55daa090">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ice Cavern
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x39933440" />
+    </children>
+  </item>
+  <item nodeId="node-0x39933440">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0xef7ed40" />
+    </children>
+  </item>
+  <item nodeId="node-0xef7ed40">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb77b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb77b10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0xa8d5ec0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa8d5ec0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Ice Crevasse
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x39971520" />
+    </children>
+  </item>
+  <item nodeId="node-0x39971520">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 3-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x35de5320" />
+    </children>
+  </item>
+  <item nodeId="node-0x35de5320">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 3-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x3992c160" />
+    </children>
+  </item>
+  <item nodeId="node-0x3992c160">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 3-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x51a7d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x51a7d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 3-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d07270" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d07270">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the frozen plains.
+
+You can see a scientist here.
+
+A scientist heads to Off the Grid.
+A scientist arrives from Off the Grid.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1129">YES</temporary>
+    <children>
+      <child nodeId="node-0x194f8c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x194f8c70">
+    <command xml:space="preserve">look at scientist</command>
+    <result xml:space="preserve">You see nothing special about the scientist.
+
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1128">YES</temporary>
+  </item>
+  <item nodeId="node-0x312490">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0xa87b350" />
+    </children>
+  </item>
+  <item nodeId="node-0xa87b350">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0x35de4180" />
+    </children>
+  </item>
+  <item nodeId="node-0x35de4180">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">thick outdoor gear: Taken.
+EMP Grenade: Taken.
+
+A scientist arrives from Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0x3c6560" />
+    </children>
+  </item>
+  <item nodeId="node-0x3c6560">
+    <command xml:space="preserve">wear gear</command>
+    <result xml:space="preserve">You put on the thick outdoor gear.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0x194c3220" />
+    </children>
+  </item>
+  <item nodeId="node-0x194c3220">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0x5d4140" />
+      <child nodeId="node-0x35dc1db0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35dc1db0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e742e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e742e0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0xef23f90" />
+    </children>
+  </item>
+  <item nodeId="node-0xef23f90">
+    <command xml:space="preserve">turn off supercomputer</command>
+    <result xml:space="preserve">Your mobile phone buzzes.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1076">YES</temporary>
+    <children>
+      <child nodeId="node-0x399f9130" />
+    </children>
+  </item>
+  <item nodeId="node-0x399f9130">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+Your mobile phone buzzes.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1075">YES</temporary>
+  </item>
+  <item nodeId="node-0x5d4140">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+The SnowCat lies dormant in the Garage. Outside to north.
+
+You can see some empty fuel canisters and SnowCat (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x52790480" />
+    </children>
+  </item>
+  <item nodeId="node-0x52790480">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 0-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x35dc8d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x35dc8d40">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 0-0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x547580" />
+    </children>
+  </item>
+  <item nodeId="node-0x547580">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 0-1
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x13eb1be0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13eb1be0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 0-2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb3e3d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb3e3d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the icy plains.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0xa8b78f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa8b78f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the frigid plains.
+
+It&apos;s kinda cold out here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x3992b4c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3992b4c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the icy plains.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x3996df80" />
+    </children>
+  </item>
+  <item nodeId="node-0x3996df80">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the frigid plains.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1065">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb71000" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb71000">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Off the Grid
+You are off the known grid and wandering the glacial plains.
+
+You can&apos;t feel your toes.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 34 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1064">YES</temporary>
   </item>
   <item nodeId="node-0x23026240">
     <command xml:space="preserve">w</command>
@@ -1054,19 +1131,6 @@ You can see SnowCat (empty) here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="893">YES</temporary>
-    <children>
-      <child nodeId="node-0x1831f480" />
-    </children>
-  </item>
-  <item nodeId="node-0x1831f480">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Ice Crevasse
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="892">YES</temporary>
   </item>
   <item nodeId="node-0x35d112c0">
     <command xml:space="preserve">e</command>
@@ -1081,362 +1145,271 @@ Your mobile phone buzzes.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="836">YES</temporary>
+    <temporary score="1048">YES</temporary>
     <children>
       <child nodeId="node-0x35d103d0" />
-      <child nodeId="node-0x23085300" />
-      <child nodeId="node-0x23091890" />
-      <child nodeId="node-0x399e30b0" />
-      <child nodeId="node-0x35d498e0" />
-      <child nodeId="node-0xf3be1d0" />
-      <child nodeId="node-0x35d5d8c0" />
-      <child nodeId="node-0x194adc30" />
-      <child nodeId="node-0x323a60" />
     </children>
   </item>
-  <item nodeId="node-0x323a60">
-    <command xml:space="preserve">switch off supercomputer</command>
-    <result xml:space="preserve">You switch the supercomputer off.
-
-Your mobile phone buzzes.
+  <item nodeId="node-0x35d103d0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="788">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1048">YES</temporary>
     <children>
-      <child nodeId="node-0x194aa920" />
+      <child nodeId="node-0x35df25d0" />
+      <child nodeId="node-0xef74ca0" />
+      <child nodeId="node-0x13e31c10" />
     </children>
   </item>
-  <item nodeId="node-0x194aa920">
-    <command xml:space="preserve">look at supercomputer</command>
-    <result xml:space="preserve">This machine guides all the research here at Antarctic #57.
-
-The supercomputer is currently switched off.
-
-Your mobile phone buzzes.
+  <item nodeId="node-0x13e31c10">
+    <command xml:space="preserve">read gauges</command>
+    <result xml:space="preserve">The gauges report -91 degrees celsius.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="787">YES</temporary>
+    <temporary score="913">YES</temporary>
+    <children>
+      <child nodeId="node-0x399a8690" />
+    </children>
   </item>
-  <item nodeId="node-0x194adc30">
-    <command xml:space="preserve">turn off supercomputer</command>
-    <result xml:space="preserve">Your mobile phone buzzes.
+  <item nodeId="node-0x399a8690">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+A scientist arrives from Operations.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="912">YES</temporary>
+  </item>
+  <item nodeId="node-0xef74ca0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1048">YES</temporary>
+    <children>
+      <child nodeId="node-0x51cf20" />
+    </children>
+  </item>
+  <item nodeId="node-0x51cf20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+You can see a scientist here.
+
+A scientist heads to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1048">YES</temporary>
+    <children>
+      <child nodeId="node-0x35da92c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35da92c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+The SnowCat lies dormant in the Garage. Outside to north.
+
+You can see a scientist, some empty fuel canisters and SnowCat (empty) here.
 
 You can&apos;t feel your toes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="813">YES</temporary>
+    <temporary score="1048">YES</temporary>
     <children>
-      <child nodeId="node-0x194daae0" />
-      <child nodeId="node-0x13ec9650" />
+      <child nodeId="node-0x230a7af0" />
     </children>
   </item>
-  <item nodeId="node-0x13ec9650">
-    <command xml:space="preserve">turn on supercomputer</command>
+  <item nodeId="node-0x230a7af0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Grid 0-1
+A scientist arrives from Garage.
+
+Brrrrrrr.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1048">YES</temporary>
+    <children>
+      <child nodeId="node-0x52770070" />
+    </children>
+  </item>
+  <item nodeId="node-0x52770070">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1048">YES</temporary>
+    <children>
+      <child nodeId="node-0x35da4af0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35da4af0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grid 0-0
+You are getting cold.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1048">YES</temporary>
+    <children>
+      <child nodeId="node-0x23002cd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x23002cd0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grid 0-1
+Brrrrrrr.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 27 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1047">YES</temporary>
+  </item>
+  <item nodeId="node-0x35df25d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="930">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d275d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d275d0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="930">YES</temporary>
+    <children>
+      <child nodeId="node-0x183bd120" />
+    </children>
+  </item>
+  <item nodeId="node-0x183bd120">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see a pint glass (empty), a prepared plate (empty) and Bart the Bartender here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="930">YES</temporary>
+    <children>
+      <child nodeId="node-0x230dd8d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230dd8d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="930">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb3f2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb3f2f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="930">YES</temporary>
+    <children>
+      <child nodeId="node-0x230d6720" />
+    </children>
+  </item>
+  <item nodeId="node-0x230d6720">
+    <command xml:space="preserve">read gagues</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="806">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0x1940c820" />
+      <child nodeId="node-0x399bb0d0" />
     </children>
   </item>
-  <item nodeId="node-0x1940c820">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-Your mobile phone buzzes.
-
-You are getting cold.
+  <item nodeId="node-0x399bb0d0">
+    <command xml:space="preserve">read gauges</command>
+    <result xml:space="preserve">The gauges report outside temperature -6 degrees celsius.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="806">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0x399f04a0" />
+      <child nodeId="node-0x3998c030" />
     </children>
   </item>
-  <item nodeId="node-0x399f04a0">
-    <command xml:space="preserve">read phone</command>
-    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
-
-Your mobile phone buzzes.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="806">YES</temporary>
-    <children>
-      <child nodeId="node-0x35dea2c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x35dea2c0">
-    <command xml:space="preserve">read mobile phone</command>
-    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
-
-Your mobile phone buzzes.
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="805">YES</temporary>
-  </item>
-  <item nodeId="node-0x194daae0">
-    <command xml:space="preserve">read mobile phone</command>
-    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="813">YES</temporary>
-    <children>
-      <child nodeId="node-0x1837f5e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1837f5e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="813">YES</temporary>
-    <children>
-      <child nodeId="node-0x13edd2f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x13edd2f0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (in which is ROBOTS file) here.
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="813">YES</temporary>
-    <children>
-      <child nodeId="node-0xefedfc0" />
-    </children>
-  </item>
-  <item nodeId="node-0xefedfc0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Operations
-West to Offices.
-
-You can see a supercomputer here.
-
-Brrrrrrr.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 24 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="812">YES</temporary>
-  </item>
-  <item nodeId="node-0x35d5d8c0">
-    <command xml:space="preserve">turn off computer</command>
-    <result xml:space="preserve">Your mobile phone buzzes.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="836">YES</temporary>
-    <children>
-      <child nodeId="node-0x230057c0" />
-      <child nodeId="node-0x39965d00" />
-    </children>
-  </item>
-  <item nodeId="node-0x39965d00">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (in which is ROBOTS file) here.
-
-Your mobile phone buzzes.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="836">YES</temporary>
-    <children>
-      <child nodeId="node-0x23081a20" />
-    </children>
-  </item>
-  <item nodeId="node-0x23081a20">
-    <command xml:space="preserve">read phone</command>
-    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
-
-You can&apos;t feel your toes.
-
-It is now pitch dark in here!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="836">YES</temporary>
-    <children>
-      <child nodeId="node-0x533060" />
-    </children>
-  </item>
-  <item nodeId="node-0x533060">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="836">YES</temporary>
-    <children>
-      <child nodeId="node-0x35d99d70" />
-    </children>
-  </item>
-  <item nodeId="node-0x35d99d70">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-You are getting cold.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 24 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="835">YES</temporary>
-  </item>
-  <item nodeId="node-0x230057c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-Your mobile phone buzzes.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="829">YES</temporary>
-    <children>
-      <child nodeId="node-0x13eb0180" />
-    </children>
-  </item>
-  <item nodeId="node-0x13eb0180">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-Your mobile phone buzzes.
-
-It&apos;s kinda cold out here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="829">YES</temporary>
-    <children>
-      <child nodeId="node-0x23081890" />
-    </children>
-  </item>
-  <item nodeId="node-0x23081890">
-    <command xml:space="preserve">read phone</command>
-    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
-
-Your mobile phone buzzes.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="829">YES</temporary>
-    <children>
-      <child nodeId="node-0x183a7d80" />
-    </children>
-  </item>
-  <item nodeId="node-0x183a7d80">
-    <command xml:space="preserve">read phone</command>
-    <result xml:space="preserve">It is pitch dark, and you can&apos;t see a thing.
-
-Your mobile phone buzzes.
-
-You are getting cold.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 24 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="828">YES</temporary>
-  </item>
-  <item nodeId="node-0xf3be1d0">
-    <command xml:space="preserve">check mobile phone</command>
-    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Head to Housing Unit.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="770">YES</temporary>
-    <children>
-      <child nodeId="node-0x18391590" />
-    </children>
-  </item>
-  <item nodeId="node-0x18391590">
+  <item nodeId="node-0x3998c030">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Offices
@@ -1447,12 +1420,12 @@ You can see a computer terminal (in which is ROBOTS file) here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="770">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0x273b220" />
+      <child nodeId="node-0x1945acb0" />
     </children>
   </item>
-  <item nodeId="node-0x273b220">
+  <item nodeId="node-0x1945acb0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Catwalk
@@ -1461,114 +1434,25 @@ Your shoes clank along the metal surface between the railings leading west to Re
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="769">YES</temporary>
-  </item>
-  <item nodeId="node-0x35d498e0">
-    <command xml:space="preserve">examine supercomputer</command>
-    <result xml:space="preserve">This machine guides all the research here at Antarctic #57.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="758">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0xf38be50" />
+      <child nodeId="node-0x18304cf0" />
     </children>
   </item>
-  <item nodeId="node-0xf38be50">
-    <command xml:space="preserve">examine blinking lights</command>
-    <result xml:space="preserve">They flicker faster than you can see.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="758">YES</temporary>
-    <children>
-      <child nodeId="node-0x13e02090" />
-    </children>
-  </item>
-  <item nodeId="node-0x13e02090">
-    <command xml:space="preserve">read gauges</command>
-    <result xml:space="preserve">The gauges report -91 degrees celcius.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="758">YES</temporary>
-    <children>
-      <child nodeId="node-0x399aa640" />
-    </children>
-  </item>
-  <item nodeId="node-0x399aa640">
-    <command xml:space="preserve">read gauges</command>
-    <result xml:space="preserve">The gauges report -20 degrees celcius.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="757">YES</temporary>
-  </item>
-  <item nodeId="node-0x399e30b0">
-    <command xml:space="preserve">look at mobile</command>
-    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Head to Housing Unit.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="778">YES</temporary>
-    <children>
-      <child nodeId="node-0x399d1ae0" />
-    </children>
-  </item>
-  <item nodeId="node-0x399d1ae0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (in which is ROBOTS file) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="778">YES</temporary>
-    <children>
-      <child nodeId="node-0x230fc010" />
-    </children>
-  </item>
-  <item nodeId="node-0x230fc010">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Catwalk
-Your shoes bang along the metal surface between the railings leading west to Ready Room and east to Garage.
-
-You can see a scientist here.
-
-A scientist heads to Ready Room.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="778">YES</temporary>
-    <children>
-      <child nodeId="node-0x183e2cd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x183e2cd0">
+  <item nodeId="node-0x18304cf0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Ready Room
-You can see a scientist here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="778">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0x399e1fc0" />
+      <child nodeId="node-0x3992c610" />
     </children>
   </item>
-  <item nodeId="node-0x399e1fc0">
+  <item nodeId="node-0x3992c610">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Housing Unit
@@ -1577,178 +1461,45 @@ You can see Humanoid 1, Humanoid 2 and Humanoid 4 here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="778">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0x230e4be0" />
+      <child nodeId="node-0xf3b1f00" />
     </children>
   </item>
-  <item nodeId="node-0x230e4be0">
+  <item nodeId="node-0xf3b1f00">
     <command xml:space="preserve">turn on Humanoid 1</command>
-    <result xml:space="preserve">You switch Humanoid 1 on.
+    <result xml:space="preserve">The humanoid twitches for a second, but collapses after blowing a fuse.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="777">YES</temporary>
+    <temporary score="930">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb778c0" />
+    </children>
   </item>
-  <item nodeId="node-0x23091890">
-    <command xml:space="preserve">look at supercomputer</command>
-    <result xml:space="preserve">This machine guides all the research here at Antarctic #57.
-
+  <item nodeId="node-0x2cb778c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Ready Room
 Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="780">YES</temporary>
-  </item>
-  <item nodeId="node-0x23085300">
-    <command xml:space="preserve">look at mobile phone</command>
-    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Head to Housing Unit.&quot;
-
-A scientist arrives from Offices.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="765">YES</temporary>
+    <temporary score="930">YES</temporary>
     <children>
-      <child nodeId="node-0x399ac830" />
+      <child nodeId="node-0x35d1b560" />
     </children>
   </item>
-  <item nodeId="node-0x399ac830">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Offices
-You pass through Offices, with Catwalk to the north and Operations to the east.
-
-You can see a computer terminal (in which is ROBOTS file) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="765">YES</temporary>
-    <children>
-      <child nodeId="node-0x39958e10" />
-    </children>
-  </item>
-  <item nodeId="node-0x39958e10">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Catwalk
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="764">YES</temporary>
-  </item>
-  <item nodeId="node-0x35d103d0">
+  <item nodeId="node-0x35d1b560">
     <command xml:space="preserve">read phone</command>
-    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
-
-A scientist arrives from Offices.
+    <result xml:space="preserve">Text message: &quot;Urgent! Suit up in Ready Room. Track down rogue Humanoid 3 outside via Garage.&quot;
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="822">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f28c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f28c0">
-    <command xml:space="preserve">turn off computer</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="822">YES</temporary>
-    <children>
-      <child nodeId="node-0x399be9c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x399be9c0">
-    <command xml:space="preserve">turn off supercomputer</command>
-    <result xml:space="preserve">You can&apos;t feel your toes.
-
-It is now pitch dark in here!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="822">YES</temporary>
-    <children>
-      <child nodeId="node-0x5077a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5077a0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-You are getting cold.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="822">YES</temporary>
-    <children>
-      <child nodeId="node-0x19458b40" />
-    </children>
-  </item>
-  <item nodeId="node-0x19458b40">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-You can&apos;t feel your toes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="822">YES</temporary>
-    <children>
-      <child nodeId="node-0x23036e80" />
-    </children>
-  </item>
-  <item nodeId="node-0x23036e80">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-Brrrrrrr.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="822">YES</temporary>
-    <children>
-      <child nodeId="node-0x183b9f70" />
-    </children>
-  </item>
-  <item nodeId="node-0x183b9f70">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-It&apos;s kinda cold out here.
-
-
-
-    *** You have died of hypothermia. ***
-
-
-In that game you scored 2 out of a possible 0, in 25 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="821">YES</temporary>
+    <temporary score="929">YES</temporary>
   </item>
   <item nodeId="node-0x18326350">
     <command xml:space="preserve">test awaken</command>
@@ -1779,17 +1530,372 @@ On the bar are prepared plates, pint glasses and some beer taps.
 
 You can also see Bart the Bartender here.
 
-Bart the Bartender prepares the prepared plates.
-
-A scientist arrives from Offices.
+Bart the Bartender scrubs the stovetop.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1038">YES</temporary>
     <children>
+      <child nodeId="node-0x35d81d10" />
+      <child nodeId="node-0x35d22de0" />
       <child nodeId="node-0x2306ff00" />
+      <child nodeId="node-0x5eb4f0" />
     </children>
+  </item>
+  <item nodeId="node-0x5eb4f0">
+    <command xml:space="preserve">take bart</command>
+    <result xml:space="preserve">I don&apos;t suppose Bart the Bartender would care for that.
+
+Bart the Bartender tends to the beer taps.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x3996bc70" />
+    </children>
+  </item>
+  <item nodeId="node-0x3996bc70">
+    <command xml:space="preserve">take bar</command>
+    <result xml:space="preserve">That&apos;s hardly portable.
+
+Bart the Bartender scrubs the stovetop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x18397b90" />
+    </children>
+  </item>
+  <item nodeId="node-0x18397b90">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a scientist and a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x230a3340" />
+    </children>
+  </item>
+  <item nodeId="node-0x230a3340">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x35ddcd40" />
+    </children>
+  </item>
+  <item nodeId="node-0x35ddcd40">
+    <command xml:space="preserve">take supercomputer</command>
+    <result xml:space="preserve">That&apos;s fixed in place.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb82180" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb82180">
+    <command xml:space="preserve">take gauges</command>
+    <result xml:space="preserve">That seems to be a part of the supercomputer.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0xa88d5b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa88d5b0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb89e40" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb89e40">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a scientist and a computer terminal (closed) here.
+
+A scientist heads to Operations.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x399c4a10" />
+    </children>
+  </item>
+  <item nodeId="node-0x399c4a10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes bang along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0xef88f50" />
+    </children>
+  </item>
+  <item nodeId="node-0xef88f50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Units to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0xeff0a80" />
+    </children>
+  </item>
+  <item nodeId="node-0xeff0a80">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb44810" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb44810">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">thick outdoor gear: Taken.
+EMP Grenade: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3ded50" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3ded50">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an EMP Grenade
+  a thick outdoor gear
+  a mobile phone
+  a keycard
+  some grey fatigues (being worn)
+  a copy of Research Robotics
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb75570" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb75570">
+    <command xml:space="preserve">wear gear</command>
+    <result xml:space="preserve">You put on the thick outdoor gear.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2303ec10" />
+    </children>
+  </item>
+  <item nodeId="node-0x2303ec10">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an EMP Grenade
+  a thick outdoor gear (being worn)
+  a mobile phone
+  a keycard
+  some grey fatigues (being worn)
+  a copy of Research Robotics
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cbc8970" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cbc8970">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Housing Unit
+You can see Humanoid 1, Humanoid 2 and Humanoid 4 here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x399422c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399422c0">
+    <command xml:space="preserve">examine all</command>
+    <result xml:space="preserve">You can&apos;t use multiple objects with that verb.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x39932220" />
+    </children>
+  </item>
+  <item nodeId="node-0x39932220">
+    <command xml:space="preserve">examine Humanoid 1</command>
+    <result xml:space="preserve">The eyes look dead.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb724d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb724d0">
+    <command xml:space="preserve">examine Humanoid 2</command>
+    <result xml:space="preserve">The face is smashed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x523230" />
+    </children>
+  </item>
+  <item nodeId="node-0x523230">
+    <command xml:space="preserve">x Humanoid 4</command>
+    <result xml:space="preserve">The antennae are bent.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e0cd00" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e0cd00">
+    <command xml:space="preserve">turn on Humanoid 1</command>
+    <result xml:space="preserve">The humanoid twitches for a second, but collapses after blowing a fuse.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x230b16d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230b16d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Units to west, Catwalk east.
+
+You can see some lockers (empty) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d63b80" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d63b80">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Urgent! Suit up in Ready Room. Track down rogue Humanoid 3 outside via Garage.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0x35de9190" />
+    </children>
+  </item>
+  <item nodeId="node-0x35de9190">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1001">YES</temporary>
+    <children>
+      <child nodeId="node-0xf317f10" />
+    </children>
+  </item>
+  <item nodeId="node-0xf317f10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+You can see SnowCat (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1000">YES</temporary>
   </item>
   <item nodeId="node-0x2306ff00">
     <command xml:space="preserve">e</command>
@@ -1804,12 +1910,597 @@ Your mobile phone buzzes.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1018">YES</temporary>
     <children>
       <child nodeId="node-0x23006cd0" />
+      <child nodeId="node-0x183089e0" />
+      <child nodeId="node-0x39929e00" />
     </children>
   </item>
+  <item nodeId="node-0x39929e00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+Your mobile phone buzzes.
+
+A scientist arrives from Operations.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="975">YES</temporary>
+    <children>
+      <child nodeId="node-0x39964a80" />
+    </children>
+  </item>
+  <item nodeId="node-0x39964a80">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="975">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d41590" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d41590">
+    <command xml:space="preserve">take supercomputer</command>
+    <result xml:space="preserve">Taken.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="974">YES</temporary>
+  </item>
+  <item nodeId="node-0x183089e0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+A scientist arrives from Operations.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3682c0" />
+      <child nodeId="node-0x39976d30" />
+    </children>
+  </item>
+  <item nodeId="node-0x39976d30">
+    <command xml:space="preserve">test duties</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] look at mobile
+Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+&gt;[2] unlock terminal with keycard
+You unlock the computer terminal.
+
+A scientist heads to Catwalk.
+
+&gt;[3] open terminal
+You open the computer terminal, revealing ROBOTS file.
+
+&gt;[4] read robots.
+Robot Locations
+Humanoid 1 Housing Unit
+Humanoid 2 Housing Unit
+Humanoid 3 UNKNOWN
+Humanoid 4 Housing Unit
+
+A scientist arrives from Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x39963450" />
+    </children>
+  </item>
+  <item nodeId="node-0x39963450">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes jingle along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x3997d1b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3997d1b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb3fdd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb3fdd0">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x399e09a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399e09a0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">thick outdoor gear: Taken.
+EMP Grenade: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x501f50" />
+    </children>
+  </item>
+  <item nodeId="node-0x501f50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Housing Unit
+You can see Humanoid 1, Humanoid 2 and Humanoid 4 here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0xeff8510" />
+    </children>
+  </item>
+  <item nodeId="node-0xeff8510">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see some lockers (empty) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x1940d320" />
+    </children>
+  </item>
+  <item nodeId="node-0x1940d320">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Urgent! Suit up in Ready Room. Track down rogue Humanoid 3 outside via Garage.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0xa81f490" />
+    </children>
+  </item>
+  <item nodeId="node-0xa81f490">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x3997d960" />
+    </children>
+  </item>
+  <item nodeId="node-0x3997d960">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Garage
+The SnowCat lies dormant in the Garage. Outside to north.
+
+You can see a scientist, some empty fuel canisters and SnowCat (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x19416eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x19416eb0">
+    <command xml:space="preserve">x Snowcat</command>
+    <result xml:space="preserve">A rugged, tracked vehicle with enclosed cab for navigating the treacherous climate outside.
+
+A scientist heads to Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0xf37f040" />
+    </children>
+  </item>
+  <item nodeId="node-0xf37f040">
+    <command xml:space="preserve">x canisters</command>
+    <result xml:space="preserve">You see nothing special about the empty fuel canisters.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d0d270" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d0d270">
+    <command xml:space="preserve">enter Snowcat</command>
+    <result xml:space="preserve">You get into SnowCat.
+
+A scientist arrives from Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1018">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3c65f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3c65f0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Garage (in SnowCat)
+The SnowCat lies dormant in the Garage. Outside to north.
+
+You can see a scientist and some empty fuel canisters here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1017">YES</temporary>
+  </item>
+  <item nodeId="node-0xf3682c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x183f3510" />
+    </children>
+  </item>
+  <item nodeId="node-0x183f3510">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+You can see a scientist here.
+
+A scientist heads to Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x230606f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230606f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Housing Unit
+You can see Humanoid 1, Humanoid 2 and Humanoid 4 here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x501970" />
+    </children>
+  </item>
+  <item nodeId="node-0x501970">
+    <command xml:space="preserve">look at Humanoid 1</command>
+    <result xml:space="preserve">The eyes look dead.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x194daa20" />
+    </children>
+  </item>
+  <item nodeId="node-0x194daa20">
+    <command xml:space="preserve">Look at Humanoid 2</command>
+    <result xml:space="preserve">The face is smashed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x3994a6d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3994a6d0">
+    <command xml:space="preserve">look at Humandoi 3</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3e0620" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3e0620">
+    <command xml:space="preserve">look at Humanoid 3</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x1948a630" />
+    </children>
+  </item>
+  <item nodeId="node-0x1948a630">
+    <command xml:space="preserve">look at Humanoid 4</command>
+    <result xml:space="preserve">The antennae are bent.
+
+A scientist arrives from Ready Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x2309f840" />
+    </children>
+  </item>
+  <item nodeId="node-0x2309f840">
+    <command xml:space="preserve">turn on Humanoid 1</command>
+    <result xml:space="preserve">The humanoid twitches for a second, but collapses after blowing a fuse.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3f5d60" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3f5d60">
+    <command xml:space="preserve">turn on Humanoid 2</command>
+    <result xml:space="preserve">The humanoid doesn&apos;t even respond.
+
+A scientist heads to Ready Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x230f65b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230f65b0">
+    <command xml:space="preserve">turn on Humanoid 4</command>
+    <result xml:space="preserve">The head spins around three times before the eyes roll back and the unit shuts down.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="908">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d283c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d283c0">
+    <command xml:space="preserve">turn on Humanoid 4</command>
+    <result xml:space="preserve">The head spins around three times before the eyes roll back and the unit shuts down.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="907">YES</temporary>
+  </item>
   <item nodeId="node-0x23006cd0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+You can see a scientist here.
+
+Your mobile phone buzzes.
+
+A scientist heads to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="970">YES</temporary>
+    <children>
+      <child nodeId="node-0xefb78b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xefb78b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Units to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="970">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cbc1880" />
+      <child nodeId="node-0x230a9000" />
+    </children>
+  </item>
+  <item nodeId="node-0x230a9000">
+    <command xml:space="preserve">open cabinets</command>
+    <result xml:space="preserve">You open the cabinets, revealing Thick outdoor gear.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="937">YES</temporary>
+  </item>
+  <item nodeId="node-0x2cbc1880">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="970">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d74b70" />
+      <child nodeId="node-0xefeb740" />
+    </children>
+  </item>
+  <item nodeId="node-0xefeb740">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="958">YES</temporary>
+    <children>
+      <child nodeId="node-0x230d4700" />
+    </children>
+  </item>
+  <item nodeId="node-0x230d4700">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ready Room
+Your gear is stored in the lockers. Housing Units to west, Catwalk east.
+
+You can see some lockers (in which are Thick outdoor gear and EMP Grenade) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="957">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d74b70">
+    <command xml:space="preserve">take al</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="970">YES</temporary>
+    <children>
+      <child nodeId="node-0x312c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x312c70">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">lockers: Taken.
+thick outdoor gear: Taken.
+EMP Grenade: Taken.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="969">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d22de0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+Bart the Bartender prepares the stovetop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="951">YES</temporary>
+    <children>
+      <child nodeId="node-0x399dd330" />
+    </children>
+  </item>
+  <item nodeId="node-0x399dd330">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+A scientist arrives from Operations.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="951">YES</temporary>
+    <children>
+      <child nodeId="node-0x19450d00" />
+    </children>
+  </item>
+  <item nodeId="node-0x19450d00">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Catwalk
@@ -1820,133 +2511,763 @@ Your mobile phone buzzes.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="951">YES</temporary>
     <children>
-      <child nodeId="node-0x194f5880" />
+      <child nodeId="node-0x2cb474f0" />
     </children>
   </item>
-  <item nodeId="node-0x194f5880">
+  <item nodeId="node-0x2cb474f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers.
+
+You can see some lockers (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="951">YES</temporary>
+    <children>
+      <child nodeId="node-0xf3f92d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf3f92d0">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing Thick outdoor gear and EMP Grenade.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="951">YES</temporary>
+    <children>
+      <child nodeId="node-0x39971140" />
+    </children>
+  </item>
+  <item nodeId="node-0x39971140">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+A scientist arrives from Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="950">YES</temporary>
+  </item>
+  <item nodeId="node-0x35d81d10">
+    <command xml:space="preserve">test breakfast</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] take plate
+You take a plate from the bar.
+
+Bart the Bartender prepares the prepared plates.
+
+&gt;[2] take glass
+You take a pint glass from the bar.
+
+Bart the Bartender tends to the beer taps.
+
+&gt;[3] eat pancake
+(first taking the pancake)
+You eat the pancake. Not bad.
+
+Bart the Bartender prepares the pint glasses.
+
+&gt;[4] eat egg
+(first taking the egg)
+You eat the egg. Not bad.
+
+Bart the Bartender cleans the pint glasses.
+
+&gt;[5] eat bacon
+(first taking the slice of bacon)
+You eat the slice of bacon. Not bad.
+
+Bart the Bartender tends to the pint glasses.
+
+&gt;[6] eat toast
+(first taking the slice of toast)
+You eat the slice of toast. Not bad.
+
+Bart the Bartender scrubs the stovetop.
+
+&gt;[7] drink orange juice
+You drink the orange juice. Refreshing.
+
+Bart the Bartender washes the stovetop.
+
+&gt;[8] drop plate and glass
+prepared plate: Dropped.
+pint glass: Dropped.
+
+Bart the Bartender cleans the prepared plates.
+
+&gt;[9] turn off bart
+You switch Bart the Bartender off.
+
+&gt;[10] east.
+
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x3996c2d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3996c2d0">
+    <command xml:space="preserve">est duties</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognize.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x52ce70" />
+    </children>
+  </item>
+  <item nodeId="node-0x52ce70">
+    <command xml:space="preserve">test duties</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] look at mobile
+Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+&gt;[2] unlock terminal with keycard
+You unlock the computer terminal.
+
+&gt;[3] open terminal
+You open the computer terminal, revealing ROBOTS file.
+
+&gt;[4] read robots.
+Robot Locations
+Humanoid 1 Housing Unit
+Humanoid 2 Housing Unit
+Humanoid 3 UNKNOWN
+Humanoid 4 Housing Unit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x22fea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22fea0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x230e26b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x230e26b0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0xa8aec80" />
+    </children>
+  </item>
+  <item nodeId="node-0xa8aec80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x5d8b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x5d8b40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clomp along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+You can see a scientist here.
+
+A scientist heads to Ready Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cb93260" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cb93260">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see a scientist and some lockers (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0xa815c70" />
+    </children>
+  </item>
+  <item nodeId="node-0xa815c70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Housing Unit
+You can see Humanoid 1, Humanoid 2 and Humanoid 4 here.
+
+A scientist arrives from Ready Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x399b6110" />
+    </children>
+  </item>
+  <item nodeId="node-0x399b6110">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x399ea1e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399ea1e0">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Urgent! Suit up in Ready Room. Track down rogue Humanoid 3 outside via Garage.&quot;
+
+A scientist arrives from Housing Unit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x35dc0730" />
+    </children>
+  </item>
+  <item nodeId="node-0x35dc0730">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x527958a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x527958a0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">thick outdoor gear: Taken.
+EMP Grenade: Taken.
+
+A scientist heads to Housing Unit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d5be30" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d5be30">
+    <command xml:space="preserve">put on gear</command>
+    <result xml:space="preserve">You put on the thick outdoor gear.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x35db2350" />
+    </children>
+  </item>
+  <item nodeId="node-0x35db2350">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes bang along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x1834f2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1834f2a0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Garage
-You can see SnowCat (empty) here.
+The SnowCat lies dormant in the Garage. Outside to north.
 
-Your mobile phone buzzes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="872">YES</temporary>
-    <children>
-      <child nodeId="node-0x23060370" />
-    </children>
-  </item>
-  <item nodeId="node-0x23060370">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Grid 0-1
-Your mobile phone buzzes.
+You can see some empty fuel canisters and SnowCat (empty) here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1038">YES</temporary>
     <children>
-      <child nodeId="node-0x399e6120" />
+      <child nodeId="node-0x35d18230" />
     </children>
   </item>
-  <item nodeId="node-0x399e6120">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-Your mobile phone buzzes.
+  <item nodeId="node-0x35d18230">
+    <command xml:space="preserve">enter snowcat</command>
+    <result xml:space="preserve">You get into SnowCat.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1038">YES</temporary>
     <children>
-      <child nodeId="node-0x399eaa30" />
+      <child nodeId="node-0x399deea0" />
     </children>
   </item>
-  <item nodeId="node-0x399eaa30">
+  <item nodeId="node-0x399deea0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Garage (in SnowCat)
+The SnowCat roars to life in the Garage. Outside to north.
+
+You can see some empty fuel canisters here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1038">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e1c7c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e1c7c0">
+    <command xml:space="preserve">look at snowcat</command>
+    <result xml:space="preserve">A rugged, tracked vehicle with enclosed cab for navigating the treacherous climate outside.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1037">YES</temporary>
+  </item>
+  <item nodeId="node-0x3999e9e0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">copy of Research Robotics: Taken.
+grey fatigues: Taken.
+keycard: Taken.
+mobile phone: Taken.
+
+[Your score has just gone up by two points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0xa8e61d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa8e61d0">
+    <command xml:space="preserve">test awaken</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] take all
+There are none at all available!
+
+&gt;[2] put on clothes
+You put on the grey fatigues.
+
+&gt;[3] turn off alarm
+You switch the alarm clock off.
+
+&gt;[4] north.
+(first getting off your bunk bed)
+(first opening the hatch)
+
+Mess Hall
+The Mess Hall is more properly a bar repurposed at mealtimes for eating, and west of Offices.
+
+On the bar are prepared plates, pint glasses and some beer taps.
+
+You can also see Bart the Bartender here.
+
+Bart the Bartender tends to the stovetop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0xef55ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0xef55ed0">
+    <command xml:space="preserve">test all</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test awaken
+(Testing.)
+
+&gt;[2] take all
+prepared plates: You take a plate from the bar.
+pint glasses: You take a pint glass from the bar.
+
+Bart the Bartender scrubs the stovetop.
+
+&gt;[3] put on clothes
+You&apos;re already wearing those!
+
+Bart the Bartender tends to the stovetop.
+
+&gt;[4] turn off alarm
+You can&apos;t see any such thing.
+
+&gt;[5] north.
+You can&apos;t go that way.
+
+Bart the Bartender scrubs the prepared plates.
+
+&gt;[6] test breakfast
+(Testing.)
+
+&gt;[7] take plate
+You already have that.
+
+Bart the Bartender prepares the beer taps.
+
+&gt;[8] take glass
+You already have that.
+
+Bart the Bartender scrubs the stovetop.
+
+&gt;[9] eat pancake
+(first taking the pancake)
+You eat the pancake. Not bad.
+
+Bart the Bartender cleans the beer taps.
+
+&gt;[10] eat egg
+(first taking the egg)
+You eat the egg. Not bad.
+
+Bart the Bartender washes the stovetop.
+
+&gt;[11] eat bacon
+(first taking the slice of bacon)
+You eat the slice of bacon. Not bad.
+
+Bart the Bartender tends to the prepared plates.
+
+&gt;[12] eat toast
+(first taking the slice of toast)
+You eat the slice of toast. Not bad.
+
+Bart the Bartender washes the beer taps.
+
+&gt;[13] drink orange juice
+You drink the orange juice. Refreshing.
+
+Bart the Bartender cleans the beer taps.
+
+&gt;[14] drop plate and glass
+prepared plate: Dropped.
+pint glass: Dropped.
+
+Bart the Bartender tends to the beer taps.
+
+&gt;[15] turn off bart
+You switch Bart the Bartender off.
+
+&gt;[16] east.
+
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (closed) here.
+
+Your mobile phone buzzes.
+
+&gt;[17] test duties.
+(Testing.)
+
+&gt;[18] look at mobile
+Text message: &quot;Today&apos;s duties:
+- Check status of robots on computer terminal in Offices.
+- Activate robot workers in Housing Unit.
+- Gear up in Ready Room.&quot;
+
+A scientist arrives from Operations.
+
+&gt;[19] unlock terminal with keycard
+You unlock the computer terminal.
+
+&gt;[20] open terminal
+You open the computer terminal, revealing ROBOTS file.
+
+A scientist heads to Operations.
+
+&gt;[21] read robots.
+Robot Locations
+Humanoid 1 Housing Unit
+Humanoid 2 Housing Unit
+Humanoid 3 UNKNOWN
+Humanoid 4 Housing Unit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x2cbdc2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2cbdc2a0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
-Grid 0-2
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a scientist and a supercomputer here.
+
 Your mobile phone buzzes.
+
+A scientist heads to Offices.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1096">YES</temporary>
     <children>
-      <child nodeId="node-0x1838f6b0" />
+      <child nodeId="node-0x55d92b50" />
     </children>
   </item>
-  <item nodeId="node-0x1838f6b0">
-    <command xml:space="preserve">e</command>
+  <item nodeId="node-0x55d92b50">
+    <command xml:space="preserve">w</command>
     <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the glacial plains.
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a scientist and a computer terminal (in which is ROBOTS file) here.
 
 Your mobile phone buzzes.
 
-You can&apos;t feel your toes.
-
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1096">YES</temporary>
     <children>
-      <child nodeId="node-0x3997e360" />
+      <child nodeId="node-0x2cb987c0" />
     </children>
   </item>
-  <item nodeId="node-0x3997e360">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Grid 0-2
-[Previous turn undone.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="872">YES</temporary>
-    <children>
-      <child nodeId="node-0x399b4e30" />
-    </children>
-  </item>
-  <item nodeId="node-0x399b4e30">
+  <item nodeId="node-0x2cb987c0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
-Grid 1-2
+Catwalk
+Your shoes jingle along the metal surface between the railings leading west to Ready Room and east to Garage.
+
 Your mobile phone buzzes.
+
+A scientist arrives from Offices.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1096">YES</temporary>
     <children>
-      <child nodeId="node-0x399462f0" />
+      <child nodeId="node-0x35d8adb0" />
     </children>
   </item>
-  <item nodeId="node-0x399462f0">
-    <command xml:space="preserve">n</command>
+  <item nodeId="node-0x35d8adb0">
+    <command xml:space="preserve">w</command>
     <result xml:space="preserve">
-Grid 2-2
+Ready Room
+Your gear is stored in the lockers. Housing Unit to west, Catwalk east.
+
+You can see some lockers (closed) here.
+
 Your mobile phone buzzes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1096">YES</temporary>
     <children>
-      <child nodeId="node-0x194bbb80" />
+      <child nodeId="node-0x230200e0" />
     </children>
   </item>
-  <item nodeId="node-0x194bbb80">
+  <item nodeId="node-0x230200e0">
+    <command xml:space="preserve">open lockers</command>
+    <result xml:space="preserve">You open the lockers, revealing a thick outdoor gear and an EMP Grenade.
+
+Your mobile phone buzzes.
+
+A scientist arrives from Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x55d96710" />
+    </children>
+  </item>
+  <item nodeId="node-0x55d96710">
+    <command xml:space="preserve">wear gear</command>
+    <result xml:space="preserve">(first taking the thick outdoor gear)
+You put on the thick outdoor gear.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x399664a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x399664a0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">EMP Grenade: Taken.
+
+Your mobile phone buzzes.
+
+A scientist heads to Catwalk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x5faf50" />
+    </children>
+  </item>
+  <item nodeId="node-0x5faf50">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
-Off the Grid
-You are off the known grid and wandering the frigid plains.
+Catwalk
+Your shoes bang along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+You can see a scientist here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x23096ef0" />
+    </children>
+  </item>
+  <item nodeId="node-0x23096ef0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x19487e20" />
+    </children>
+  </item>
+  <item nodeId="node-0x19487e20">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Operations
+The clicks and beeps of the supercomputer here match the blinking lights and gauges. West to Offices.
+
+You can see a supercomputer here.
+
+Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x2306ad70" />
+    </children>
+  </item>
+  <item nodeId="node-0x2306ad70">
+    <command xml:space="preserve">turn off supercomputer</command>
+    <result xml:space="preserve">Your mobile phone buzzes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x13e01be0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13e01be0">
+    <command xml:space="preserve">take off gear</command>
+    <result xml:space="preserve">You take off the thick outdoor gear.
 
 Your mobile phone buzzes.
 
@@ -1955,44 +3276,97 @@ It&apos;s kinda cold out here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="872">YES</temporary>
+    <temporary score="1096">YES</temporary>
     <children>
-      <child nodeId="node-0x2304f180" />
+      <child nodeId="node-0x230c9d10" />
     </children>
   </item>
-  <item nodeId="node-0x2304f180">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Grid 2-2
-[Previous turn undone.]
+  <item nodeId="node-0x230c9d10">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Offices
+You pass through Offices, with Catwalk to the north and Operations to the east.
+
+You can see a computer terminal (in which is ROBOTS file) here.
+
+Your mobile phone buzzes.
+
+You are getting cold.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="871">YES</temporary>
-  </item>
-  <item nodeId="node-0xa878560">
-    <command xml:space="preserve">read ROBOST</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="840">YES</temporary>
+    <temporary score="1096">YES</temporary>
     <children>
-      <child nodeId="node-0xa8785d0" />
+      <child nodeId="node-0x3992e800" />
     </children>
   </item>
-  <item nodeId="node-0xa8785d0">
-    <command xml:space="preserve">read ROBOTS</command>
-    <result xml:space="preserve">Robot Locations
-Humanoid 1 Housing Unit
-Humanoid 2 Housing Unit
-Humanoid 3 Ice Cave
-Humanoid 4 Housing Unit
+  <item nodeId="node-0x3992e800">
+    <command xml:space="preserve">b</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognize.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="839">YES</temporary>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x35d455e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x35d455e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Catwalk
+Your shoes clank along the metal surface between the railings leading west to Ready Room and east to Garage.
+
+Your mobile phone buzzes.
+
+You can&apos;t feel your toes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x399a0f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x399a0f90">
+    <command xml:space="preserve">read phone</command>
+    <result xml:space="preserve">Text message: &quot;Alert! A Humanoid worker is missing. Investigate Housing Unit.&quot;
+
+You are getting cold.
+
+It is now pitch dark in here!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1096">YES</temporary>
+    <children>
+      <child nodeId="node-0x39920bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x39920bb0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+It&apos;s kinda cold out here.
+
+
+
+    *** You have died of hypothermia. ***
+
+
+In that game you scored 2 out of a possible 0, in 37 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1095">YES</temporary>
   </item>
 </Skein>
